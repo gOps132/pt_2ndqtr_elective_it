@@ -6,10 +6,10 @@ import os
 class DatabaseCtx():
     def __init__(self):
         try:
-            self.db_cnx = connector.connect(
+            self.db_ctx = connector.connect(
                 host="localhost", 
                 user="root",
-                database='pt_1st_qtr_demo',
+                database='pt_2nd_qtr_demo_db',
                 password=os.getenv("MYSQLPASS")
                 )
 
@@ -23,11 +23,11 @@ class DatabaseCtx():
                 self.terminate()
 
     def terminate(self):
-        self.db_cnx.close()
+        self.db_ctx.close()
 
     def queue_db(self, str):
-        if self.db_cnx and self.db_cnx.is_connected():
-            cursor = self.db_cnx.cursor()
+        if self.db_ctx and self.db_ctx.is_connected():
+            cursor = self.db_ctx.cursor()
             result = cursor.execute(str)
             rows = cursor.fetchall()
             for rows in rows:

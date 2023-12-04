@@ -25,7 +25,7 @@ def main():
 
     info_query_ctx = InfoQueryCtx()
     info_query_ctx.grid()
-    info_query_ctx_execute = ExecuteQueryCtxWidget(main_db_ctx)
+    info_query_ctx_execute = ExecuteQueryCtxWidget(main_db_ctx, info_query_ctx)
     info_query_ctx_execute.grid()
 
     window.mainloop()

@@ -12,7 +12,7 @@ class InfoQueryCtx:
         self.gender = tk.Label(master=self.frame, text="Gender")
         self.section = tk.Label(master=self.frame, text="Section")
         self.year_level = tk.Label(master=self.frame, text="Year Level")
-        self.strand = tk.Label(master=self.frame, text="Strand")
+        self.strand = tk.Label(master=self.frame, text="Strand or Elective")
         
         self.student_id_entry = tk.Entry(master=self.frame)
         self.last_name_entry = tk.Entry(master=self.frame)
@@ -32,7 +32,7 @@ class InfoQueryCtx:
         )
         self.section_entry = ttk.Combobox(
             master=self.frame,
-            values=["Joswiak", "Kazmierski", "Wojciechowski", "Klin ik"]
+            values=["Joswiak", "Kazmierski", "Wojciechowski", "Klinik"]
         )
         self.year_level_entry = ttk.Combobox(
             master=self.frame,
@@ -40,7 +40,7 @@ class InfoQueryCtx:
         )
         self.strand_entry = ttk.Combobox(
             master=self.frame,
-            values=["STEM", "GAS", "ABM"]
+            values=["MECH", "CIVIL", "ELEX", "STEM", "GAS", "ABM"]
         )
 
     def grid(self) -> None:
@@ -64,10 +64,11 @@ class InfoQueryCtx:
 
 
 class ExecuteQueryCtxWidget:
-    def __init__(self, cnx):
+    def __init__(self, db_ctx, info_query_ctx):
         self.frame = ttk.Frame()
         self.frame.grid(column=1)
-        self.cnx = cnx
+        self.ctx = db_ctx
+        self.ifq_ctx = info_query_ctx
 
         self.insert_btn = tk.Button(master=self.frame, text="Insert")    
         self.update_btn = tk.Button(master=self.frame, text="Update")    
@@ -85,5 +86,5 @@ class ExecuteQueryCtxWidget:
         self.queue_btn.grid(row=0, column=3)
     
     def queue(self):
-        result = self.cnx.queue_db("SELECT * FROM students")
+        result = self.ctx.queue_db("SELECT * FROM pt_2nd_qtr_demo_db")
         print(result) # queued none

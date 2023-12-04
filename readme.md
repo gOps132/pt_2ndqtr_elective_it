@@ -8,26 +8,30 @@
 * ...
 
 ## How to run:
-1. Initialize and run mysql server using [redacted].sql 
-2. Make a Virtual Environment
+1. Initialize and run mysql server using [redacted].sql
+2. create a .env file, modify, and insert credentials
 ```
-    python -m venv .venv
+MYSQLPASS="[dbpassword]"
 ```
-3. Activate Virtual Environment
+3. Make a Virtual Environment
+```
+python -m venv .venv
+```
+4. Activate Virtual Environment
 On Powershell
 ```
-    .\.venv\Scripts\activate.ps1
+.\.venv\Scripts\activate.ps1
 ```
 On CMD
 ```
-    .\.venv\Scripts\activate.bat
+.\.venv\Scripts\activate.bat
 ```
 On Unix (untested)
 ```
-    .\.venv\Scripts\activate
+.\.venv\Scripts\activate
 ```
-4. Run Python File
+5. Run Python File
 ```
-    python main.py
+python main.py
 ```
 
