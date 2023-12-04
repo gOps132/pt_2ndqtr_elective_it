@@ -8,7 +8,7 @@
 * ...
 
 ## How to run:
-1. Initialize and run mysql server using [redacted].sql
+1. Initialize and run mysql server using pt_2nd_qtr_demo.sql in the db folder
 2. create a .env file, modify, and insert credentials
 ```
 MYSQLPASS="[dbpassword]"
