@@ -7,7 +7,7 @@ def main():
     window.wm_title("hello world")
     info_widget = InformationWidget()
     info_widget.grid()
-    execute_widget = ExecuteWidget("")
+    execute_widget = ExecuteWidget()
     execute_widget.grid()
     output_widget = OutputWidget()
     output_widget.grid()

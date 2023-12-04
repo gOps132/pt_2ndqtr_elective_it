@@ -6,7 +6,7 @@ import os
 load_dotenv()
 
 DB = connector.connect(
-    host="localhost", user="root", password=os.getenv("MYSQLPASS"), database="teachers"
+    host="localhost", user="root", password=os.getenv("MYSQLPASS"), database=os.getenv("MYSQLPASS")
 )
 CURSOR = DB.cursor()
 
