@@ -30,8 +30,11 @@ On Unix (untested)
 ```
 .\.venv\Scripts\activate
 ```
-5. Run Python File
+5. Run pip commond to install dependencies
+```
+pip install -r requirements.txt
+```
+6. Run the program
 ```
 python main.py
 ```
-
