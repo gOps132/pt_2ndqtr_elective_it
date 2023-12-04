@@ -1,36 +1,36 @@
 id,lastname,firstname,elective
-1,"ABARINTOS", "Zedrick Vito, Dia",MECH
-2,"ALMIRANTE", "Niles Isak, Caringal",MECH
-3,"BACOLOD", "Eleazar Ross, Suarez",MECH
-4,"BOLLOZOS", "Blake, Plaza",MECH
-5,"BOMBEO", "Andre Joaquin, Quinain",MECH
-6,"CAÑARES", "Richard Alfred, Mendoza",MECH
-7,"CHUA", "Ben Johann, David",MECH
-8,"EMPASIS", "Brian Patrick, Macoy",CIVIL
-9,"ENRIQUEZ", "Ej Kristoffer, Pasiculan",MECH
-10,"GAVIOLA", "Djassemi Kim, Olmilla",MECH
-11,"HAPITA", "Denzel Don, Gimone",MECH
-12,"JUNTILLA", "Neathan, Gamao",MECH
-13,"LABADAN", "Irv Ramses Tristan, Gumban",MECH
-14,"LANIT", "Josh Caden, Rivera",MECH
-15,"LIWANAG", "Joaquin Matteo, Lanozo",CIVIL
-16,"LUMAUAG", "Raphael Dominic, Pelayo",CIVIL
-17,"MALABAR", "Jeremiah, Otero",CIVIL
-18,"MANABAT", "Gabrielle Dave, Manapin",CIVIL
-19,"MARISCAL", "Michael, Bereña",CIVIL
-20,"MENDOZA", "Harry Daniel, Chang",CIVIL
-21,"MERIN", "Finsch Clyde, Revilla",CIVIL
-22,"MESINA", "Ron Philip, Relampagos",CIVIL
-23,"MONTENEGRO", "Leif Edward, Belardo",CIVIL
-24,"MURILLO", "Marcuz Diego, Ballares",CIVIL
-25,"NAVARRO", "Alexus Bernard, Fernandez",CIVIL
-26,"OROZCO", "Christian Ederf, Cuyos",CIVIL
-27,"PARDILLO", "Nathaniel, De Los Reyes",ELEX
-28,"PASCO", "Wayne Avril, Laroda",ELEX
-29,"PIZARRAS", "Tristan Joaquin, Salcedo",ELEX
-30,"PROCIANOS", "Gabriel Vincent, Tampos",ELEX
-31,"QUIJANO", "Christian Gabriel, Alcuizar",ELEX
-32,"QUILO", "Aaron Vladimir",ELEX
-33,"REQUIRON", "Joseph Roy, Valdez",ELEX
-34,"RESILLA", "Ezekiel, Laurel",ELEX
-35,"SANCHEZ", "Raphael, Belandres",ELEX
+1,"ABARINTOS","Zedrick Vito, Dia",MECH
+2,"ALMIRANTE","Niles Isak, Caringal",MECH
+3,"BACOLOD","Eleazar Ross, Suarez",MECH
+4,"BOLLOZOS","Blake, Plaza",MECH
+5,"BOMBEO","Andre Joaquin, Quinain",MECH
+6,"CAÑARES","Richard Alfred, Mendoza",MECH
+7,"CHUA","Ben Johann, David",MECH
+8,"EMPASIS","Brian Patrick, Macoy",CIVIL
+9,"ENRIQUEZ","Ej Kristoffer, Pasiculan",MECH
+10,"GAVIOLA","Djassemi Kim, Olmilla",MECH
+11,"HAPITA","Denzel Don, Gimone",MECH
+12,"JUNTILLA","Neathan, Gamao",MECH
+13,"LABADAN","Irv Ramses Tristan, Gumban",MECH
+14,"LANIT","Josh Caden, Rivera",MECH
+15,"LIWANAG","Joaquin Matteo, Lanozo",CIVIL
+16,"LUMAUAG","Raphael Dominic, Pelayo",CIVIL
+17,"MALABAR","Jeremiah, Otero",CIVIL
+18,"MANABAT","Gabrielle Dave, Manapin",CIVIL
+19,"MARISCAL","Michael, Bereña",CIVIL
+20,"MENDOZA","Harry Daniel, Chang",CIVIL
+21,"MERIN","Finsch Clyde, Revilla",CIVIL
+22,"MESINA","Ron Philip, Relampagos",CIVIL
+23,"MONTENEGRO","Leif Edward, Belardo",CIVIL
+24,"MURILLO","Marcuz Diego, Ballares",CIVIL
+25,"NAVARRO","Alexus Bernard, Fernandez",CIVIL
+26,"OROZCO","Christian Ederf, Cuyos",CIVIL
+27,"PARDILLO","Nathaniel, De Los Reyes",ELEX
+28,"PASCO","Wayne Avril, Laroda",ELEX
+29,"PIZARRAS","Tristan Joaquin, Salcedo",ELEX
+30,"PROCIANOS","Gabriel Vincent, Tampos",ELEX
+31,"QUIJANO","Christian Gabriel, Alcuizar",ELEX
+32,"QUILO","Aaron Vladimir",ELEX
+33,"REQUIRON","Joseph Roy, Valdez",ELEX
+34,"RESILLA","Ezekiel, Laurel",ELEX
+35,"SANCHEZ","Raphael, Belandres",ELEX

@@ -1,38 +1,38 @@
 id,lastname,firstname,elective
-1,"ABAPO", "Patrick Raghild, Barrientos",ELEX
-2,"ABUZO", "Ray Augustine, Satina",ELEX
-3,"ARMIDILLA", "Jamar Miguel, Moroscallo",ELEX
-4,"BANAL", "Kenneth Francis, Catli",ELEX
-5,"BANDAL", "Breindel Jake, Cagang",ELEX
-6,"BAS", "Marc Matteo, Cabajar",ELEX
-7,"BINGHAY", "Lourene Ian, Mari",ELEX
-8,"CABALLES", "Sean Harsimran, Cristoria",ELEX
-9,"CABAÑAS", "Zjavier Jay, Villarta",ELEX
-10,"CABATO", "Sean Kareem, Fernandez",ELEX
-11,"CENIZA", "Yuki John, Gacayan",ELEX
-12,"CULANGO", "John Vincent, Aldaba",ELEX
-13,"DAMASCO", "John Richard, Saberon",ELEX
-14,"DE PEDRO", "Zyrusean Gabriele, Hernaez",ELEX
-15,"EVIOTA", "Angelo Gabriel, Paradero",MECH
-16,"FABOR", "Sebastian, Menchavez",ELEX
-17,"FERNANDEZ", "Matthew, Mauring",MECH
-18,"GUADALQUIVER", "Jayzher, Gingoyon",MECH
-19,"KING", "Michael Joseph Daniel, Somosot",MECH
-20,"LADERA", "Jacob Santino, Enriquez",MECH
-21,"LADEZA", "John Derek, Espinosa",MECH
-22,"LAURITO", "Joshua Frederick, Castro",MECH
-23,"MANLOSA", "Gelo, Amante",MECH
-24,"MIEL", "Kent Sebastian, Soria",MECH
-25,"MONTEJO", "Nicholai Gabriel, Rom",MECH
-26,"MONTERMOSO", "Don Andric, Dela Cruz",MECH
-27,"NECESARIO", "Klark Adriane, Paran",CIVIL
-28,"NEMEÑO", "Jedrek Ean, Hojilla",CIVIL
-29,"ORTIZ", "Atticus Angelo, Ruiz",CIVIL
-30,"REPOLIDON", "Bryle Jeff Niño, Dinela",CIVIL
-31,"SANCHEZ", "John Alexandre, Cristobal",CIVIL
-32,"TABARES", "Von Niño, Rago",CIVIL
-33,"UY", "Andreison, Cañete",CIVIL
-34,"VILLAFLOR", "Carvien Antoine, Cinco",CIVIL
-35,"VILLAMOR", "Mikhail Olrick, Heruela",CIVIL
-36,"VILLANUEVA", "Sean Andrew, Kaindoy",CIVIL
-37,"VILLARIN", "Joachim James, Sarsonas",CIVIL
+1,"ABAPO","Patrick Raghild, Barrientos",ELEX
+2,"ABUZO","Ray Augustine, Satina",ELEX
+3,"ARMIDILLA","Jamar Miguel, Moroscallo",ELEX
+4,"BANAL","Kenneth Francis, Catli",ELEX
+5,"BANDAL","Breindel Jake, Cagang",ELEX
+6,"BAS","Marc Matteo, Cabajar",ELEX
+7,"BINGHAY","Lourene Ian, Mari",ELEX
+8,"CABALLES","Sean Harsimran, Cristoria",ELEX
+9,"CABAÑAS","Zjavier Jay, Villarta",ELEX
+10,"CABATO","Sean Kareem, Fernandez",ELEX
+11,"CENIZA","Yuki John, Gacayan",ELEX
+12,"CULANGO","John Vincent, Aldaba",ELEX
+13,"DAMASCO","John Richard, Saberon",ELEX
+14,"DE PEDRO","Zyrusean Gabriele, Hernaez",ELEX
+15,"EVIOTA","Angelo Gabriel, Paradero",MECH
+16,"FABOR","Sebastian, Menchavez",ELEX
+17,"FERNANDEZ","Matthew, Mauring",MECH
+18,"GUADALQUIVER","Jayzher, Gingoyon",MECH
+19,"KING","Michael Joseph Daniel, Somosot",MECH
+20,"LADERA","Jacob Santino, Enriquez",MECH
+21,"LADEZA","John Derek, Espinosa",MECH
+22,"LAURITO","Joshua Frederick, Castro",MECH
+23,"MANLOSA","Gelo, Amante",MECH
+24,"MIEL","Kent Sebastian, Soria",MECH
+25,"MONTEJO","Nicholai Gabriel, Rom",MECH
+26,"MONTERMOSO","Don Andric, Dela Cruz",MECH
+27,"NECESARIO","Klark Adriane, Paran",CIVIL
+28,"NEMEÑO","Jedrek Ean, Hojilla",CIVIL
+29,"ORTIZ","Atticus Angelo, Ruiz",CIVIL
+30,"REPOLIDON","Bryle Jeff Niño, Dinela",CIVIL
+31,"SANCHEZ","John Alexandre, Cristobal",CIVIL
+32,"TABARES","Von Niño, Rago",CIVIL
+33,"UY","Andreison, Cañete",CIVIL
+34,"VILLAFLOR","Carvien Antoine, Cinco",CIVIL
+35,"VILLAMOR","Mikhail Olrick, Heruela",CIVIL
+36,"VILLANUEVA","Sean Andrew, Kaindoy",CIVIL
+37,"VILLARIN","Joachim James, Sarsonas",CIVIL

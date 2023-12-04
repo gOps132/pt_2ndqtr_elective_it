@@ -28,11 +28,11 @@ class DatabaseCtx():
     def queue_db(self, str):
         if self.db_ctx and self.db_ctx.is_connected():
             cursor = self.db_ctx.cursor()
-            result = cursor.execute(str)
+            cursor.execute(str)
             rows = cursor.fetchall()
             for rows in rows:
                 print(rows)
-            else:
-                print("could not connect")
+            # else:
+            #     print("could not connect")
             
             return rows

@@ -1,5 +1,6 @@
 import tkinter as tk
 import tkinter.ttk as ttk
+from tkinter import messagebox
 
 class InfoQueryCtx:        
     def __init__(self):
@@ -30,13 +31,14 @@ class InfoQueryCtx:
             value="Female",
             variable=self.gender_options
         )
-        self.section_entry = ttk.Combobox(
-            master=self.frame,
-            values=["Joswiak", "Kazmierski", "Wojciechowski", "Klinik"]
-        )
+        # self.section_entry = ttk.Combobox(
+        #     master=self.frame,
+        #     values=["Joswiak", "Kazmierski", "Wojciechowski", "Klinik"]
+        # )
+        self.section_entry = tk.Entry(master=self.frame,)
         self.year_level_entry = ttk.Combobox(
             master=self.frame,
-            values=["09", "10", "11", "12"]
+            values=["k", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
         )
         self.strand_entry = ttk.Combobox(
             master=self.frame,
@@ -52,16 +54,15 @@ class InfoQueryCtx:
         self.year_level.grid(row=5, column=0)
         self.strand.grid(row=6, column=0)
 
-        self.student_id_entry.grid(row=0, column=1)
+        # self.student_id_entry.grid(row=0, column=1)
         self.last_name_entry.grid(row=1, column=1)
         self.first_name_entry.grid(row=2, column=1)
-        self.gender_options.grid(row=3, column=1)
-        self.gender_entry_m.grid(row=0, column=0)
-        self.gender_entry_f.grid(row=0, column=1)
+        # self.gender_options.grid(row=3, column=1)
+        # self.gender_entry_m.grid(row=0, column=0)
+        # self.gender_entry_f.grid(row=0, column=1)
         self.section_entry.grid(row=4, column=1)
         self.year_level_entry.grid(row=5, column=1)
         self.strand_entry.grid(row=6, column=1)
-
 
 class ExecuteQueryCtxWidget:
     def __init__(self, db_ctx, info_query_ctx):
@@ -84,7 +85,26 @@ class ExecuteQueryCtxWidget:
         self.update_btn.grid(row=0, column=1)
         self.delete_btn.grid(row=0, column=2)
         self.queue_btn.grid(row=0, column=3)
-    
+
+    def check_entries(self):
+        if (len(self.ifq_ctx.year_level_entry.get()) + len(self.ifq_ctx.section_entry.get()) == 0):
+            messagebox.showerror("error", "complete your entries!")
+            return False
+        else:
+            return True
+
     def queue(self):
-        result = self.ctx.queue_db("SELECT * FROM pt_2nd_qtr_demo_db")
-        print(result) # queued none
+        if self.check_entries():
+            result = self.ctx.queue_db(
+                "SELECT" + 
+                    "*" + 
+                "FROM" +
+                    "`" + 
+                        str(self.ifq_ctx.year_level_entry.get()) + 
+                    "-" +
+                        str(self.ifq_ctx.section_entry.get()) + 
+                    "`"
+            )
+            print(result)
+
+

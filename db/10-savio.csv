@@ -1,33 +1,33 @@
 id,lastname,firstname,elective
-1,"ABANGAN", "Peter Paul, Cabingatan",MECH
-2,"ANDAYA", "Godwin",MECH
-3,"BALANSAG", "Jessie Carl, Lalican",MECH
-4,"BALBUENA", "Josef Santino, Macariola",MECH
-5,"BUREROS", "Rondrich Clive, Lozano",MECH
-6,"CABURNAY", "John David, Sevilla",MECH
-7,"CAMPOS", "Damiel Christopher, Menina",MECH
-8,"CANDO", "Thomas Ezekiel",MECH
-9,"CASTELLANO", "David Mario, Rio",MECH
-10,"CENIZA", "Ernest Anton, Mondero",MECH
-11,"CONDOR", "Clark Micah, Ybañez",MECH
-12,"CORTES", "Ricel Antonio, Monteroso",MECH
-13,"CUI", "Joshua Benedict, Duarte",CIVIL
-14,"DELA CRU"Z," Dimpsey Orvil, Maratas",CIVIL
-15,"DELA PEÑ"A," Raj Matthew, Balbuena",CIVIL
-16,"EMPUERTO", "Jared Jesu, Taraya",CIVIL
-17,"FERRAZ", "Unico, Cañete",CIVIL
-18,"FORTICH", "Mikele André",CIVIL
-19,"GEONZON", "Vince Kylle, Butalid",CIVIL
-20,"HALICAN", "Marc Gabriel Nathaniel, Modina",CIVIL
-21,"INTONG", "Adrianne, Gulayan",CIVIL
-22,"JIMENO", "Linc Reznei, Fernandez",CIVIL
-23,"KIERULF", "Raffael Isaac Kalel, Palomino",ELEX
-24,"LLERIN", "Jose Luis Matthias, Delfin",ELEX
-25,"MACAILING", "Reyver Leigh, Untalan",ELEX
-26,"MANOS", "Renzid Royce, Cabahug",ELEX
-27,"MORIN", "Liam James, Meneses",ELEX
-28,"QUIAMBAO", "Prince Ash, Perez",ELEX
-29,"SEVILLE", "Zairre Vincent, Iran",ELEX
-30,"SULTIA", "Sean Robert, Ansale",ELEX
-31,"TAN", "Carmelo Mari, Pingol",ELEX
-32,"YNCLINO", "Eugene Ivan Vi, Belialba",ELEX
+1,"ABANGAN","Peter Paul, Cabingatan",MECH
+2,"ANDAYA","Godwin",MECH
+3,"BALANSAG","Jessie Carl, Lalican",MECH
+4,"BALBUENA","Josef Santino, Macariola",MECH
+5,"BUREROS","Rondrich Clive, Lozano",MECH
+6,"CABURNAY","John David, Sevilla",MECH
+7,"CAMPOS","Damiel Christopher, Menina",MECH
+8,"CANDO","Thomas Ezekiel",MECH
+9,"CASTELLANO","David Mario, Rio",MECH
+10,"CENIZA","Ernest Anton, Mondero",MECH
+11,"CONDOR","Clark Micah, Ybañez",MECH
+12,"CORTES","Ricel Antonio, Monteroso",MECH
+13,"CUI","Joshua Benedict, Duarte",CIVIL
+14,"DELA CRUZ","Dimpsey Orvil, Maratas",CIVIL
+15,"DELA PEÑA","Raj Matthew, Balbuena",CIVIL
+16,"EMPUERTO","Jared Jesu, Taraya",CIVIL
+17,"FERRAZ","Unico, Cañete",CIVIL
+18,"FORTICH","Mikele André",CIVIL
+19,"GEONZON","Vince Kylle, Butalid",CIVIL
+20,"HALICAN","Marc Gabriel Nathaniel, Modina",CIVIL
+21,"INTONG","Adrianne, Gulayan",CIVIL
+22,"JIMENO","Linc Reznei, Fernandez",CIVIL
+23,"KIERULF","Raffael Isaac Kalel, Palomino",ELEX
+24,"LLERIN","Jose Luis Matthias, Delfin",ELEX
+25,"MACAILING","Reyver Leigh, Untalan",ELEX
+26,"MANOS","Renzid Royce, Cabahug",ELEX
+27,"MORIN","Liam James, Meneses",ELEX
+28,"QUIAMBAO","Prince Ash, Perez",ELEX
+29,"SEVILLE","Zairre Vincent, Iran",ELEX
+30,"SULTIA","Sean Robert, Ansale",ELEX
+31,"TAN","Carmelo Mari, Pingol",ELEX
+32,"YNCLINO","Eugene Ivan Vi, Belialba",ELEX
