@@ -1,11 +1,12 @@
 # ELECTIVE COURSE GROUP _
 
 ## MEMBERS
-* Jess Evangelista
-* Gian Cedrick G. Epilan
-* Andan
-* Arquiza
-* ...
+* Evangelista, Jess Matthew
+* Epilan, Gian Cedrick
+* Despues, Charlz David
+* Arquiza, Cris Joseph
+* Bilaos, Daniel Niño
+* Andan, Lance Reilly
 
 ## How to run:
 1. Initialize and run mysql server using pt_2nd_qtr_demo.sql in the db folder
