@@ -23,7 +23,7 @@ def main():
     window = tk.Tk()
     window.title("PT 2nd Qtr G12 IT Elective Course")
 
-    info_query_ctx = InfoQueryCtx()
+    info_query_ctx = InfoQueryCtx(main_db_ctx)
     info_query_ctx.grid()
     info_query_ctx_execute = ExecuteQueryCtxWidget(main_db_ctx, info_query_ctx)
     info_query_ctx_execute.grid()
