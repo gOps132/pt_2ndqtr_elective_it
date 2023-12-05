@@ -13,7 +13,7 @@ class DatabaseCtx():
                 database='pt_2nd_qtr_demo_db',
                 password=os.getenv("MYSQLPASS")
                 )
-
+            self.cursor = self.db_ctx.cursor()
         except connector.Error as err:
             self.e_handle(err)
 
@@ -40,12 +40,12 @@ class DatabaseCtx():
     #         else:
     #             return True
 
-    def check_other_elements(arr, element) -> bool:
-        # Check if any other element exists in the array other than the specified element
-        if any(item != element for item in arr):
-            return True
-        else:
-            return False
+    # def check_other_elements(arr, element) -> bool:
+    #     # Check if any other element exists in the array other than the specified element
+    #     if any(item != element for item in arr):
+    #         return True
+    #     else:
+    #         return False
 
     def queue_tables(self):
         try:
@@ -58,39 +58,42 @@ class DatabaseCtx():
             self.e_handle(err)
 
     def queue_db(self, details):
-# TODO: parse details araray into a sql command
-        str = "SHOW TABLES;"
-        if details[3]:
-            str = (
-                "SELECT * FROM " +
-                "`" + details[3] + "`"
-            )
-        if details[0] or details[1] or details[2] or details[4]:
-            str += " WHERE "
-            if details[0]:
-                str += ("id=" + details[0])
-                if details[1] or details[2] or details[4]:
-                    str += " AND "
-            if details[1]:
-                str += ("firstname=" + details[1])
-                if details[2] or details[4]:
-                    str += " AND "
-            if details[2]:
-                str += ("lastname=" + details[2])
-                if details[4]:
-                    str += " AND "
-            if details[4]:
-                str += ("lastname=" + details[3])
         try:
-            if self.db_ctx and self.db_ctx.is_connected():                
-                print(str)
-                cursor = self.db_ctx.cursor()
-                cursor.execute(str)
-                result = cursor.fetchall()
+            str = "SHOW TABLES;"
+            if details[3]:
+                str = (
+                    "SELECT * FROM " +
+                    "`" + details[3] + "`"
+                )
+            if details[0] or details[1] or details[2] or details[4]:
+                str += " WHERE "
+                if details[0]:
+                    str += ("id=" + "\"" + details[0] + "\"")
+                    if details[1] or details[2] or details[4]:
+                        str += " AND "
+                if details[1]:
+                    str += ("firstname=" + "\"" + details[1] + "\"")
+                    if details[2] or details[4]:
+                        str += " AND "
+                if details[2]:
+                    str += ("lastname=" + "\"" + details[2] + "\"")
+                    if details[4]:
+                        str += " AND "
+                if details[4]:
+                    str += ("lastname=" + "\"" + details[3] + "\"")
+            str += ";"
+            print(str)
+            if self.db_ctx and self.db_ctx.is_connected():     
+# TODO: parse details araray into a sql command
+                self.cursor.execute(str)
+                result = self.cursor.fetchall()
                 str = ""
-                # DEBUG
-                # for r in result:
-                #     print(r)
+
+                    # DEBUG
+                    # for r in result:
+                    #     print(r)
                 return [result]
+            else:
+                print("disconnected")
         except connector.Error as err:
             self.e_handle(err)
