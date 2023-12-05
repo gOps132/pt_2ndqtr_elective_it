@@ -43,7 +43,7 @@ class InfoQueryCtx:
         #     values=["Joswiak", "Kazmierski", "Wojciechowski", "Klinik"]
         # )
         self.section_entry = tk.Entry(master=self.frame)
-        # TODO: sort tables
+# TODO: sort tables
         tables = error_handle(db_ctx.queue_tables())
         self.year_level_entry = ttk.Combobox(
             master=self.frame,
@@ -104,7 +104,7 @@ class ExecuteQueryCtxWidget:
         self.delete_btn.grid(row=0, column=2)
         self.queue_btn.grid(row=0, column=3)
 
-    # TODO: CHECK ENTRIES FOR ANY SQL INJECTION
+# TODO: CHECK ENTRIES FOR ANY SQL INJECTION
     def check_entries(self, entries):
         print(entries)
         # for i in entries:
