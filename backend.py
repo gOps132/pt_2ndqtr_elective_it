@@ -69,15 +69,15 @@ class DatabaseCtx():
             str += " WHERE "
             if details[0]:
                 str += ("id=" + details[0])
-                if self.check_other_elements(details, details[0]):
+                if details[1] or details[2] or details[4]:
                     str += " AND "
             if details[1]:
                 str += ("firstname=" + details[1])
-                if self.check_other_elements(details, details[1]):
+                if details[2] or details[4]:
                     str += " AND "
             if details[2]:
                 str += ("lastname=" + details[2])
-                if self.check_other_elements(details, details[2]):
+                if details[4]:
                     str += " AND "
             if details[4]:
                 str += ("lastname=" + details[3])
