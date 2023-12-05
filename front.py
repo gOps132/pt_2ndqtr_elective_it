@@ -1,8 +1,17 @@
 import tkinter as tk
 import tkinter.ttk as ttk
 from back import queue
+import typing
 
-Data = tuple[str, str, str, str, str, int, str]
+
+class Data(typing.TypedDict):
+    student_id: str
+    last_name: str
+    first_name: str
+    sex: str
+    section: str
+    year_level: int
+    strand: str
 
 
 class InformationWidget:
@@ -17,9 +26,8 @@ class InformationWidget:
         self.year_level = tk.Label(master=self.frame, text="Year Level: ")
         self.strand = tk.Label(master=self.frame, text="Strand: ")
 
-        self.student_id_entry = tk.Entry(
-            master=self.frame,
-        )
+        self.student_id_entry = tk.Entry(master=self.frame)
+        self.student_id_entry.bind()
         self.last_name_entry = tk.Entry(
             master=self.frame,
         )
@@ -30,7 +38,10 @@ class InformationWidget:
         self.sex_choice = tk.StringVar()
         self.sex_entry = ttk.Frame(master=self.frame)
         self.sex_entry_m = ttk.Radiobutton(
-            master=self.sex_entry, text="Male", value="Male", variable=self.sex_choice
+            master=self.sex_entry,
+            text="Male",
+            value="Male",
+            variable=self.sex_choice,
         )
         self.sex_entry_f = ttk.Radiobutton(
             master=self.sex_entry,
@@ -94,8 +105,8 @@ class InformationWidget:
         self.last_name.grid(row=1, column=0)
         self.first_name.grid(row=2, column=0)
         self.sex.grid(row=3, column=0)
-        self.section.grid(row=4, column=0)
-        self.year_level.grid(row=5, column=0)
+        self.year_level.grid(row=4, column=0)
+        self.section.grid(row=5, column=0)
         self.strand.grid(row=6, column=0)
 
         self.student_id_entry.grid(row=0, column=1)
@@ -106,31 +117,36 @@ class InformationWidget:
         self.sex_entry_m.grid(row=0, column=0)
         self.sex_entry_f.grid(row=0, column=1)
 
-        self.section_entry.grid(row=4, column=1)
-        self.year_level_entry.grid(row=5, column=1)
+        self.year_level_entry.grid(row=4, column=1)
+        self.section_entry.grid(row=5, column=1)
         self.strand_entry.grid(row=6, column=1)
 
     def get_data(self) -> Data:
         student_id = self.student_id_entry.get()
         last_name = self.first_name_entry.get()
         first_name = self.first_name_entry.get()
-        sex_choice = self.sex_choice.get()
+        sex = self.sex_choice.get()
         section = self.section_entry.get()
-        year_level = int(self.year_level_entry.get())
-        strand = self.strand_entry.get()
-        return (
-            student_id,
-            last_name,
-            first_name,
-            sex_choice,
-            section,
-            year_level,
-            strand,
+        year_level = int(
+            self.year_level_entry.get()
+            if self.year_level_entry.get() != ""
+            else "0",
+            base=10,
         )
+        strand = self.strand_entry.get()
+        return {
+            "student_id": student_id,
+            "last_name": last_name,
+            "first_name": first_name,
+            "sex": sex,
+            "section": section,
+            "year_level": year_level,
+            "strand": strand,
+        }
 
 
 class ExecuteWidget:
-    def __init__(self) -> None:
+    def __init__(self, info_widget: InformationWidget) -> None:
         self.frame = ttk.Frame()
         self.insert_btn = tk.Button(
             master=self.frame, text="Insert", command=self.set_insert_cmd
@@ -145,6 +161,7 @@ class ExecuteWidget:
             master=self.frame, text="Query", command=self.run_query_cmd
         )
         self.cmd = ""
+        self.info_widget = info_widget
 
     def pack(self):
         self.frame.pack()
@@ -161,13 +178,18 @@ class ExecuteWidget:
         self.query_btn.grid(row=0, column=3)
 
     def set_insert_cmd(self):
-        self.cmd = f"insert"
+        data = self.info_widget.get_data()
+        columns = ", ".join([k for k in data.keys()])
+        values = ", ".join([f'"{v}"' if isinstance(v, str) else f'{v}' for v in data.values()])
+        self.cmd = f"insert into `table_name` ({columns}) values ({values})"
 
     def set_update_cmd(self):
-        self.cmd = "update"
+        self.cmd = "update `table_name` set `column=values` where `condition`"
+        print(self.cmd)
 
     def set_delete_cmd(self):
-        self.cmd = "delete"
+        self.cmd = "delete from `table_name` where `condition`"
+        print(self.cmd)
 
     def run_query_cmd(self):
         queue(self.cmd)
