@@ -40,7 +40,6 @@ class InfoQueryCtx:
         self.section_entry = tk.Entry(master=self.frame)
 # TODO: sort tables
         tables = error_handle(db_ctx.queue_tables)
-        print(tables) # debug
         self.year_level_entry = ttk.Combobox(
             master=self.frame,
             values=tables

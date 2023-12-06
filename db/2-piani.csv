@@ -1,33 +1,33 @@
-id,lastname,first_name
-1,"ABABAN","Lanz Luis Niño,Yap"
-2,"ABELGAS","Liam Ezekiel,Buot"
-3,"ACAPULCO","Zayed"
-4,"ARNOCO","Serge Iñigo,Servan"
-5,"ARRIOLA","Jared Paolo,Empleo"
-6,"ASIGNAR","Kedric Alexander,Gamali"
-7,"BALON","Rafael Iago,Cabiluna"
-8,"BENDIGOSA","Hadi Hansen,Layon"
-9,"BRIONES","Jalree Shawn,Garong"
-10,"CANONOY","Edge Josef,Saguin"
-11,"DIEZ","John Paul,Galano"
-12,"DUZON","Jhianni Raphael,Montesclaros"
-13,"GENERALE","Ramonov Zed Constantine,Montañez"
-14,"GO","Fyodor Lucien,Abellanosa"
-15,"LANTICSE","Vito Corey,Delima"
-16,"LAO","Ieolo Enriquelle,King"
-17,"LINAO","Rafael Konrad,Saguin"
-18,"MILLARE","Lorenzo Jose,Pales"
-19,"MONTESCLAROS","Julian Miguel,Lim"
-20,"MORENO","Chris Van Andrei,Tindugan"
-21,"MUÑEZ","Zeus Sebastian,Dean"
-22,"ONDAP","Tyler Jaz,Baclayon"
-23,"OPEÑA","Theon Ezrah,Abas"
-24,"PAÑARES","Arthur,Hermoso"
-25,"PATALINGHUG","Makaio Nicholaus"
-26,"PINEDA","Rico Leandro,Soria"
-27,"RAFIL","Raidon Alfonso,Cañeda"
-28,"RAMOS","Zev Michael,Yap"
-29,"SERVANDE","Gian Daryll,Balansag"
-30,"TABANAS","Luis Miguel,Sala"
-31,"TO"-O"NG,Andrei Vito"
-32,"VALENZUELA","Matthew Evan,Basa"
+id,lastname,first_name,elective
+1,ABABAN,"Lanz Luis Niño,Yap",
+2,ABELGAS,"Liam Ezekiel,Buot",
+3,ACAPULCO,Zayed,
+4,ARNOCO,"Serge Iñigo,Servan",
+5,ARRIOLA,"Jared Paolo,Empleo",
+6,ASIGNAR,"Kedric Alexander,Gamali",
+7,BALON,"Rafael Iago,Cabiluna",
+8,BENDIGOSA,"Hadi Hansen,Layon",
+9,BRIONES,"Jalree Shawn,Garong",
+10,CANONOY,"Edge Josef,Saguin",
+11,DIEZ,"John Paul,Galano",
+12,DUZON,"Jhianni Raphael,Montesclaros",
+13,GENERALE,"Ramonov Zed Constantine,Montañez",
+14,GO,"Fyodor Lucien,Abellanosa",
+15,LANTICSE,"Vito Corey,Delima",
+16,LAO,"Ieolo Enriquelle,King",
+17,LINAO,"Rafael Konrad,Saguin",
+18,MILLARE,"Lorenzo Jose,Pales",
+19,MONTESCLAROS,"Julian Miguel,Lim",
+20,MORENO,"Chris Van Andrei,Tindugan",
+21,MUÑEZ,"Zeus Sebastian,Dean",
+22,ONDAP,"Tyler Jaz,Baclayon",
+23,OPEÑA,"Theon Ezrah,Abas",
+24,PAÑARES,"Arthur,Hermoso",
+25,PATALINGHUG,Makaio Nicholaus,
+26,PINEDA,"Rico Leandro,Soria",
+27,RAFIL,"Raidon Alfonso,Cañeda",
+28,RAMOS,"Zev Michael,Yap",
+29,SERVANDE,"Gian Daryll,Balansag",
+30,TABANAS,"Luis Miguel,Sala",
+31,"TO-O""NG","Andrei Vito""",
+32,VALENZUELA,"Matthew Evan,Basa",

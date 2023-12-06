@@ -1,33 +1,33 @@
-id,lastname,firstname
-1,"ABARQUEZ","Anton Martino, Roncesvalles"
-2,"ANCIANO","Danbert, Vidal"
-3,"ARENAJO","David Mathew, Vallecer"
-4,"BAISAC","Ralee, Abing"
-5,"BAGUIO","Razi Gabrielle, Villoria"
-6,"BALILI","Cleford, Cajilo"
-7,"BATHAN","Paulus Ivan, Macuto"
-8,"BULAY","Marvy Jermaine, Toleroso"
-9,"CAYACAP","Bern Anton Marzyl, Bansag"
-10,"COLIAO","Alan Jr, Custodio"
-11,"CONDE","John Lexter, Sarabia"
-12,"DELA CERNA", Mark John"
-13,"DELGAMO","Jett-Daniel, Singco"
-14,"ESTELLA","Rence Mathew, Niere"
-15,"GETARUELAS","Rojhan"
-16,"HAYAG","Chris Rocel, Tomada"
-17,"JUBAC","Chrysler Luke, Ysaal"
-18,"LACANO","James Ryan, Largadas"
-19,"MUAÑA","Mark Gabriel, Cabanada"
-20,"NURPURI","Karanvir, Singh"
-21,"ORLANES","Kirk Gabriel, Torcende"
-22,"PACLIBAR","Ali Xander"
-23,"QUIRANTE","Hans Ezequiel, Repollo"
-24,"RAFIL","Rione Anthony, Cañeda"
-25,"RONDRIQUE","John Mark, Gisem"
-26,"SARANILLO","Christian Marc"
-27,"SEVILLE","Nicholas Ray, Yap"
-28,"TABADA","Gian Xander, Caballero"
-29,"TABOADA","Robert Johann, Briones"
-30,"TAGUD","Ej Niño, Omboy"
-31,"TAN","Nolasco Dave Iii, Ando"
-32,"YANONG","Rayne Matthew, Lebios"
+id,lastname,firstname,elective
+1,ABARQUEZ,"Anton Martino, Roncesvalles",
+2,ANCIANO,"Danbert, Vidal",
+3,ARENAJO,"David Mathew, Vallecer",
+4,BAISAC,"Ralee, Abing",
+5,BAGUIO,"Razi Gabrielle, Villoria",
+6,BALILI,"Cleford, Cajilo",
+7,BATHAN,"Paulus Ivan, Macuto",
+8,BULAY,"Marvy Jermaine, Toleroso",
+9,CAYACAP,"Bern Anton Marzyl, Bansag",
+10,COLIAO,"Alan Jr, Custodio",
+11,CONDE,"John Lexter, Sarabia",
+12,DELA CERNA," Mark John""",
+13,DELGAMO,"Jett-Daniel, Singco",
+14,ESTELLA,"Rence Mathew, Niere",
+15,GETARUELAS,Rojhan,
+16,HAYAG,"Chris Rocel, Tomada",
+17,JUBAC,"Chrysler Luke, Ysaal",
+18,LACANO,"James Ryan, Largadas",
+19,MUAÑA,"Mark Gabriel, Cabanada",
+20,NURPURI,"Karanvir, Singh",
+21,ORLANES,"Kirk Gabriel, Torcende",
+22,PACLIBAR,Ali Xander,
+23,QUIRANTE,"Hans Ezequiel, Repollo",
+24,RAFIL,"Rione Anthony, Cañeda",
+25,RONDRIQUE,"John Mark, Gisem",
+26,SARANILLO,Christian Marc,
+27,SEVILLE,"Nicholas Ray, Yap",
+28,TABADA,"Gian Xander, Caballero",
+29,TABOADA,"Robert Johann, Briones",
+30,TAGUD,"Ej Niño, Omboy",
+31,TAN,"Nolasco Dave Iii, Ando",
+32,YANONG,"Rayne Matthew, Lebios",
