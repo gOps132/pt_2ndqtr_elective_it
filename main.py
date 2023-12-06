@@ -2,6 +2,8 @@ from dotenv import load_dotenv
 from backend import *
 from frontend import *
 
+from helper import *
+
 '''
     TODO: 
     create entry information abstracted in class method and member functions
@@ -19,9 +21,9 @@ def TreeView():
         self.frame = ttk.Frame()        
 
 def main():
-    main_db_ctx = DatabaseCtx()
+    main_db_ctx = error_handle(DatabaseCtx)
     window = tk.Tk()
-    window.title("PT 2nd Qtr G12 IT Elective Course")
+    window.title("2ND QTR G12 IT ELECTIVE COURSE PT")
 
     info_query_ctx = InfoQueryCtx(main_db_ctx)
     info_query_ctx.grid()

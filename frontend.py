@@ -1,12 +1,7 @@
 import tkinter as tk
 import tkinter.ttk as ttk
-from tkinter import messagebox
 
-def error_handle(check_func):
-    if check_func[0] == "err":
-        messagebox.showerror("error", check_func[1])
-    else:
-        return check_func[0]
+from helper import *
 
 class InfoQueryCtx:        
     def __init__(self, db_ctx):
@@ -44,14 +39,15 @@ class InfoQueryCtx:
         # )
         self.section_entry = tk.Entry(master=self.frame)
 # TODO: sort tables
-        tables = error_handle(db_ctx.queue_tables())
+        tables = error_handle(db_ctx.queue_tables)
+        print(tables) # debug
         self.year_level_entry = ttk.Combobox(
             master=self.frame,
             values=tables
         )
         self.strand_entry = ttk.Combobox(
             master=self.frame,
-            values=["MECH", "CIVIL", "ELEX", "STEM", "GAS", "ABM", " "]
+            values=["MECH", "CIVIL", "ELEX", "STEM", "GAS", "ABM"]
         )
 
     def grid(self) -> None:
@@ -104,6 +100,15 @@ class ExecuteQueryCtxWidget:
         self.delete_btn.grid(row=0, column=2)
         self.queue_btn.grid(row=0, column=3)
 
+    def insert(self):
+        result = ""
+    
+    def update(self):
+        result = ""
+
+    def delete(self):
+        result = ""
+
 # TODO: CHECK ENTRIES FOR ANY SQL INJECTION
     def check_entries(self, entries):
         print(entries)
@@ -118,5 +123,4 @@ class ExecuteQueryCtxWidget:
     def queue(self):
         entries = self.ifq_ctx.get_entries()
         if self.check_entries(entries):
-            result = self.ctx.queue_db(details=entries)
-            print(result)
+            result = error_handle(self.ctx.queue_db,details=entries)

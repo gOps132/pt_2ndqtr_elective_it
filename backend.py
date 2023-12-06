@@ -1,5 +1,4 @@
 import mysql.connector as connector
-from mysql.connector import errorcode
 import os
 
 # TODO: INSERT ADD UPDATE DELETE QUEUE
@@ -15,51 +14,23 @@ class DatabaseCtx():
                 )
             self.cursor = self.db_ctx.cursor()
         except connector.Error as err:
-            self.e_handle(err)
-
-    def e_handle(self, err):
-        self.terminate()
-        return ["err", str(err.errno)]
-            # if (err.errno == errorcode.ER_ACCESS_DENIED_ERROR):
-            #     print("Invalid username or password!")
-            #     return ["err", str(err.errno)]
-            # elif (err.errno == errorcode.ER_BAD_DB_ERROR):
-            #     print("Database probably does not exist!")
-            #     return ["err", str(err.errno)]
-            # else:
-            #     print(err)
-            #     self.terminate()
+            raise Exception(err)
 
     def terminate(self):
+        self.cursor.close()
         self.db_ctx.close()
-
-    # def entry_avail_check(entries) -> bool:
-    #     for i in entries:
-    #         if len(i) == 0:
-    #             return False
-    #         else:
-    #             return True
-
-    # def check_other_elements(arr, element) -> bool:
-    #     # Check if any other element exists in the array other than the specified element
-    #     if any(item != element for item in arr):
-    #         return True
-    #     else:
-    #         return False
 
     def queue_tables(self):
         try:
-            if self.db_ctx and self.db_ctx.is_connected():
-                cursor = self.db_ctx.cursor()
-                cursor.execute("SHOW TABLES;")
-                result = cursor.fetchall()
-                return [result]
+            self.cursor.execute("SHOW TABLES;")
+            result = self.cursor.fetchall()
+            return result
         except connector.Error as err:
-            self.e_handle(err)
+            raise Exception(err)
 
     def queue_db(self, details):
         try:
-            str = "SHOW TABLES;"
+            str = "SHOW TABLES"
             if details[3]:
                 str = (
                     "SELECT * FROM " +
@@ -72,28 +43,22 @@ class DatabaseCtx():
                     if details[1] or details[2] or details[4]:
                         str += " AND "
                 if details[1]:
-                    str += ("firstname=" + "\"" + details[1] + "\"")
+                    str += ("firstname " + "LIKE \"%" + details[1] + "%\"")
                     if details[2] or details[4]:
                         str += " AND "
                 if details[2]:
-                    str += ("lastname=" + "\"" + details[2] + "\"")
+                    str += ("lastname " + "LIKE \"%" + details[2] + "%\"")
                     if details[4]:
                         str += " AND "
                 if details[4]:
-                    str += ("lastname=" + "\"" + details[3] + "\"")
+                    str += ("elective=" + "\"" + details[4] + "\"")
             str += ";"
             print(str)
-            if self.db_ctx and self.db_ctx.is_connected():     
-# TODO: parse details araray into a sql command
-                self.cursor.execute(str)
-                result = self.cursor.fetchall()
-                str = ""
-
-                    # DEBUG
-                    # for r in result:
-                    #     print(r)
-                return [result]
-            else:
-                print("disconnected")
+            self.cursor.execute(str)
+            result = self.cursor.fetchall()
+            # DEBUG
+            for r in result:
+                print(r)
+            return result
         except connector.Error as err:
-            self.e_handle(err)
+            raise Exception(err)
