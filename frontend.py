@@ -120,13 +120,31 @@ class ExecuteQueryCtxWidget:
     def add(self):
         entries = self.ifq_ctx.get_entries()
         if self.check_entries(entries):
-            result = error_handle(self.ctx.add_db,details=entries)
+            result = error_handle(self.ctx.add_db,details=entries)[0]
+            if result:
+                messagebox.showinfo("success",
+    f"""Successfully Added  
+        ID: \t {result[0]}  
+        Lastname: \t {result[1]}  
+        Firstname: \t {result[2]}  
+        Year & Section: \t {entries[3]}   
+        elective: \t {result[3]}   
+    """)
     
     def insert(self):
         entries = self.ifq_ctx.get_entries()
         if self.check_entries(entries):
-            result = error_handle(self.ctx.insert_db,details=entries)
-    
+            result = error_handle(self.ctx.insert_db,details=entries)[0]
+            if result:
+                messagebox.showinfo("success",
+    f"""Successfully Inserted  
+        ID: \t {result[0]}  
+        Lastname: \t {result[1]}  
+        Firstname: \t {result[2]}  
+        Year & Section: \t {entries[3]}   
+        elective: \t {result[3]}   
+    """)
+                
     def update(self):
         entries = self.ifq_ctx.get_entries()
         if self.check_entries(entries):

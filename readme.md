@@ -29,7 +29,7 @@ On CMD
 ```
 On Unix (untested)
 ```
-.\.venv\Scripts\activate
+./.venv/Scripts/activate
 ```
 5. Run pip commond to install dependencies
 ```

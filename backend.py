@@ -73,7 +73,7 @@ class DatabaseCtx():
         
             self.cursor.execute(command)
             self.db_ctx.commit()
-            result = self.cursor.fetchall()
+            result = self.queue_db(details = [str(self.cursor.lastrowid),0,0,details[3],0])
             print(result)
             return result
         except connector.Error as err:
@@ -88,9 +88,10 @@ class DatabaseCtx():
             print(command)
         
             self.cursor.execute(command)
-            result = self.cursor.fetchall()
+            self.db_ctx.commit()
+            result = self.queue_db(details = [str(self.cursor.lastrowid),0,0,details[3],0])
             print(result)
-            return result 
+            return result
         except connector.Error as err:
             raise Exception(err)
 
