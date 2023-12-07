@@ -13,7 +13,6 @@ class InfoQueryCtx:
         self.last_name = tk.Label(master=self.frame, text="Last Name")
         self.first_name = tk.Label(master=self.frame, text="First Name")
         # self.gender = tk.Label(master=self.frame, text="Gender")
-        # self.section = tk.Label(master=self.frame, text="Section")
         self.year_level = tk.Label(master=self.frame, text="Year Level And Section")
         self.strand = tk.Label(master=self.frame, text="Strand or Elective")
         
@@ -32,10 +31,6 @@ class InfoQueryCtx:
         #     text="Female",
         #     value="Female",
         #     variable=self.gender_options
-        # )
-        # self.section_entry = ttk.Combobox(
-        #     master=self.frame,
-        #     values=["Joswiak", "Kazmierski", "Wojciechowski", "Klinik"]
         # )
         self.section_entry = tk.Entry(master=self.frame)
 # TODO: sort tables
@@ -101,7 +96,7 @@ class ExecuteQueryCtxWidget:
         )    
         self.queue_btn = tk.Button(
             master=self.frame,
-            text="Queue",
+            text="QUEUE",
             command=self.queue
         )
 
@@ -123,12 +118,6 @@ class ExecuteQueryCtxWidget:
 # TODO: CHECK ENTRIES FOR ANY SQL INJECTION
     def check_entries(self, entries):
         print(entries)
-        # for i in entries:
-        #     if len(i) == 0:
-        #         messagebox.showerror("error", "complete your entries!")
-        #         return False
-        #     else:
-        #         return True
         return True
 
     def queue(self):
