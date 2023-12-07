@@ -84,9 +84,21 @@ class ExecuteQueryCtxWidget:
         self.ctx = db_ctx
         self.ifq_ctx = info_query_ctx
 
-        self.insert_btn = tk.Button(master=self.frame, text="Insert")    
-        self.update_btn = tk.Button(master=self.frame, text="Update")    
-        self.delete_btn = tk.Button(master=self.frame, text="Delete")    
+        self.insert_btn = tk.Button(
+            master=self.frame,
+            text="INSERT",
+            command=self.insert
+        )    
+        self.update_btn = tk.Button(
+            master=self.frame,
+            text="UPDATE",
+            command=self.update
+        )    
+        self.delete_btn = tk.Button(
+            master=self.frame,
+            text="DELETE",
+            command=self.delete
+        )    
         self.queue_btn = tk.Button(
             master=self.frame,
             text="Queue",
