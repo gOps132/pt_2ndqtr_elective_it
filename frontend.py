@@ -1,7 +1,7 @@
 import tkinter as tk
 import tkinter.ttk as ttk
-from backend import DatabaseCtx
 
+from backend import DatabaseCtx
 from helper import error_handle
 
 
@@ -20,7 +20,9 @@ class InfoQueryCtx:
         )
         self.strand = tk.Label(master=self.frame, text="Strand or Elective")
 
-        self.student_id_entry = tk.Entry(master=self.frame, textvariable=self.student_id)
+        self.student_id_entry = tk.Entry(
+            master=self.frame, textvariable=self.student_id
+        )
         self.last_name_entry = tk.Entry(master=self.frame)
         self.first_name_entry = tk.Entry(master=self.frame)
         # self.gender_options = tk.Frame(master=self.frame)
@@ -43,7 +45,6 @@ class InfoQueryCtx:
         self.section_entry = tk.Entry(master=self.frame)
         # TODO: sort tables
         tables = error_handle(self.ctx.queue_tables)
-        # print(tables)  # debug
         self.year_level_entry = ttk.Combobox(master=self.frame, values=tables)
         self.strand_entry = ttk.Combobox(
             master=self.frame,
@@ -79,7 +80,7 @@ class InfoQueryCtx:
 
 
 class ExecuteQueryCtxWidget:
-    def __init__(self, db_ctx: DatabaseCtx, info_query_ctx:InfoQueryCtx):
+    def __init__(self, db_ctx: DatabaseCtx, info_query_ctx: InfoQueryCtx):
         self.frame = ttk.Frame()
         self.frame.grid(row=1, columnspan=2)
         self.ctx = db_ctx
@@ -123,15 +124,31 @@ class ExecuteQueryCtxWidget:
         if self.check_entries(entries):
             error_handle(self.ctx.queue_db, details=entries)
 
+
 class OutputQueryCtx:
     def __init__(self, db_ctx: DatabaseCtx, exec_ctx: ExecuteQueryCtxWidget):
         self.db_ctx = db_ctx
         self.exec_ctx = exec_ctx
         self.frame = tk.Frame()
         self.frame.grid(row=0, column=1)
-        self.output = ttk.Treeview(master=self.frame)
-        # self.output.insert()
+        self.output = ttk.Treeview(master=self.frame, padding=(5, 5))
+        tables = error_handle(
+            self.db_ctx.queue_db, details=tuple("" for _ in range(5))
+        )
+        for table in tables:
+            gr_section = str(table[0])
+            students = error_handle(
+                self.db_ctx.queue_db,
+                details=tuple("" if i != 3 else gr_section for i in range(5)),
+            )
+            self.output.insert("", 0, gr_section, text=gr_section)
+            for student in students:
+                self.output.insert(
+                    gr_section,
+                    0,
+                    f"{gr_section} {student[2]}",
+                    text=f"{student[0]} {student[2]} {student[1]}",
+                )
 
     def grid(self):
         self.output.grid()
-
