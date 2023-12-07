@@ -1,10 +1,11 @@
 from dotenv import load_dotenv
-from backend import *
-from frontend import *
+import tkinter as tk
 
-from helper import *
+from backend import DatabaseCtx
+from frontend import InfoQueryCtx, ExecuteQueryCtxWidget, OutputQueryCtx
+from helper import error_handle
 
-'''
+"""
     TODO: 
     create entry information abstracted in class method and member functions
     create CRUD functions for entries, 
@@ -12,13 +13,9 @@ from helper import *
 
     SUGGESTIONS:
     tkinter dictionary lookup query for possible combinations according to current state
-'''
+"""
 
 load_dotenv()
-
-def TreeView():
-    def __init__(self):
-        self.frame = ttk.Frame()        
 
 def main():
     main_db_ctx = error_handle(DatabaseCtx)
@@ -29,9 +26,12 @@ def main():
     info_query_ctx.grid()
     info_query_ctx_execute = ExecuteQueryCtxWidget(main_db_ctx, info_query_ctx)
     info_query_ctx_execute.grid()
+    info_query_ctx_output = OutputQueryCtx(main_db_ctx, info_query_ctx_execute)
+    info_query_ctx_output.grid()
 
     window.mainloop()
     main_db_ctx.terminate()
+
 
 if __name__ == "__main__":
     main()
