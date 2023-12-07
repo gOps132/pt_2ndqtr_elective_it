@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `1-murialdo`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `1-murialdo` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -48,7 +48,7 @@ DROP TABLE IF EXISTS `1-occhiena`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `1-occhiena` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -73,7 +73,7 @@ DROP TABLE IF EXISTS `10-magone`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `10-magone` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -98,7 +98,7 @@ DROP TABLE IF EXISTS `10-namuncura`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `10-namuncura` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -123,7 +123,7 @@ DROP TABLE IF EXISTS `10-savio`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `10-savio` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -148,7 +148,7 @@ DROP TABLE IF EXISTS `10-vicuna`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `10-vicuna` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -173,7 +173,7 @@ DROP TABLE IF EXISTS `11-aparicio`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `11-aparicio` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -198,7 +198,7 @@ DROP TABLE IF EXISTS `11-braga`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `11-braga` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -223,7 +223,7 @@ DROP TABLE IF EXISTS `11-giordani`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `11-giordani` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -248,7 +248,7 @@ DROP TABLE IF EXISTS `11-quadrio`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `11-quadrio` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -273,7 +273,7 @@ DROP TABLE IF EXISTS `12-joswiak`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `12-joswiak` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -298,7 +298,7 @@ DROP TABLE IF EXISTS `12-kazmierski`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `12-kazmierski` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -323,7 +323,7 @@ DROP TABLE IF EXISTS `12-klinik`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `12-klinik` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -348,7 +348,7 @@ DROP TABLE IF EXISTS `12-wojciechowski`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `12-wojciechowski` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -373,7 +373,7 @@ DROP TABLE IF EXISTS `2-piani`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `2-piani` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `first_name` text,
   `elective` text
@@ -398,7 +398,7 @@ DROP TABLE IF EXISTS `2-rettore`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `2-rettore` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -423,7 +423,7 @@ DROP TABLE IF EXISTS `3-clifford`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `3-clifford` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `last_name` text,
   `firstname` text,
   `elective` text
@@ -448,7 +448,7 @@ DROP TABLE IF EXISTS `3-czartoryski`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `3-czartoryski` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -473,7 +473,7 @@ DROP TABLE IF EXISTS `4-albera`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `4-albera` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -498,7 +498,7 @@ DROP TABLE IF EXISTS `4-rua`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `4-rua` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -523,7 +523,7 @@ DROP TABLE IF EXISTS `5-ricaldone`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `5-ricaldone` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -548,7 +548,7 @@ DROP TABLE IF EXISTS `5-ricceri`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `5-ricceri` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -573,7 +573,7 @@ DROP TABLE IF EXISTS `6-chavez`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `6-chavez` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -598,7 +598,7 @@ DROP TABLE IF EXISTS `6-vigano`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `6-vigano` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -623,7 +623,7 @@ DROP TABLE IF EXISTS `7-beltrami`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `7-beltrami` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -648,7 +648,7 @@ DROP TABLE IF EXISTS `7-mertens`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `7-mertens` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -673,7 +673,7 @@ DROP TABLE IF EXISTS `7-srugi`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `7-srugi` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -698,7 +698,7 @@ DROP TABLE IF EXISTS `7-zatti`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `7-zatti` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -723,7 +723,7 @@ DROP TABLE IF EXISTS `8-guanella`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `8-guanella` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -773,7 +773,7 @@ DROP TABLE IF EXISTS `8-variara`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `8-variara` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -798,7 +798,7 @@ DROP TABLE IF EXISTS `9-calasanz`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `9-calasanz` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -823,7 +823,7 @@ DROP TABLE IF EXISTS `9-caravario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `9-caravario` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -848,7 +848,7 @@ DROP TABLE IF EXISTS `k-cimatti`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `k-cimatti` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text
@@ -873,7 +873,7 @@ DROP TABLE IF EXISTS `k-morano`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `k-morano` (
-  `id` int DEFAULT NULL,
+  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `lastname` text,
   `firstname` text,
   `elective` text

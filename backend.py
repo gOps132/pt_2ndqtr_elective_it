@@ -43,11 +43,11 @@ class DatabaseCtx():
                     if details[1] or details[2] or details[4]:
                         str += " AND "
                 if details[1]:
-                    str += ("firstname " + "LIKE \"%" + details[1] + "%\"")
+                    str += ("lastname " + "LIKE \"%" + details[1] + "%\"")
                     if details[2] or details[4]:
                         str += " AND "
                 if details[2]:
-                    str += ("lastname " + "LIKE \"%" + details[2] + "%\"")
+                    str += ("firstname " + "LIKE \"%" + details[2] + "%\"")
                     if details[4]:
                         str += " AND "
                 if details[4]:
@@ -62,3 +62,47 @@ class DatabaseCtx():
             return result
         except connector.Error as err:
             raise Exception(err)
+        
+    def add_db(self, details):
+        try:
+            command = \
+                f"INSERT INTO `{details[3]}` \
+                (lastname, firstname, elective) \
+                VALUES (\"{details[1]}\", \"{details[2]}\", \"{details[4]}\");"
+            print(command)
+        
+            self.cursor.execute(command)
+            self.db_ctx.commit()
+            result = self.cursor.fetchall()
+            print(result)
+            return result
+        except connector.Error as err:
+            raise Exception(err)
+
+    def insert_db(self, details):
+        try:
+            command = \
+                f"INSERT INTO `{details[3]}` \
+                (id, lastname, firstname, elective) \
+                VALUES ({details[0]}, \"{details[1]}\", \"{details[2]}\", \"{details[4]}\");"
+            print(command)
+        
+            self.cursor.execute(command)
+            result = self.cursor.fetchall()
+            print(result)
+            return result 
+        except connector.Error as err:
+            raise Exception(err)
+
+    def udpate_db(self, details):
+        try:
+            return ""
+        except connector.Error as err:
+            raise Exception(err)
+    
+    def delete_db(self, details):
+        try:
+            return ""
+        except connector.Error as err:
+            raise Exception(err)
+    

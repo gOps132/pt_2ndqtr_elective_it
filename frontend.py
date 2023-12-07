@@ -14,7 +14,7 @@ class InfoQueryCtx:
         self.first_name = tk.Label(master=self.frame, text="First Name")
         # self.gender = tk.Label(master=self.frame, text="Gender")
         self.year_level = tk.Label(master=self.frame, text="Year Level And Section")
-        self.strand = tk.Label(master=self.frame, text="Strand or Elective")
+        self.elective = tk.Label(master=self.frame, text="Strand or Elective")
         
         self.student_id_entry = tk.Entry(master=self.frame)
         self.last_name_entry = tk.Entry(master=self.frame)
@@ -39,7 +39,7 @@ class InfoQueryCtx:
             master=self.frame,
             values=tables
         )
-        self.strand_entry = ttk.Combobox(
+        self.elective_entry = ttk.Combobox(
             master=self.frame,
             values=["MECH", "CIVIL", "ELEX", "STEM", "GAS", "ABM"]
         )
@@ -51,7 +51,7 @@ class InfoQueryCtx:
         # self.gender.grid(row=3, column=0)
         # self.section.grid(row=4, column=0)
         self.year_level.grid(row=5, column=0)
-        self.strand.grid(row=6, column=0)
+        self.elective.grid(row=6, column=0)
 
         self.student_id_entry.grid(row=0, column=1)
         self.last_name_entry.grid(row=1, column=1)
@@ -61,15 +61,15 @@ class InfoQueryCtx:
         # self.gender_entry_f.grid(row=0, column=1)
         # self.section_entry.grid(row=4, column=1)
         self.year_level_entry.grid(row=5, column=1)
-        self.strand_entry.grid(row=6, column=1)
+        self.elective_entry.grid(row=6, column=1)
 
     def get_entries(self):
         return [
             self.student_id_entry.get(),
-            self.first_name_entry.get(),
             self.last_name_entry.get(), 
+            self.first_name_entry.get(),
             self.year_level_entry.get(),
-            self.strand_entry.get()
+            self.elective_entry.get()
         ]
 
 class ExecuteQueryCtxWidget:
@@ -79,6 +79,11 @@ class ExecuteQueryCtxWidget:
         self.ctx = db_ctx
         self.ifq_ctx = info_query_ctx
 
+        self.add_btn = tk.Button(
+            master=self.frame,
+            text="ADD",
+            command=self.add
+        )
         self.insert_btn = tk.Button(
             master=self.frame,
             text="INSERT",
@@ -101,24 +106,36 @@ class ExecuteQueryCtxWidget:
         )
 
     def grid(self):
-        self.insert_btn.grid(row=0, column=0)
-        self.update_btn.grid(row=0, column=1)
-        self.delete_btn.grid(row=0, column=2)
-        self.queue_btn.grid(row=0, column=3)
-
-    def insert(self):
-        result = ""
-    
-    def update(self):
-        result = ""
-
-    def delete(self):
-        result = ""
+        self.add_btn.grid(row=0, column=0)
+        self.insert_btn.grid(row=0, column=1)
+        self.update_btn.grid(row=0, column=2)
+        self.delete_btn.grid(row=0, column=3)
+        self.queue_btn.grid(row=0, column=4)
 
 # TODO: CHECK ENTRIES FOR ANY SQL INJECTION
     def check_entries(self, entries):
         print(entries)
         return True
+
+    def add(self):
+        entries = self.ifq_ctx.get_entries()
+        if self.check_entries(entries):
+            result = error_handle(self.ctx.add_db,details=entries)
+    
+    def insert(self):
+        entries = self.ifq_ctx.get_entries()
+        if self.check_entries(entries):
+            result = error_handle(self.ctx.insert_db,details=entries)
+    
+    def update(self):
+        entries = self.ifq_ctx.get_entries()
+        if self.check_entries(entries):
+            result = error_handle(self.ctx.queue_db,details=entries)
+
+    def delete(self):
+        entries = self.ifq_ctx.get_entries()
+        if self.check_entries(entries):
+            result = error_handle(self.ctx.queue_db,details=entries)
 
     def queue(self):
         entries = self.ifq_ctx.get_entries()
