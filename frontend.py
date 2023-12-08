@@ -17,7 +17,7 @@ class InfoQueryCtx:
         self.year_level = tk.Label(
             master=self.frame, text="Year Level And Section"
         )
-        self.strand = tk.Label(master=self.frame, text="Strand or Elective")
+        self.elective = tk.Label(master=self.frame, text="Strand or Elective")
 
         self.student_id_entry = tk.Entry(master=self.frame)
         self.last_name_entry = tk.Entry(master=self.frame)
@@ -37,6 +37,7 @@ class InfoQueryCtx:
         self.last_name.grid(row=1, column=0)
         self.first_name.grid(row=2, column=0)
         self.year_level.grid(row=5, column=0)
+        self.elective.grid(row=6, column=0)
         self.elective_entry.grid(row=6, column=0)
         self.student_id_entry.grid(row=0, column=1)
         self.last_name_entry.grid(row=1, column=1)
@@ -88,7 +89,12 @@ class ExecuteQueryCtxWidget:
     # TODO: CHECK ENTRIES FOR ANY SQL INJECTION
     def check_entries(self, entries):
         print(entries)
-        return True
+        # grade and section
+        if entries[3]:
+            return True
+        else:
+            messagebox.showerror("Lacking Entries", "no section")
+            return False
 
     def add(self):
         entries = self.ifq_ctx.get_entries()
@@ -139,18 +145,19 @@ class ExecuteQueryCtxWidget:
             # print(result)
             self.ifq_output.update_view(result)
 
-# TODO: CREATE 2 SEPERATE TREES, ONE FOR THE LIST OF SECTIONS
-# AND ONE FOR THE STUDENTS WITHIN EACH QUEUED SECTIONS
 class OutputQueryCtx():
     def __init__(self, db_ctx: DatabaseCtx):
         self.db_ctx = db_ctx
         self.frame = tk.Frame()
         self.create_tree_widget()
 
+    def clear_view(self):
+        x = self.output.get_children()         
+        for item in x: 
+            self.output.delete(item)
+
     def create_tree_widget(self):
         self.frame.grid(row=0, column=1)
-        # self.output = ttk.Treeview(master=self.frame, padding=(5, 5))
-
         columns = ('ID', 'Lastname', 'Firstname', 'Elective')
         self.output = ttk.Treeview(
             master=self.frame,
@@ -161,7 +168,7 @@ class OutputQueryCtx():
 
         # self.scrollbar = ttk.Scrollbar(self.output, orient=tk.VERTICAL, command=self.output.yview)
         # self.output.configure(yscroll=self.scrollbar.set)
-        # self.scrollbar.grid(row=0, column=1, sticky='ns')s
+        # self.scrollbar.grid(row=0, column=1, sticky='ns')
 
         tables = error_handle(
             self.db_ctx.queue_tables
@@ -178,11 +185,8 @@ class OutputQueryCtx():
         for item in x: 
             self.output.delete(item)
 
-#   this is assuming you haven't queries the list of tables
-#   but within one of those tables
     def update_view(self, *details):
         self.clear_view()
-
         for i in range (0, len(details)):
             for y in range(0, len(details[i])):
                 self.output.insert('', tk.END, values=details[i][y])
