@@ -23,11 +23,12 @@ DROP TABLE IF EXISTS `1-murialdo`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `1-murialdo` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -48,11 +49,12 @@ DROP TABLE IF EXISTS `1-occhiena`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `1-occhiena` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -73,11 +75,12 @@ DROP TABLE IF EXISTS `10-magone`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `10-magone` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -98,11 +101,12 @@ DROP TABLE IF EXISTS `10-namuncura`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `10-namuncura` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -123,11 +127,12 @@ DROP TABLE IF EXISTS `10-savio`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `10-savio` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -148,11 +153,12 @@ DROP TABLE IF EXISTS `10-vicuna`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `10-vicuna` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -173,11 +179,12 @@ DROP TABLE IF EXISTS `11-aparicio`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `11-aparicio` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -198,11 +205,12 @@ DROP TABLE IF EXISTS `11-braga`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `11-braga` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -223,11 +231,12 @@ DROP TABLE IF EXISTS `11-giordani`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `11-giordani` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -248,11 +257,12 @@ DROP TABLE IF EXISTS `11-quadrio`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `11-quadrio` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -273,11 +283,12 @@ DROP TABLE IF EXISTS `12-joswiak`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `12-joswiak` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -298,11 +309,12 @@ DROP TABLE IF EXISTS `12-kazmierski`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `12-kazmierski` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -323,11 +335,12 @@ DROP TABLE IF EXISTS `12-klinik`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `12-klinik` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -348,11 +361,12 @@ DROP TABLE IF EXISTS `12-wojciechowski`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `12-wojciechowski` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -373,11 +387,12 @@ DROP TABLE IF EXISTS `2-piani`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `2-piani` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `first_name` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -398,11 +413,12 @@ DROP TABLE IF EXISTS `2-rettore`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `2-rettore` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -423,11 +439,12 @@ DROP TABLE IF EXISTS `3-clifford`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `3-clifford` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `last_name` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -448,11 +465,12 @@ DROP TABLE IF EXISTS `3-czartoryski`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `3-czartoryski` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -473,11 +491,12 @@ DROP TABLE IF EXISTS `4-albera`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `4-albera` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -498,11 +517,12 @@ DROP TABLE IF EXISTS `4-rua`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `4-rua` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -523,11 +543,12 @@ DROP TABLE IF EXISTS `5-ricaldone`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `5-ricaldone` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -548,11 +569,12 @@ DROP TABLE IF EXISTS `5-ricceri`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `5-ricceri` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -573,11 +595,12 @@ DROP TABLE IF EXISTS `6-chavez`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `6-chavez` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -598,11 +621,12 @@ DROP TABLE IF EXISTS `6-vigano`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `6-vigano` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -623,11 +647,12 @@ DROP TABLE IF EXISTS `7-beltrami`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `7-beltrami` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -648,11 +673,12 @@ DROP TABLE IF EXISTS `7-mertens`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `7-mertens` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -673,11 +699,12 @@ DROP TABLE IF EXISTS `7-srugi`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `7-srugi` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -698,11 +725,12 @@ DROP TABLE IF EXISTS `7-zatti`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `7-zatti` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -723,11 +751,12 @@ DROP TABLE IF EXISTS `8-guanella`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `8-guanella` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -748,10 +777,11 @@ DROP TABLE IF EXISTS `8-hlond`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `8-hlond` (
-  `id` text,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
+  `elective` text,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -761,7 +791,7 @@ CREATE TABLE `8-hlond` (
 
 LOCK TABLES `8-hlond` WRITE;
 /*!40000 ALTER TABLE `8-hlond` DISABLE KEYS */;
-INSERT INTO `8-hlond` VALUES ('id','lastname','firstname','elective');
+INSERT INTO `8-hlond` VALUES ('','','','');
 /*!40000 ALTER TABLE `8-hlond` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -773,11 +803,12 @@ DROP TABLE IF EXISTS `8-variara`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `8-variara` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -798,11 +829,12 @@ DROP TABLE IF EXISTS `9-calasanz`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `9-calasanz` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -823,11 +855,12 @@ DROP TABLE IF EXISTS `9-caravario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `9-caravario` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -841,6 +874,32 @@ INSERT INTO `9-caravario` VALUES (1,'ABAPO','Patrick Raghild, Barrientos','ELEX'
 UNLOCK TABLES;
 
 --
+-- Table structure for table `9-kowalski`
+--
+
+DROP TABLE IF EXISTS `9-kowalski`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `9-kowalski` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `lastname` text,
+  `firstname` text,
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `9-kowalski`
+--
+
+LOCK TABLES `9-kowalski` WRITE;
+/*!40000 ALTER TABLE `9-kowalski` DISABLE KEYS */;
+INSERT INTO `9-kowalski` VALUES ('','','','');
+/*!40000 ALTER TABLE `9-kowalski` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `k-cimatti`
 --
 
@@ -848,11 +907,12 @@ DROP TABLE IF EXISTS `k-cimatti`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `k-cimatti` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -873,11 +933,12 @@ DROP TABLE IF EXISTS `k-morano`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `k-morano` (
-  `id` int(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` int NOT NULL AUTO_INCREMENT,
   `lastname` text,
   `firstname` text,
-  `elective` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `elective` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -899,4 +960,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-06 19:49:25
+-- Dump completed on 2023-12-08 21:13:31

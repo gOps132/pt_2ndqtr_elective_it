@@ -87,18 +87,14 @@ class ExecuteQueryCtxWidget:
         self.queue_btn.grid(row=0, column=4)
 
     # TODO: CHECK ENTRIES FOR ANY SQL INJECTION
-    def check_entries(self, entries):
+    def verify(self, entries):
         print(entries)
-        # grade and section
-        if entries[3]:
-            return True
-        else:
-            messagebox.showerror("Lacking Entries", "no section")
-            return False
+        return True
+
 
     def add(self):
         entries = self.ifq_ctx.get_entries()
-        if self.check_entries(entries):
+        if self.verify(entries):
             result = error_handle(self.ctx.add_db, details=entries)
             if result:
                 messagebox.showinfo(
@@ -110,11 +106,11 @@ class ExecuteQueryCtxWidget:
                         Year & Section: \t {entries[3]}   
                         elective: \t {result[0][3]}   
                     """)
-                # self.ifq_output.update_view(result)
+                self.ifq_output.update_view(result)
     
     def insert(self):
         entries = self.ifq_ctx.get_entries()
-        if self.check_entries(entries):
+        if self.verify(entries):
             result = error_handle(self.ctx.insert_db, details=entries)
             if result:
                 messagebox.showinfo(
@@ -126,25 +122,25 @@ class ExecuteQueryCtxWidget:
                         Year & Section: \t {entries[3]}   
                         elective: \t {result[0][3]}   
                     """)
-            # self.ifq_output.update_view(result[0])
+                self.ifq_output.update_view(result)
 
     def update(self):
         entries = self.ifq_ctx.get_entries()
-        if self.check_entries(entries):
+        if self.verify(entries):
             result = error_handle(self.ctx.queue_db, details=entries)
 
     def delete(self):
         entries = self.ifq_ctx.get_entries()
-        if self.check_entries(entries):
+        if self.verify(entries):
             result = error_handle(self.ctx.queue_db, details=entries)
 
     def queue(self):
         entries = self.ifq_ctx.get_entries()
-        if self.check_entries(entries):
+        if entries[3]:
             result = error_handle(self.ctx.queue_db, details=entries)
-            # print(result)
             self.ifq_output.update_view(result)
-
+        else:
+            messagebox.showerror("Lacking Entries", "no section")
 class OutputQueryCtx():
     def __init__(self, db_ctx: DatabaseCtx):
         self.db_ctx = db_ctx
@@ -173,7 +169,6 @@ class OutputQueryCtx():
         tables = error_handle(
             self.db_ctx.queue_tables
         )
-        print(tables)
 
         self.output.heading('ID', text='ID')
         self.output.heading('Lastname', text='Lastname')
