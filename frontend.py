@@ -4,7 +4,7 @@ import tkinter.ttk as ttk
 from helper import *
 
 class InfoQueryCtx:        
-    def __init__(self, db_ctx):
+    def __init__(self, db_ctx) -> None:
         self.frame = ttk.Frame()
         self.frame.grid(column=1)
         self.ctx = db_ctx
@@ -73,7 +73,7 @@ class InfoQueryCtx:
         ]
 
 class ExecuteQueryCtxWidget:
-    def __init__(self, db_ctx, info_query_ctx):
+    def __init__(self, db_ctx, info_query_ctx) -> None:
         self.frame = ttk.Frame()
         self.frame.grid(column=1)
         self.ctx = db_ctx
@@ -130,7 +130,7 @@ class ExecuteQueryCtxWidget:
         Year & Section: \t {entries[3]}   
         elective: \t {result[3]}   
     """)
-    
+
     def insert(self):
         entries = self.ifq_ctx.get_entries()
         if self.check_entries(entries):
@@ -144,7 +144,7 @@ class ExecuteQueryCtxWidget:
         Year & Section: \t {entries[3]}   
         elective: \t {result[3]}   
     """)
-                
+
     def update(self):
         entries = self.ifq_ctx.get_entries()
         if self.check_entries(entries):

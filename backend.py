@@ -2,9 +2,9 @@ import mysql.connector as connector
 import os
 
 # TODO: INSERT ADD UPDATE DELETE QUEUE
-class DatabaseCtx():
+class DatabaseCtx:
     
-    def __init__(self):
+    def __init__(self) -> None:
         try:
             self.db_ctx = connector.connect(
                 host="localhost", 
@@ -62,7 +62,7 @@ class DatabaseCtx():
             return result
         except connector.Error as err:
             raise Exception(err)
-        
+
     def add_db(self, details):
         try:
             command = \
