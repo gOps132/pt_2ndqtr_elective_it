@@ -54,8 +54,9 @@ class DatabaseCtx:
             print(cmd)
             self.cursor.execute(cmd)
             result = self.cursor.fetchall()
-            for i in result:
-                print(i)
+            # debug
+            # for i in result:
+            #     print(i)
             return result
         except connector.Error as err:
             raise Exception(err)

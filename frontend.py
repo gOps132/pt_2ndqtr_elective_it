@@ -55,10 +55,11 @@ class InfoQueryCtx:
 
 
 class ExecuteQueryCtxWidget:
-    def __init__(self, db_ctx, info_query_ctx):
+    def __init__(self, db_ctx, info_query_ctx, info_query_output):
         self.frame = ttk.Frame()
         self.ctx = db_ctx
         self.ifq_ctx = info_query_ctx
+        self.ifq_output = info_query_output
 
         self.add_btn = tk.Button(
             master=self.frame, text="ADD", command=self.add
@@ -92,33 +93,35 @@ class ExecuteQueryCtxWidget:
     def add(self):
         entries = self.ifq_ctx.get_entries()
         if self.check_entries(entries):
-            result = error_handle(self.ctx.add_db, details=entries)[0]
+            result = error_handle(self.ctx.add_db, details=entries)
             if result:
                 messagebox.showinfo(
                     "success",
                     f"""Successfully Added  
-        ID: \t {result[0]}  
-        Lastname: \t {result[1]}  
-        Firstname: \t {result[2]}  
-        Year & Section: \t {entries[3]}   
-        elective: \t {result[3]}   
-    """)
+                        ID: \t {result[0][0]}  
+                        Lastname: \t {result[0][1]}  
+                        Firstname: \t {result[0][2]}  
+                        Year & Section: \t {entries[3]}   
+                        elective: \t {result[0][3]}   
+                    """)
+                # self.ifq_output.update_view(result)
     
     def insert(self):
         entries = self.ifq_ctx.get_entries()
         if self.check_entries(entries):
-            result = error_handle(self.ctx.insert_db, details=entries)[0]
+            result = error_handle(self.ctx.insert_db, details=entries)
             if result:
                 messagebox.showinfo(
                     "success",
                     f"""Successfully Inserted  
-        ID: \t {result[0]}  
-        Lastname: \t {result[1]}  
-        Firstname: \t {result[2]}  
-        Year & Section: \t {entries[3]}   
-        elective: \t {result[3]}   
-    """)
-                
+                        ID: \t {result[0][0]}  
+                        Lastname: \t {result[0][1]}  
+                        Firstname: \t {result[0][2]}  
+                        Year & Section: \t {entries[3]}   
+                        elective: \t {result[0][3]}   
+                    """)
+            # self.ifq_output.update_view(result[0])
+
     def update(self):
         entries = self.ifq_ctx.get_entries()
         if self.check_entries(entries):
@@ -132,33 +135,57 @@ class ExecuteQueryCtxWidget:
     def queue(self):
         entries = self.ifq_ctx.get_entries()
         if self.check_entries(entries):
-            error_handle(self.ctx.queue_db, details=entries)
+            result = error_handle(self.ctx.queue_db, details=entries)
+            # print(result)
+            self.ifq_output.update_view(result)
 
-
-class OutputQueryCtx:
-    def __init__(self, db_ctx: DatabaseCtx, exec_ctx: ExecuteQueryCtxWidget):
+# TODO: CREATE 2 SEPERATE TREES, ONE FOR THE LIST OF SECTIONS
+# AND ONE FOR THE STUDENTS WITHIN EACH QUEUED SECTIONS
+class OutputQueryCtx():
+    def __init__(self, db_ctx: DatabaseCtx):
         self.db_ctx = db_ctx
-        self.exec_ctx = exec_ctx
         self.frame = tk.Frame()
+        self.create_tree_widget()
+
+    def create_tree_widget(self):
         self.frame.grid(row=0, column=1)
-        self.output = ttk.Treeview(master=self.frame, padding=(5, 5))
-        tables = error_handle(
-            self.db_ctx.queue_db, details=tuple("" for _ in range(5))
+        # self.output = ttk.Treeview(master=self.frame, padding=(5, 5))
+
+        columns = ('ID', 'Lastname', 'Firstname', 'Elective')
+        self.output = ttk.Treeview(
+            master=self.frame,
+            columns=columns,
+            show="headings",
+            padding=(5, 5)
         )
-        for table in tables:
-            gr_section = str(table[0])
-            students = error_handle(
-                self.db_ctx.queue_db,
-                details=tuple("" if i != 3 else gr_section for i in range(5)),
-            )
-            self.output.insert("", 0, gr_section, text=gr_section)
-            for student in students:
-                self.output.insert(
-                    gr_section,
-                    0,
-                    f"{gr_section} {student[2]}",
-                    text=f"{student[0]} {student[2]} {student[1]}",
-                )
+
+        # self.scrollbar = ttk.Scrollbar(self.output, orient=tk.VERTICAL, command=self.output.yview)
+        # self.output.configure(yscroll=self.scrollbar.set)
+        # self.scrollbar.grid(row=0, column=1, sticky='ns')s
+
+        tables = error_handle(
+            self.db_ctx.queue_tables
+        )
+        print(tables)
+
+        self.output.heading('ID', text='ID')
+        self.output.heading('Lastname', text='Lastname')
+        self.output.heading('Firstname', text='Firstname')
+        self.output.heading('Elective', text='Elective')
+
+    def clear_view(self):
+        x = self.output.get_children()         
+        for item in x: 
+            self.output.delete(item)
+
+#   this is assuming you haven't queries the list of tables
+#   but within one of those tables
+    def update_view(self, *details):
+        self.clear_view()
+
+        for i in range (0, len(details)):
+            for y in range(0, len(details[i])):
+                self.output.insert('', tk.END, values=details[i][y])
 
     def grid(self):
         self.output.grid()

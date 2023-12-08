@@ -25,11 +25,11 @@ def main():
     window.title("2ND QTR G12 IT ELECTIVE COURSE PT")
 
     info_query_ctx = InfoQueryCtx(main_db_ctx)
+    info_query_ctx_output = OutputQueryCtx(main_db_ctx)
+    info_query_ctx_execute = ExecuteQueryCtxWidget(main_db_ctx, info_query_ctx, info_query_ctx_output)
     info_query_ctx.grid()
-    info_query_ctx_execute = ExecuteQueryCtxWidget(main_db_ctx, info_query_ctx)
     info_query_ctx_execute.grid()
-    # info_query_ctx_output = OutputQueryCtx(main_db_ctx, info_query_ctx_execute)
-    # info_query_ctx_output.grid()
+    info_query_ctx_output.grid()
 
     window.mainloop()
     main_db_ctx.terminate()
