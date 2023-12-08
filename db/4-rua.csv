@@ -1,32 +1,32 @@
-id,lastname,firstname
-1,"ABELLA","Von Keandre,Decena"
-2,"ALBURO","Kris Edrian,Ybañez"
-3,"AMAY","Xavier Zaniel"
-4,"ARMIDILLA","Jaden Charles,Moroscallo"
-5,"AVES","Inigo Emmanuel,Gica"
-6,"BACULI","Iñaki Vince,Amasa"
-7,"BESARIO","Derick Daniel,Uy"
-8,"CABANIG","Francis Vhien,Turado"
-9,"CAJIGAS","Jack Javed Li"
-10,"CALINAWAN","Ken Liam,Mejares"
-11,"CAÑETE","Theodore Miguel,Manubag"
-12,"CORSAME","Justin Luke,Dy"
-13,"ESCOBIDO","Ignazio Louis,Villo"
-14,"GANATE","Zeev,Kho"
-15,"GERALI","Eli,Escoto"
-16,"JAGOLINA","Ryo Aleksandrs,Martinez"
-17,"JAPITANA","John Chlyses,Estonilo"
-18,"JIMENEZ","Aundrei Theron,Canencia"
-19,"LABUS","Franco Jeremiah,Gonzalez"
-20,"LUARDO","Ethan Rey,Sotes"
-21,"MADRILEJOS","Kendrick Caleb,Garcia"
-22,"MIRALLES","Geoffrey Daniel,Cantones"
-23,"MORALDE","John Gabrhyl,Saga"
-24,"PANES","Liam Alexander,Tan"
-25,"PANULAYA","Kristoff,Gonzales"
-26,"PEREZ","Brandon Miguel,Quillosa"
-27,"ROMA","Gabriel Marie"
-28,"ROMAGUERA","Glad Kornelius,Limosnero"
-29,"SY","Juan Diego,Ly"
-30,"TAYPIN","Robburt"
-31,"VILLARIN","Stephen Josh,Duhig"
+id,lastname,firstname,elective
+1,ABELLA,"Von Keandre,Decena",
+2,ALBURO,"Kris Edrian,Ybañez",
+3,AMAY,Xavier Zaniel,
+4,ARMIDILLA,"Jaden Charles,Moroscallo",
+5,AVES,"Inigo Emmanuel,Gica",
+6,BACULI,"Iñaki Vince,Amasa",
+7,BESARIO,"Derick Daniel,Uy",
+8,CABANIG,"Francis Vhien,Turado",
+9,CAJIGAS,Jack Javed Li,
+10,CALINAWAN,"Ken Liam,Mejares",
+11,CAÑETE,"Theodore Miguel,Manubag",
+12,CORSAME,"Justin Luke,Dy",
+13,ESCOBIDO,"Ignazio Louis,Villo",
+14,GANATE,"Zeev,Kho",
+15,GERALI,"Eli,Escoto",
+16,JAGOLINA,"Ryo Aleksandrs,Martinez",
+17,JAPITANA,"John Chlyses,Estonilo",
+18,JIMENEZ,"Aundrei Theron,Canencia",
+19,LABUS,"Franco Jeremiah,Gonzalez",
+20,LUARDO,"Ethan Rey,Sotes",
+21,MADRILEJOS,"Kendrick Caleb,Garcia",
+22,MIRALLES,"Geoffrey Daniel,Cantones",
+23,MORALDE,"John Gabrhyl,Saga",
+24,PANES,"Liam Alexander,Tan",
+25,PANULAYA,"Kristoff,Gonzales",
+26,PEREZ,"Brandon Miguel,Quillosa",
+27,ROMA,Gabriel Marie,
+28,ROMAGUERA,"Glad Kornelius,Limosnero",
+29,SY,"Juan Diego,Ly",
+30,TAYPIN,Robburt,
+31,VILLARIN,"Stephen Josh,Duhig",

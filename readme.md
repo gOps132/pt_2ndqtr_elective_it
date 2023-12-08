@@ -10,6 +10,7 @@
 
 ## How to run:
 1. Initialize and run mysql server using pt_2nd_qtr_demo.sql in the db folder
+# Note: create schema first and choose when you import the sql dump
 2. create a .env file, modify, and insert credentials
 ```
 MYSQLPASS="[dbpassword]"
@@ -29,7 +30,7 @@ On CMD
 ```
 On Unix (untested)
 ```
-.\.venv\Scripts\activate
+venv/bin/activate
 ```
 5. Run pip commond to install dependencies
 ```

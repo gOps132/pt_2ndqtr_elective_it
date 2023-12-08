@@ -1,8 +1,9 @@
-from dotenv import load_dotenv
 import tkinter as tk
 
+from dotenv import load_dotenv
+
 from backend import DatabaseCtx
-from frontend import InfoQueryCtx, ExecuteQueryCtxWidget, OutputQueryCtx
+from frontend import ExecuteQueryCtxWidget, InfoQueryCtx, OutputQueryCtx
 from helper import error_handle
 
 """
@@ -16,6 +17,7 @@ from helper import error_handle
 """
 
 load_dotenv()
+
 
 def main():
     main_db_ctx = error_handle(DatabaseCtx)

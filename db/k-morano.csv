@@ -1,12 +1,12 @@
-id,lastname,firstname
-1,"BACARISAS","Alaric Vince, Laguda"
-2,"BANDALA","Cian Cristoffer, Gimeno"
-3,"CONCINA","Erwan Niño, Sayson"
-4,"KITAMURA","Kenshin, Fernandez"
-5,"MILLARE","Lucas Javier, Pales"
-6,"NATAD","Josh Lorenz, Quijano"
-7,"PADILLO","John Drei, Mata"
-8,"PORTES","Jared, Trocio"
-9,"TOCMO","Jeyson Edrian, Acapulco"
-10,"TRURNIT","Quinn Reinhardt, Salubon"
-11,"ZOSA","Halcyon Ezekiel, Plaza"
+id,lastname,firstname,elective
+1,BACARISAS,"Alaric Vince, Laguda",
+2,BANDALA,"Cian Cristoffer, Gimeno",
+3,CONCINA,"Erwan Niño, Sayson",
+4,KITAMURA,"Kenshin, Fernandez",
+5,MILLARE,"Lucas Javier, Pales",
+6,NATAD,"Josh Lorenz, Quijano",
+7,PADILLO,"John Drei, Mata",
+8,PORTES,"Jared, Trocio",
+9,TOCMO,"Jeyson Edrian, Acapulco",
+10,TRURNIT,"Quinn Reinhardt, Salubon",
+11,ZOSA,"Halcyon Ezekiel, Plaza",

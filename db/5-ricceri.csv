@@ -1,38 +1,38 @@
-id,lastname,firstname
-1,"ABELGAS","Luke Nathaniel,Buot"
-2,"AMONCIO","Lennard Francis,Yap"
-3,"ANINO","Deandre Dominic,Arante"
-4,"BACULA","Peter Adam,Ceñal"
-5,"BANAYNAL","Eleandro Zion,Algabre"
-6,"BIBERA","Alberto Rafael,Caricari"
-7,"CAÑADA","Zechariah,Salomson"
-8,"CARBUNGCO","Reogene Jr.,Villafuente"
-9,"CENIZA","George Michael,Silvosa"
-10,"CHAN","Anton Lee,Saceda"
-11,"DE LOS REYES","Rex John,Aloha"
-12,"ENTESE","Ignatius Raphael,Corrope"
-13,"ESCABAL","Joshua Raye,Cerro"
-14,"ESTELLA","Ron Alexander,Niere"
-15,"GERONA","Clyde,Obeso"
-16,"JURADO","Ronan Mathieu,Ipong"
-17,"NAVAJA","Zachariel Melchizedek,Sasam"
-18,"OLEGARIO","Dominic Lucas,Solis"
-19,"OMAQUE","Blake Skyler,Saldaña"
-20,"ORTIZ","Francis Louis,Ruiz"
-21,"PASAOL","Christoff Deirohn,Ybarita"
-22,"RAFOLS","Jacob Finn,Castro"
-23,"REY","Clarence James,Akiatan"
-24,"REYES","Ronald Ezra,Teves"
-25,"SARCHEZ","Ralph Khio Genesis,Pascubillo"
-26,"SARDA","Zackary Iago,Api"
-27,"TEJERO","Michael Ringo,Macatol"
-28,"TEVES","Zeqe Wilson,Pimentel"
-29,"TIOPES","Nicolas Alexander,Inot"
-30,"TOLEDO","Daniel Pierre,Villacarlos"
-31,"TONGCO","Hans Federico,Pulma"
-32,"TUMALE","Railey Nep,Lapingcao"
-33,"UBANAN","Christoff,Alegrado"
-34,"UY","Gavin Alexander Kale,Caputolan"
-35,"VILLAMOR","Christian,Lim"
-36,"VILLARASO","Michael,Pono"
-37,"ZAPANTA","Gerard Claude,Lapiña"
+id,lastname,firstname,elective
+1,ABELGAS,"Luke Nathaniel,Buot",
+2,AMONCIO,"Lennard Francis,Yap",
+3,ANINO,"Deandre Dominic,Arante",
+4,BACULA,"Peter Adam,Ceñal",
+5,BANAYNAL,"Eleandro Zion,Algabre",
+6,BIBERA,"Alberto Rafael,Caricari",
+7,CAÑADA,"Zechariah,Salomson",
+8,CARBUNGCO,"Reogene Jr.,Villafuente",
+9,CENIZA,"George Michael,Silvosa",
+10,CHAN,"Anton Lee,Saceda",
+11,DE LOS REYES,"Rex John,Aloha",
+12,ENTESE,"Ignatius Raphael,Corrope",
+13,ESCABAL,"Joshua Raye,Cerro",
+14,ESTELLA,"Ron Alexander,Niere",
+15,GERONA,"Clyde,Obeso",
+16,JURADO,"Ronan Mathieu,Ipong",
+17,NAVAJA,"Zachariel Melchizedek,Sasam",
+18,OLEGARIO,"Dominic Lucas,Solis",
+19,OMAQUE,"Blake Skyler,Saldaña",
+20,ORTIZ,"Francis Louis,Ruiz",
+21,PASAOL,"Christoff Deirohn,Ybarita",
+22,RAFOLS,"Jacob Finn,Castro",
+23,REY,"Clarence James,Akiatan",
+24,REYES,"Ronald Ezra,Teves",
+25,SARCHEZ,"Ralph Khio Genesis,Pascubillo",
+26,SARDA,"Zackary Iago,Api",
+27,TEJERO,"Michael Ringo,Macatol",
+28,TEVES,"Zeqe Wilson,Pimentel",
+29,TIOPES,"Nicolas Alexander,Inot",
+30,TOLEDO,"Daniel Pierre,Villacarlos",
+31,TONGCO,"Hans Federico,Pulma",
+32,TUMALE,"Railey Nep,Lapingcao",
+33,UBANAN,"Christoff,Alegrado",
+34,UY,"Gavin Alexander Kale,Caputolan",
+35,VILLAMOR,"Christian,Lim",
+36,VILLARASO,"Michael,Pono",
+37,ZAPANTA,"Gerard Claude,Lapiña",

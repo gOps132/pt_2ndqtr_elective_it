@@ -1,31 +1,31 @@
-id,last_name,firstname
-1,"ALKUINO","Rene Eduardo,Bagcat"
-2,"ALVEZ","Sebastian Stark,Umbay"
-3,"ANORE","Jerrett Nicolai,Tenebro"
-4,"AREJA","Kristoff Dwayne,Juezan"
-5,"BACULI","Brendan Tyler,Amasa"
-6,"BASCON","Ethan Luke,Gabiana"
-7,"CABALLERO","Felipe Iii,Ducay"
-8,"CABANOS","Zheuseff Andrei,Sevilla"
-9,"CARMELOTES","Dyric Niño,Sejesmundo"
-10,"CASTAÑARES","Leiton Alphonsus,Ardiente"
-11,"CODILLA","Gabriel Collin"
-12,"DE LOS REYES","Rafael,Tan"
-13,"DY","Gwayne Edman,Lamela"
-14,"FABRE","Micko"
-15,"GRETAN","Lian Emmanuel,Enopia"
-16,"LASCUÑA","Rheo Andre,Celeste"
-17,"LIRASAN","Reynold Jr.,Alcala"
-18,"LOPEZ","Leonne Dominic,Hortelano"
-19,"MONLEON","Dan Leonard,Cordova"
-20,"NARBOADA","Ghalvyn Earl,Siboa"
-21,"NATAD","Joaquin Luke,Quijano"
-22,"OSORIO","Immanuel Dylan,Rabillas"
-23,"PACUBAS","Adrian Lark,Ollague"
-24,"PARROTINA","Juwan Ven Matthew,Javier"
-25,"PORQUIADO","Marion Anthony,Gimenez"
-26,"QUINTANA","Zeik Ernest,Jumao-As"
-27,"QUIRANTE","Donovan Santino,Uy"
-28,"SALIG","Carl Blake,Mangubat"
-29,"SESE","Juancho Eduardo,Lozano"
-30,"TORREJOS","Jakob Mikael,Leongas"
+id,last_name,firstname,elective
+1,ALKUINO,"Rene Eduardo,Bagcat",
+2,ALVEZ,"Sebastian Stark,Umbay",
+3,ANORE,"Jerrett Nicolai,Tenebro",
+4,AREJA,"Kristoff Dwayne,Juezan",
+5,BACULI,"Brendan Tyler,Amasa",
+6,BASCON,"Ethan Luke,Gabiana",
+7,CABALLERO,"Felipe Iii,Ducay",
+8,CABANOS,"Zheuseff Andrei,Sevilla",
+9,CARMELOTES,"Dyric Niño,Sejesmundo",
+10,CASTAÑARES,"Leiton Alphonsus,Ardiente",
+11,CODILLA,Gabriel Collin,
+12,DE LOS REYES,"Rafael,Tan",
+13,DY,"Gwayne Edman,Lamela",
+14,FABRE,Micko,
+15,GRETAN,"Lian Emmanuel,Enopia",
+16,LASCUÑA,"Rheo Andre,Celeste",
+17,LIRASAN,"Reynold Jr.,Alcala",
+18,LOPEZ,"Leonne Dominic,Hortelano",
+19,MONLEON,"Dan Leonard,Cordova",
+20,NARBOADA,"Ghalvyn Earl,Siboa",
+21,NATAD,"Joaquin Luke,Quijano",
+22,OSORIO,"Immanuel Dylan,Rabillas",
+23,PACUBAS,"Adrian Lark,Ollague",
+24,PARROTINA,"Juwan Ven Matthew,Javier",
+25,PORQUIADO,"Marion Anthony,Gimenez",
+26,QUINTANA,"Zeik Ernest,Jumao-As",
+27,QUIRANTE,"Donovan Santino,Uy",
+28,SALIG,"Carl Blake,Mangubat",
+29,SESE,"Juancho Eduardo,Lozano",
+30,TORREJOS,"Jakob Mikael,Leongas",

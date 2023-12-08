@@ -1,33 +1,33 @@
-id,lastname,firstname
-1,"ABELLANA","Trystyn Thaddeus,Espina"
-2,"AGUSTIN","Zac Gavin,Decinan"
-3,"APA-AP","Zeus,Orge"
-4,"ARMECIN","Buccio Lucas,Fabiano"
-5,"CAPAO","Axel Jairus,Gines"
-6,"CASTAÑOS","Johann Sachiel,Gines"
-7,"CONDE","Herbert Sean"
-8,"CORRO","Alshamari James,Agrabio"
-9,"DATAN","Savio Antonio,King"
-10,"DEL ROSARIO","Jan Lucas,Getubig"
-11,"FERNANDO","Dylan Ezekiel,Tampus"
-12,"GALLARDO","Ah-In Messi,Nadela"
-13,"GARCIA","Jace Miguel,Landia"
-14,"INCORPORADO","Javier Simon,Bual"
-15,"LUMAYAG","Malikk Ivar,Zanoria"
-16,"MALAMANIG","Cillian Zach,Abadiano"
-17,"MORENO","Galilee,Lazaro"
-18,"OSORIO","Gideon Franco,Rabillas"
-19,"PACUBAS","Lark Dylan,Ollague"
-20,"PARCON","Iam Daniel Marqus,Ogoc"
-21,"PATUAL","Randell Christopher,Quijada"
-22,"PEÑA","Marcus Vaughn,Astudillo"
-23,"PLAZA","Kade Anthony"
-24,"QUINTANA","Steven James,Semillano"
-25,"RALLOMA","Elijah Kyrie,Remarca"
-26,"RONQUILLO","Manuel Sebastian,Gimarino"
-27,"RUBIO","Haydes Kyrie,Abaño"
-28,"SALOMON","Robert Apollo,Bacolod"
-29,"SAMSON","Andre Simon,Cabus"
-30,"TIOPES","Ocean Lionel,Inot"
-31,"UY","Ethan Brandon,Rusia"
-32,"YPIL","Niño Jezeus,Encierto"
+id,lastname,firstname,elective
+1,"ABELLANA","Trystyn Thaddeus,Espina",
+2,"AGUSTIN","Zac Gavin,Decinan",
+3,"APA-AP","Zeus,Orge",
+4,"ARMECIN","Buccio Lucas,Fabiano",
+5,"CAPAO","Axel Jairus,Gines",
+6,"CASTAÑOS","Johann Sachiel,Gines",
+7,"CONDE","Herbert Sean",
+8,"CORRO","Alshamari James,Agrabio",
+9,"DATAN","Savio Antonio,King",
+10,"DEL ROSARIO","Jan Lucas,Getubig",
+11,"FERNANDO","Dylan Ezekiel,Tampus",
+12,"GALLARDO","Ah-In Messi,Nadela",
+13,"GARCIA","Jace Miguel,Landia",
+14,"INCORPORADO","Javier Simon,Bual",
+15,"LUMAYAG","Malikk Ivar,Zanoria",
+16,"MALAMANIG","Cillian Zach,Abadiano",
+17,"MORENO","Galilee,Lazaro",
+18,"OSORIO","Gideon Franco,Rabillas",
+19,"PACUBAS","Lark Dylan,Ollague",
+20,"PARCON","Iam Daniel Marqus,Ogoc",
+21,"PATUAL","Randell Christopher,Quijada",
+22,"PEÑA","Marcus Vaughn,Astudillo",
+23,"PLAZA","Kade Anthony",
+24,"QUINTANA","Steven James,Semillano",
+25,"RALLOMA","Elijah Kyrie,Remarca",
+26,"RONQUILLO","Manuel Sebastian,Gimarino",
+27,"RUBIO","Haydes Kyrie,Abaño",
+28,"SALOMON","Robert Apollo,Bacolod",
+29,"SAMSON","Andre Simon,Cabus",
+30,"TIOPES","Ocean Lionel,Inot",
+31,"UY","Ethan Brandon,Rusia",
+32,"YPIL","Niño Jezeus,Encierto",

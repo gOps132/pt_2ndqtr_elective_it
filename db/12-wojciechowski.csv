@@ -1,39 +1,39 @@
-id,lastname,firstname
-1,"AMAZONA","Franz Matheu, Abalos"
-2,"ARANZADO","Martin Jonas, Abangan"
-3,"ARCILLA","Reuel Matthew, Aliñabon"
-4,"BAYLOSES","Angelo Miguel, Vidad"
-5,"BOYLES","Sean Patrick, Blando"
-6,"BUCAO","Jhasper Adrian, Formarejo"
-7,"BUGTAI","Niño Venice, Sarsona"
-8,"CABAS","John Vincent, Cantiveros"
-9,"CARILLO","Samuel, Balquin"
-10,"CATINGUB","Ethan Enzo, Maranga"
-11,"CAYAO","Frehd Eztahnly, Perez"
-12,"CENIZA","Jonas Evander"
-13,"CRUZ","Joseph Florence Karl, Ubas"
-14,"DACUMA","George Marco, Abayan"
-15,"DALMERO","Lhester Rutart, Baltazar"
-16,"DE LA CALZADA","Chad, Antigua"
-17,"DEL CAMPO","Simon Andrei, Ruela"
-18,"DELGAMO","Josh-Carlo, Singco"
-19,"ENAD","John, Aratea"
-20,"GARCES","Joseph Kyne"
-21,"GARCIA","Paul Emmanuel, Delos Angeles"
-22,"GUILIPA","Vynz Aron, Ventula"
-23,"INCORPORADO","Jose Sebastian, Bual"
-24,"JUMAO-AS","Johann Terence, Yee"
-25,"LARGO","Laurence, Sismar"
-26,"LINGATONG","Nathan Khail, Contreras"
-27,"MALLO","Jeul Matthew, Gutierrez"
-28,"MAÑACAP","Kirt Cj, Raypon"
-29,"MONDARES","John Rod, Amamangpang"
-30,"PADLA","Marc Achilles, Duran"
-31,"PUMAREJA","Carsten, Serrano"
-32,"RONDRIQUE","John Mehl, Gisem"
-33,"SACABON","Ziv Andrie, Fernandez"
-34,"SARIGUMBA","Josef Baskin, Flores"
-35,"TAMPUS","Tyrus Titus, Hortizuela"
-36,"TAN","Arden Philippe Malthus, Legaspi"
-37,"WENCESLAO","Antonio Benedict, Sabang"
-38,"YAGONIA","Janssen Niño, Tibay"
+id,lastname,firstname,elective
+1,AMAZONA,"Franz Matheu, Abalos",
+2,ARANZADO,"Martin Jonas, Abangan",
+3,ARCILLA,"Reuel Matthew, Aliñabon",
+4,BAYLOSES,"Angelo Miguel, Vidad",
+5,BOYLES,"Sean Patrick, Blando",
+6,BUCAO,"Jhasper Adrian, Formarejo",
+7,BUGTAI,"Niño Venice, Sarsona",
+8,CABAS,"John Vincent, Cantiveros",
+9,CARILLO,"Samuel, Balquin",
+10,CATINGUB,"Ethan Enzo, Maranga",
+11,CAYAO,"Frehd Eztahnly, Perez",
+12,CENIZA,Jonas Evander,
+13,CRUZ,"Joseph Florence Karl, Ubas",
+14,DACUMA,"George Marco, Abayan",
+15,DALMERO,"Lhester Rutart, Baltazar",
+16,DE LA CALZADA,"Chad, Antigua",
+17,DEL CAMPO,"Simon Andrei, Ruela",
+18,DELGAMO,"Josh-Carlo, Singco",
+19,ENAD,"John, Aratea",
+20,GARCES,Joseph Kyne,
+21,GARCIA,"Paul Emmanuel, Delos Angeles",
+22,GUILIPA,"Vynz Aron, Ventula",
+23,INCORPORADO,"Jose Sebastian, Bual",
+24,JUMAO-AS,"Johann Terence, Yee",
+25,LARGO,"Laurence, Sismar",
+26,LINGATONG,"Nathan Khail, Contreras",
+27,MALLO,"Jeul Matthew, Gutierrez",
+28,MAÑACAP,"Kirt Cj, Raypon",
+29,MONDARES,"John Rod, Amamangpang",
+30,PADLA,"Marc Achilles, Duran",
+31,PUMAREJA,"Carsten, Serrano",
+32,RONDRIQUE,"John Mehl, Gisem",
+33,SACABON,"Ziv Andrie, Fernandez",
+34,SARIGUMBA,"Josef Baskin, Flores",
+35,TAMPUS,"Tyrus Titus, Hortizuela",
+36,TAN,"Arden Philippe Malthus, Legaspi",
+37,WENCESLAO,"Antonio Benedict, Sabang",
+38,YAGONIA,"Janssen Niño, Tibay",
