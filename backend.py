@@ -31,32 +31,47 @@ class DatabaseCtx:
 
     def queue_db(self, details):
         try:
-            cmd = "SHOW TABLES"
+            cmd = "SHOW TABLES "
             if details[3]:
                 cmd = f"SELECT * FROM `{details[3]}`"
             if details[0] or details[1] or details[2] or details[4]:
-                cmd += f" WHERE id= \"{details[0]}\"\
-                    AND firstname LIKE \"%{details[1]}%\"\
-                    AND lastname LIKE \"%{details[2]}%\"\
-                    AND elective=\"{details[4]}\""
+                cmd += " WHERE "
+                if details[0]:
+                    cmd += f"id=\"{details[0]}\""
+                    if details[1] or details[2] or details[4]:
+                        cmd += " AND "
+                if details[1]:
+                    cmd += f"lastname LIKE \"%{details[1]}%\""
+                    if details[2] or details[4]:
+                        cmd += " AND "
+                if details[2]:
+                    cmd += f"firstname LIKE \"%{details[2]}%\""
+                    if details[4]:
+                        cmd += " AND "
+                if details[4]:
+                    cmd += f"elective= \"{details[4]}\""
             cmd += ";"
+            print(cmd)
             self.cursor.execute(cmd)
             result = self.cursor.fetchall()
+            for i in result:
+                print(i)
             return result
         except connector.Error as err:
             raise Exception(err)
 
     def add_db(self, details):
         try:
-            command = f'INSERT INTO `{details[3]}` \
+            cmd = f'INSERT INTO `{details[3]}` \
                 (lastname, firstname, elective) \
                 VALUES ("{details[1]}", "{details[2]}", "{details[4]}");'
 
-            self.cursor.execute(command)
+            self.cursor.execute(cmd)
             self.db_ctx.commit()
             result = self.queue_db(
-                details=[str(self.cursor.lastrowid), 0, 0, details[3], 0]
+                details=[self.cursor.lastrowid, 0, 0, details[3], 0]
             )
+            print(result)
             return result
         except connector.Error as err:
             raise Exception(err)

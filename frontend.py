@@ -3,6 +3,7 @@ import tkinter.ttk as ttk
 
 from backend import DatabaseCtx
 from helper import error_handle
+from tkinter import messagebox
 
 
 class InfoQueryCtx:        
@@ -46,8 +47,8 @@ class InfoQueryCtx:
     def get_entries(self):
         return (
             self.student_id_entry.get(),
-            self.first_name_entry.get(),
             self.last_name_entry.get(),
+            self.first_name_entry.get(),
             self.year_level_entry.get(),
             self.elective_entry.get(),
         )

@@ -28,8 +28,8 @@ def main():
     info_query_ctx.grid()
     info_query_ctx_execute = ExecuteQueryCtxWidget(main_db_ctx, info_query_ctx)
     info_query_ctx_execute.grid()
-    info_query_ctx_output = OutputQueryCtx(main_db_ctx, info_query_ctx_execute)
-    info_query_ctx_output.grid()
+    # info_query_ctx_output = OutputQueryCtx(main_db_ctx, info_query_ctx_execute)
+    # info_query_ctx_output.grid()
 
     window.mainloop()
     main_db_ctx.terminate()
