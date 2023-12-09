@@ -62,6 +62,7 @@ class ExecuteQueryCtxWidget:
         self.ifq_ctx = info_query_ctx
         self.ifq_output = info_query_output
         self.main_window_ctx = window
+        self.current_section = ""
         self.widgets()
 
     def widgets(self):
@@ -96,34 +97,41 @@ class ExecuteQueryCtxWidget:
     def add(self):
         entries = self.ifq_ctx.get_entries()
         if self.verify(entries):
-            result = error_handle(self.db_ctx.add_db, details=entries)
-            if result:
-                messagebox.showinfo(
-                    "success",
-                    f"""Successfully Added  
-                        ID: \t {result[0][0]}  
-                        Lastname: \t {result[0][1]}  
-                        Firstname: \t {result[0][2]}  
-                        Year & Section: \t {entries[3]}   
-                        elective: \t {result[0][3]}   
-                    """)
-                self.ifq_output.update_view(result)
+            if entries[3]:
+                result = error_handle(self.db_ctx.add_db, details=entries)
+                if result:
+                    messagebox.showinfo(
+                        "success",
+                        f"""Successfully Added  
+                            ID: \t {result[0][0]}  
+                            Lastname: \t {result[0][1]}  
+                            Firstname: \t {result[0][2]}  
+                            Year & Section: \t {entries[3]}   
+                            elective: \t {result[0][3]}   
+                        """)
+                    self.ifq_output.update_view(result)
+            else:
+                messagebox.showerror("Lacking Entries", "no section")
+        
     
     def insert(self):
         entries = self.ifq_ctx.get_entries()
         if self.verify(entries):
-            result = error_handle(self.db_ctx.insert_db, details=entries)
-            if result:
-                messagebox.showinfo(
-                    "success",
-                    f"""Successfully Inserted  
-                        ID: \t {result[0][0]}  
-                        Lastname: \t {result[0][1]}  
-                        Firstname: \t {result[0][2]}  
-                        Year & Section: \t {entries[3]}   
-                        elective: \t {result[0][3]}   
-                    """)
-                self.ifq_output.update_view(result)
+            if entries[3]:
+                result = error_handle(self.db_ctx.insert_db, details=entries)
+                if result:
+                    messagebox.showinfo(
+                        "success",
+                        f"""Successfully Inserted  
+                            ID: \t {result[0][0]}  
+                            Lastname: \t {result[0][1]}  
+                            Firstname: \t {result[0][2]}  
+                            Year & Section: \t {entries[3]}   
+                            elective: \t {result[0][3]}   
+                        """)
+                    self.ifq_output.update_view(result)
+            else:
+                messagebox.showerror("Lacking Entries", "no section")
 
     def update(self):
         entries = self.ifq_ctx.get_entries()
@@ -143,7 +151,17 @@ class ExecuteQueryCtxWidget:
     def delete(self):
         entries = self.ifq_ctx.get_entries()
         if self.verify(entries):
-            result = error_handle(self.db_ctx.queue_db, details=entries)
+            queue_selected_entry = self.ifq_output.selected_entry("")
+            if queue_selected_entry:
+                permission = messagebox.askquestion(
+                    "DELETE",
+                    f"DELETE {queue_selected_entry}?"
+                )
+                if permission == 'yes':
+                    result = self.db_ctx.delete_db(queue_selected_entry)
+                    self.ifq_output.update_view(result)
+            else:
+                messagebox.showerror("error", "Please select an entry")
 
     def queue(self):
         entries = self.ifq_ctx.get_entries()
@@ -152,6 +170,7 @@ class ExecuteQueryCtxWidget:
             self.ifq_output.update_view(result)
         else:
             messagebox.showerror("Lacking Entries", "no section")
+
 class OutputQueryCtx():
     def __init__(self, db_ctx: DatabaseCtx):
         self.db_ctx = db_ctx
@@ -176,10 +195,6 @@ class OutputQueryCtx():
         # self.scrollbar = ttk.Scrollbar(self.output, orient=tk.VERTICAL, command=self.output.yview)
         # self.output.configure(yscroll=self.scrollbar.set)
         # self.scrollbar.grid(row=0, column=1, sticky='ns')
-
-        tables = error_handle(
-            self.db_ctx.queue_tables
-        )
 
         self.output.heading('ID', text='ID')
         self.output.heading('Lastname', text='Lastname')
