@@ -1,12 +1,12 @@
 import tkinter as tk
 import tkinter.ttk as ttk
+from tkinter import messagebox
 
 from backend import DatabaseCtx
 from helper import error_handle
-from tkinter import messagebox
 
 
-class InfoQueryCtx:        
+class InfoQueryCtx:
     def __init__(self, db_ctx):
         self.frame = ttk.Frame()
         self.ctx = db_ctx
@@ -55,8 +55,52 @@ class InfoQueryCtx:
         )
 
 
+class OutputQueryCtx:
+    def __init__(self, db_ctx: DatabaseCtx):
+        self.db_ctx = db_ctx
+        self.frame = tk.Frame()
+        self.create_tree_widget()
+
+    def create_tree_widget(self):
+        self.frame.grid(row=0, column=1)
+        columns = ("ID", "Lastname", "Firstname", "Elective")
+        self.output = ttk.Treeview(
+            master=self.frame, columns=columns, show="headings", padding=(5, 5)
+        )
+
+        # self.scrollbar = ttk.Scrollbar(self.output, orient=tk.VERTICAL, command=self.output.yview)
+        # self.output.configure(yscroll=self.scrollbar.set)
+        # self.scrollbar.grid(row=0, column=1, sticky='ns')
+
+        tables = error_handle(self.db_ctx.queue_tables)
+
+        self.output.heading("ID", text="ID")
+        self.output.heading("Lastname", text="Lastname")
+        self.output.heading("Firstname", text="Firstname")
+        self.output.heading("Elective", text="Elective")
+
+    def clear_view(self):
+        x = self.output.get_children()
+        for item in x:
+            self.output.delete(item)
+
+    def update_view(self, *details):
+        self.clear_view()
+        for i in range(0, len(details)):
+            for y in range(0, len(details[i])):
+                self.output.insert("", tk.END, values=details[i][y])
+
+    def grid(self):
+        self.output.grid()
+
+
 class ExecuteQueryCtxWidget:
-    def __init__(self, db_ctx, info_query_ctx, info_query_output):
+    def __init__(
+        self,
+        db_ctx: DatabaseCtx,
+        info_query_ctx: InfoQueryCtx,
+        info_query_output: OutputQueryCtx,
+    ):
         self.frame = ttk.Frame()
         self.ctx = db_ctx
         self.ifq_ctx = info_query_ctx
@@ -91,7 +135,6 @@ class ExecuteQueryCtxWidget:
         print(entries)
         return True
 
-
     def add(self):
         entries = self.ifq_ctx.get_entries()
         if self.verify(entries):
@@ -100,14 +143,15 @@ class ExecuteQueryCtxWidget:
                 messagebox.showinfo(
                     "success",
                     f"""Successfully Added  
-                        ID: \t {result[0][0]}  
-                        Lastname: \t {result[0][1]}  
-                        Firstname: \t {result[0][2]}  
+                        ID: \t {result[0]}  
+                        Lastname: \t {result[1]}  
+                        Firstname: \t {result[2]}  
                         Year & Section: \t {entries[3]}   
-                        elective: \t {result[0][3]}   
-                    """)
+                        elective: \t {result[4]}   
+                    """,
+                )
                 self.ifq_output.update_view(result)
-    
+
     def insert(self):
         entries = self.ifq_ctx.get_entries()
         if self.verify(entries):
@@ -116,23 +160,48 @@ class ExecuteQueryCtxWidget:
                 messagebox.showinfo(
                     "success",
                     f"""Successfully Inserted  
-                        ID: \t {result[0][0]}  
-                        Lastname: \t {result[0][1]}  
-                        Firstname: \t {result[0][2]}  
+                        ID: \t {result[0]}  
+                        Lastname: \t {result[1]}  
+                        Firstname: \t {result[2]}  
                         Year & Section: \t {entries[3]}   
-                        elective: \t {result[0][3]}   
-                    """)
+                        elective: \t {result[4]}   
+                    """,
+                )
                 self.ifq_output.update_view(result)
 
     def update(self):
         entries = self.ifq_ctx.get_entries()
         if self.verify(entries):
             result = error_handle(self.ctx.queue_db, details=entries)
+            if result:
+                messagebox.showinfo(
+                    "success",
+                    f"""Successfully Updated  
+                        ID: \t {entries[1]} ---> {result[0]}  
+                        Lastname: \t {entries[1]} ---> {result[1]}  
+                        Firstname: \t {entries[2]} ---> {result[2]}  
+                        Year & Section: \t {entries[3]}   
+                        elective: \t {entries[4]} ---> {result[4]}  
+                    """,
+                )
+                self.ifq_output.update_view(result)
 
     def delete(self):
         entries = self.ifq_ctx.get_entries()
         if self.verify(entries):
             result = error_handle(self.ctx.queue_db, details=entries)
+            if result:
+                messagebox.showinfo(
+                    "success",
+                    f"""Successfully Deleted  
+                        ID: \t {result[0]}  
+                        Lastname: \t {result[1]}  
+                        Firstname: \t {result[2]}  
+                        Year & Section: \t {entries[3]}   
+                        elective: \t {result[4]} 
+                    """,
+                )
+                self.ifq_output.update_view(result)
 
     def queue(self):
         entries = self.ifq_ctx.get_entries()
@@ -141,45 +210,3 @@ class ExecuteQueryCtxWidget:
             self.ifq_output.update_view(result)
         else:
             messagebox.showerror("Lacking Entries", "no section")
-class OutputQueryCtx():
-    def __init__(self, db_ctx: DatabaseCtx):
-        self.db_ctx = db_ctx
-        self.frame = tk.Frame()
-        self.create_tree_widget()
-
-    def create_tree_widget(self):
-        self.frame.grid(row=0, column=1)
-        columns = ('ID', 'Lastname', 'Firstname', 'Elective')
-        self.output = ttk.Treeview(
-            master=self.frame,
-            columns=columns,
-            show="headings",
-            padding=(5, 5)
-        )
-
-        # self.scrollbar = ttk.Scrollbar(self.output, orient=tk.VERTICAL, command=self.output.yview)
-        # self.output.configure(yscroll=self.scrollbar.set)
-        # self.scrollbar.grid(row=0, column=1, sticky='ns')
-
-        tables = error_handle(
-            self.db_ctx.queue_tables
-        )
-
-        self.output.heading('ID', text='ID')
-        self.output.heading('Lastname', text='Lastname')
-        self.output.heading('Firstname', text='Firstname')
-        self.output.heading('Elective', text='Elective')
-
-    def clear_view(self):
-        x = self.output.get_children()         
-        for item in x: 
-            self.output.delete(item)
-
-    def update_view(self, *details):
-        self.clear_view()
-        for i in range (0, len(details)):
-            for y in range(0, len(details[i])):
-                self.output.insert('', tk.END, values=details[i][y])
-
-    def grid(self):
-        self.output.grid()

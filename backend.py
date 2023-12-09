@@ -73,7 +73,7 @@ class DatabaseCtx:
                 details=[self.cursor.lastrowid, 0, 0, details[3], 0]
             )
             print(result)
-            return result
+            return result[0]
         except connector.Error as err:
             raise Exception(err)
 
@@ -88,7 +88,7 @@ class DatabaseCtx:
             result = self.queue_db(
                 details=[str(self.cursor.lastrowid), 0, 0, details[3], 0]
             )
-            return result
+            return result[0]
         except connector.Error as err:
             raise Exception(err)
 
@@ -102,18 +102,22 @@ class DatabaseCtx:
             result = self.queue_db(
                 details=[str(self.cursor.lastrowid), 0, 0, details[3], 0]
             )
-            return result
+            return result[0]
         except connector.Error as err:
             raise Exception(err)
 
     def delete_db(self, details):
         try:
-            command = f""
+            command = f"DELETE FROM {details[3]}\
+            WHERE id=\"{details[0]}\"\
+            AND lastname LIKE \"%{details[1]}%\"\
+            AND firstname LIKE \"%{details[2]}%\"\
+            AND elective=\"{details[4]}\""
             self.cursor.execute(command)
             self.db_ctx.commit()
-            self.queue_db(
-                details=[str(self.cursor.lastrowid), 0, 0, details[3], 0]
-            )
+            # self.queue_db(
+            #     details=[str(self.cursor.lastrowid), 0, 0, details[3], 0]
+            # )
             return details
         except connector.Error as err:
             raise Exception(err)
