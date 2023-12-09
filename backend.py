@@ -70,7 +70,7 @@ class DatabaseCtx:
             self.cursor.execute(cmd)
             self.db_ctx.commit()
             result = self.queue_db(
-                details=[self.cursor.lastrowid, 0, 0, details[3], 0]
+                details=[0, 0, 0, self.current_section, 0]
             )
             print(result)
             return result

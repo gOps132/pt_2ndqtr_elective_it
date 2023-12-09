@@ -62,7 +62,6 @@ class ExecuteQueryCtxWidget:
         self.ifq_ctx = info_query_ctx
         self.ifq_output = info_query_output
         self.main_window_ctx = window
-        self.current_section = ""
         self.widgets()
 
     def widgets(self):
