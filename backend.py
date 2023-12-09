@@ -108,11 +108,12 @@ class DatabaseCtx:
 
     def delete_db(self, details):
         try:
-            command = f"DELETE FROM {details[3]}\
+            command = f"DELETE FROM `{details[3]}`\
             WHERE id=\"{details[0]}\"\
             AND lastname LIKE \"%{details[1]}%\"\
             AND firstname LIKE \"%{details[2]}%\"\
             AND elective=\"{details[4]}\""
+            print(command)
             self.cursor.execute(command)
             self.db_ctx.commit()
             # self.queue_db(

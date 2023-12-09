@@ -7,8 +7,8 @@ from helper import error_handle
 
 
 class InfoQueryCtx:
-    def __init__(self, db_ctx):
-        self.frame = ttk.Frame()
+    def __init__(self, root: tk.Misc, db_ctx: DatabaseCtx):
+        self.frame = ttk.Frame(root)
         self.ctx = db_ctx
 
         self.student_id = tk.Label(master=self.frame, text="Student ID")
@@ -56,9 +56,9 @@ class InfoQueryCtx:
 
 
 class OutputQueryCtx:
-    def __init__(self, db_ctx: DatabaseCtx):
+    def __init__(self, root: tk.Misc, db_ctx: DatabaseCtx):
         self.db_ctx = db_ctx
-        self.frame = tk.Frame()
+        self.frame = tk.Frame(root)
         self.create_tree_widget()
 
     def create_tree_widget(self):
@@ -97,14 +97,15 @@ class OutputQueryCtx:
 class ExecuteQueryCtxWidget:
     def __init__(
         self,
+        root: tk.Misc, 
         db_ctx: DatabaseCtx,
         info_query_ctx: InfoQueryCtx,
         info_query_output: OutputQueryCtx,
     ):
-        self.frame = ttk.Frame()
-        self.ctx = db_ctx
-        self.ifq_ctx = info_query_ctx
-        self.ifq_output = info_query_output
+        self.frame = ttk.Frame(root)
+        self.db_ctx = db_ctx
+        self.info_query_ctx = info_query_ctx
+        self.info_query_output = info_query_output
 
         self.add_btn = tk.Button(
             master=self.frame, text="ADD", command=self.add
@@ -136,9 +137,9 @@ class ExecuteQueryCtxWidget:
         return True
 
     def add(self):
-        entries = self.ifq_ctx.get_entries()
+        entries = self.info_query_ctx.get_entries()
         if self.verify(entries):
-            result = error_handle(self.ctx.add_db, details=entries)
+            result = error_handle(self.db_ctx.add_db, details=entries)
             if result:
                 messagebox.showinfo(
                     "success",
@@ -150,12 +151,12 @@ class ExecuteQueryCtxWidget:
                         elective: \t {result[4]}   
                     """,
                 )
-                self.ifq_output.update_view(result)
+                self.info_query_output.update_view(result)
 
     def insert(self):
-        entries = self.ifq_ctx.get_entries()
+        entries = self.info_query_ctx.get_entries()
         if self.verify(entries):
-            result = error_handle(self.ctx.insert_db, details=entries)
+            result = error_handle(self.db_ctx.insert_db, details=entries)
             if result:
                 messagebox.showinfo(
                     "success",
@@ -167,12 +168,16 @@ class ExecuteQueryCtxWidget:
                         elective: \t {result[4]}   
                     """,
                 )
-                self.ifq_output.update_view(result)
+                self.info_query_output.update_view(result)
 
     def update(self):
-        entries = self.ifq_ctx.get_entries()
+        entries = self.info_query_ctx.get_entries()
+        update_window = tk.Toplevel()
+        update_info_cts = InfoQueryCtx(update_window, self.db_ctx)
+
+
         if self.verify(entries):
-            result = error_handle(self.ctx.queue_db, details=entries)
+            result = error_handle(self.db_ctx.update_db, details=entries)
             if result:
                 messagebox.showinfo(
                     "success",
@@ -184,12 +189,12 @@ class ExecuteQueryCtxWidget:
                         elective: \t {entries[4]} ---> {result[4]}  
                     """,
                 )
-                self.ifq_output.update_view(result)
+                self.info_query_output.update_view(result)
 
     def delete(self):
-        entries = self.ifq_ctx.get_entries()
+        entries = self.info_query_ctx.get_entries()
         if self.verify(entries):
-            result = error_handle(self.ctx.queue_db, details=entries)
+            result = error_handle(self.db_ctx.delete_db, details=entries)
             if result:
                 messagebox.showinfo(
                     "success",
@@ -201,12 +206,12 @@ class ExecuteQueryCtxWidget:
                         elective: \t {result[4]} 
                     """,
                 )
-                self.ifq_output.update_view(result)
+                self.info_query_output.update_view(result)
 
     def queue(self):
-        entries = self.ifq_ctx.get_entries()
+        entries = self.info_query_ctx.get_entries()
         if entries[3]:
-            result = error_handle(self.ctx.queue_db, details=entries)
-            self.ifq_output.update_view(result)
+            result = error_handle(self.db_ctx.queue_db, details=entries)
+            self.info_query_output.update_view(result)
         else:
             messagebox.showerror("Lacking Entries", "no section")
