@@ -99,22 +99,18 @@ class DatabaseCtx:
             WHERE id="{old_details[0]}" AND lastname LIKE "%{old_details[1]}%" AND firstname LIKE "%{old_details[2]}%" AND elective="{old_details[4]}"'
             self.cursor.execute(command)
             self.db_ctx.commit()
-            result = self.queue_db(
-                details=[str(self.cursor.lastrowid), 0, 0, details[3], 0]
-            )
-            print(result)
-            print(detail)
+            result = self.queue_db(details=[details[0], 0, 0, details[3], 0])
             return result[0]
         except connector.Error as err:
             raise Exception(err)
 
     def delete_db(self, details):
         try:
-            command = f"DELETE FROM `{details[3]}`\
-            WHERE id=\"{details[0]}\"\
-            AND lastname LIKE \"%{details[1]}%\"\
-            AND firstname LIKE \"%{details[2]}%\"\
-            AND elective=\"{details[4]}\""
+            command = f'DELETE FROM `{details[3]}`\
+            WHERE id="{details[0]}"\
+            AND lastname LIKE "%{details[1]}%"\
+            AND firstname LIKE "%{details[2]}%"\
+            AND elective="{details[4]}"'
             self.cursor.execute(command)
             self.db_ctx.commit()
             # self.queue_db(

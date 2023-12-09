@@ -1,6 +1,6 @@
-from logging import root
 import tkinter as tk
 import tkinter.ttk as ttk
+from logging import root
 from tkinter import messagebox
 
 from backend import DatabaseCtx
@@ -98,7 +98,7 @@ class OutputQueryCtx:
 class ExecuteQueryCtxWidget:
     def __init__(
         self,
-        root: tk.Misc, 
+        root: tk.Misc,
         db_ctx: DatabaseCtx,
         info_query_ctx: InfoQueryCtx,
         info_query_output: OutputQueryCtx,
@@ -134,7 +134,7 @@ class ExecuteQueryCtxWidget:
 
     # TODO: CHECK ENTRIES FOR ANY SQL INJECTION
     def verify(self, entries):
-        print(entries)
+        print("entries", entries)
         return True
 
     def add(self):
@@ -177,17 +177,25 @@ class ExecuteQueryCtxWidget:
         update_window = tk.Tk()
         update_info_ctx = InfoQueryCtx(update_window, self.db_ctx)
         update_info_ctx.grid()
+
         def get_update_entries():
             nonlocal updated_entries
             updated_entries = update_info_ctx.get_entries()
             update_window.quit()
-        submit_btn = tk.Button(update_window, text="Submit", command=get_update_entries)
+
+        submit_btn = tk.Button(
+            update_window, text="Submit", command=get_update_entries
+        )
         submit_btn.grid(row=1, column=0)
         update_window.mainloop()
         update_window.destroy()
 
         if self.verify(entries):
-            result = error_handle(self.db_ctx.update_db, details=updated_entries, old_details=entries)
+            result = error_handle(
+                self.db_ctx.update_db,
+                details=updated_entries,
+                old_details=entries,
+            )
             if result:
                 messagebox.showinfo(
                     "success",
@@ -196,7 +204,7 @@ class ExecuteQueryCtxWidget:
                         Lastname: \t {entries[1]} ---> {result[1]}  
                         Firstname: \t {entries[2]} ---> {result[2]}  
                         Year & Section: \t {entries[3]}   
-                        elective: \t {entries[4]} ---> {result[4]}  
+                        elective: \t {entries[4]} ---> {result[3]}  
                     """,
                 )
                 self.info_query_output.update_view(result)
