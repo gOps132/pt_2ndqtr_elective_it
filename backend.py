@@ -94,7 +94,7 @@ class DatabaseCtx:
 
     def update_db(self, details, old_details):
         try:
-            command = f'UPDATE {details[3]}\
+            command = f'UPDATE `{details[3]}`\
             SET id="{details[0]}", lastname="{details[1]}", firstname="{details[2]}", elective="{details[4]}"\
             WHERE id="{old_details[0]}" AND lastname LIKE "%{old_details[1]}%" AND firstname LIKE "%{old_details[2]}%" AND elective="{old_details[4]}"'
             self.cursor.execute(command)
@@ -102,6 +102,8 @@ class DatabaseCtx:
             result = self.queue_db(
                 details=[str(self.cursor.lastrowid), 0, 0, details[3], 0]
             )
+            print(result)
+            print(detail)
             return result[0]
         except connector.Error as err:
             raise Exception(err)
@@ -113,7 +115,6 @@ class DatabaseCtx:
             AND lastname LIKE \"%{details[1]}%\"\
             AND firstname LIKE \"%{details[2]}%\"\
             AND elective=\"{details[4]}\""
-            print(command)
             self.cursor.execute(command)
             self.db_ctx.commit()
             # self.queue_db(

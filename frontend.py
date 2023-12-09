@@ -1,3 +1,4 @@
+from logging import root
 import tkinter as tk
 import tkinter.ttk as ttk
 from tkinter import messagebox
@@ -172,12 +173,21 @@ class ExecuteQueryCtxWidget:
 
     def update(self):
         entries = self.info_query_ctx.get_entries()
-        update_window = tk.Toplevel()
-        update_info_cts = InfoQueryCtx(update_window, self.db_ctx)
-
+        updated_entries = tuple(["", "", "", "", ""])
+        update_window = tk.Tk()
+        update_info_ctx = InfoQueryCtx(update_window, self.db_ctx)
+        update_info_ctx.grid()
+        def get_update_entries():
+            nonlocal updated_entries
+            updated_entries = update_info_ctx.get_entries()
+            update_window.quit()
+        submit_btn = tk.Button(update_window, text="Submit", command=get_update_entries)
+        submit_btn.grid(row=1, column=0)
+        update_window.mainloop()
+        update_window.destroy()
 
         if self.verify(entries):
-            result = error_handle(self.db_ctx.update_db, details=entries)
+            result = error_handle(self.db_ctx.update_db, details=updated_entries, old_details=entries)
             if result:
                 messagebox.showinfo(
                     "success",
