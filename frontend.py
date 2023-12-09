@@ -147,11 +147,6 @@ class OutputQueryCtx():
         self.frame = tk.Frame()
         self.create_tree_widget()
 
-    def clear_view(self):
-        x = self.output.get_children()         
-        for item in x: 
-            self.output.delete(item)
-
     def create_tree_widget(self):
         self.frame.grid(row=0, column=1)
         columns = ('ID', 'Lastname', 'Firstname', 'Elective')
