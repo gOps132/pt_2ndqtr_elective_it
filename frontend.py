@@ -9,7 +9,7 @@ from tkinter import messagebox
 class InfoQueryCtx:        
     def __init__(self, db_ctx):
         self.frame = ttk.Frame()
-        self.ctx = db_ctx
+        self.db_ctx = db_ctx
 
         self.student_id = tk.Label(master=self.frame, text="Student ID")
         self.last_name = tk.Label(master=self.frame, text="Last Name")
@@ -56,12 +56,15 @@ class InfoQueryCtx:
 
 
 class ExecuteQueryCtxWidget:
-    def __init__(self, db_ctx, info_query_ctx, info_query_output):
+    def __init__(self, db_ctx, info_query_ctx, info_query_output, window):
         self.frame = ttk.Frame()
-        self.ctx = db_ctx
+        self.db_ctx = db_ctx
         self.ifq_ctx = info_query_ctx
         self.ifq_output = info_query_output
+        self.main_window_ctx = window
+        self.widgets()
 
+    def widgets(self):
         self.add_btn = tk.Button(
             master=self.frame, text="ADD", command=self.add
         )
@@ -77,7 +80,6 @@ class ExecuteQueryCtxWidget:
         self.queue_btn = tk.Button(
             master=self.frame, text="QUEUE", command=self.queue
         )
-
     def grid(self):
         self.frame.grid(row=1, columnspan=2)
         self.add_btn.grid(row=0, column=0)
@@ -90,12 +92,11 @@ class ExecuteQueryCtxWidget:
     def verify(self, entries):
         print(entries)
         return True
-
-
+        
     def add(self):
         entries = self.ifq_ctx.get_entries()
         if self.verify(entries):
-            result = error_handle(self.ctx.add_db, details=entries)
+            result = error_handle(self.db_ctx.add_db, details=entries)
             if result:
                 messagebox.showinfo(
                     "success",
@@ -111,7 +112,7 @@ class ExecuteQueryCtxWidget:
     def insert(self):
         entries = self.ifq_ctx.get_entries()
         if self.verify(entries):
-            result = error_handle(self.ctx.insert_db, details=entries)
+            result = error_handle(self.db_ctx.insert_db, details=entries)
             if result:
                 messagebox.showinfo(
                     "success",
@@ -127,17 +128,27 @@ class ExecuteQueryCtxWidget:
     def update(self):
         entries = self.ifq_ctx.get_entries()
         if self.verify(entries):
-            result = error_handle(self.ctx.queue_db, details=entries)
+            queue_selected_entry = self.ifq_output.selected_entry("")
+            if queue_selected_entry:
+                permission = messagebox.askquestion(
+                    "update",
+                    f"Change {queue_selected_entry} to \n{entries}?"
+                )
+                if permission == 'yes':
+                    result = self.db_ctx.update_db(queue_selected_entry, entries)
+                    self.ifq_output.update_view(result)
+            else:
+                messagebox.showerror("error", "Please select an entry")
 
     def delete(self):
         entries = self.ifq_ctx.get_entries()
         if self.verify(entries):
-            result = error_handle(self.ctx.queue_db, details=entries)
+            result = error_handle(self.db_ctx.queue_db, details=entries)
 
     def queue(self):
         entries = self.ifq_ctx.get_entries()
         if entries[3]:
-            result = error_handle(self.ctx.queue_db, details=entries)
+            result = error_handle(self.db_ctx.queue_db, details=entries)
             self.ifq_output.update_view(result)
         else:
             messagebox.showerror("Lacking Entries", "no section")
@@ -174,6 +185,15 @@ class OutputQueryCtx():
         self.output.heading('Lastname', text='Lastname')
         self.output.heading('Firstname', text='Firstname')
         self.output.heading('Elective', text='Elective')
+
+        self.output.bind('<<TreeviewSelect>>', self.selected_entry)
+
+    def selected_entry(self, event):
+        for selected_item in self.output.selection():
+            item = self.output.item(selected_item)
+            record = item['values']
+            print(record)
+            return record
 
     def clear_view(self):
         x = self.output.get_children()         

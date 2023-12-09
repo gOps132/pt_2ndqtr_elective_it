@@ -6,18 +6,7 @@ from backend import DatabaseCtx
 from frontend import ExecuteQueryCtxWidget, InfoQueryCtx, OutputQueryCtx
 from helper import error_handle
 
-"""
-    TODO: 
-    create entry information abstracted in class method and member functions
-    create CRUD functions for entries, 
-    display in tkinter tree view queried student state 
-
-    SUGGESTIONS:
-    tkinter dictionary lookup query for possible combinations according to current state
-"""
-
 load_dotenv()
-
 
 def main():
     main_db_ctx = error_handle(DatabaseCtx)
@@ -26,7 +15,12 @@ def main():
 
     info_query_ctx = InfoQueryCtx(main_db_ctx)
     info_query_ctx_output = OutputQueryCtx(main_db_ctx)
-    info_query_ctx_execute = ExecuteQueryCtxWidget(main_db_ctx, info_query_ctx, info_query_ctx_output)
+    info_query_ctx_execute = ExecuteQueryCtxWidget(
+        main_db_ctx,
+        info_query_ctx,
+        info_query_ctx_output,
+        window
+    )
     info_query_ctx.grid()
     info_query_ctx_execute.grid()
     info_query_ctx_output.grid()

@@ -79,11 +79,11 @@ class DatabaseCtx:
 
     def insert_db(self, details):
         try:
-            command = f'INSERT INTO `{details[3]}` \
+            cmd = f'INSERT INTO `{details[3]}` \
                 (id, lastname, firstname, elective) \
                 VALUES ({details[0]}, "{details[1]}", "{details[2]}", "{details[4]}");'
 
-            self.cursor.execute(command)
+            self.cursor.execute(cmd)
             self.db_ctx.commit()
             result = self.queue_db(
                 details=[str(self.cursor.lastrowid), 0, 0, details[3], 0]
@@ -92,9 +92,21 @@ class DatabaseCtx:
         except connector.Error as err:
             raise Exception(err)
 
-    def update_db(self, details):
+    def update_db(self, change_from, change_to):
         try:
-            return ""
+            cmd = f"""\
+UPDATE `{change_to[3]}`
+{f"SET id = {change_to[0]} AND" if change_to[0] else "SET"} \
+lastname = {f"`{change_to[1]}`" if change_to[1] else "\"\",\n"}\
+firstname = {f"`{change_to[2]}`" if change_to[2] else "\"\" ,\n"}\
+elective = {f"`{change_to[4]}`" if change_to[4] else "\"\"\n"}\
+WHERE id = {change_from[0]};
+"""
+            print(cmd)
+            self.cursor.execute(cmd)
+            self.db_ctx.commit()
+            result = self.queue_db(change_to)
+            return result
         except connector.Error as err:
             raise Exception(err)
 
