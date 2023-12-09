@@ -37,19 +37,19 @@ class DatabaseCtx:
             if details[0] or details[1] or details[2] or details[4]:
                 cmd += " WHERE "
                 if details[0]:
-                    cmd += f"id=\"{details[0]}\""
+                    cmd += f'id="{details[0]}"'
                     if details[1] or details[2] or details[4]:
                         cmd += " AND "
                 if details[1]:
-                    cmd += f"lastname LIKE \"%{details[1]}%\""
+                    cmd += f'lastname LIKE "%{details[1]}%"'
                     if details[2] or details[4]:
                         cmd += " AND "
                 if details[2]:
-                    cmd += f"firstname LIKE \"%{details[2]}%\""
+                    cmd += f'firstname LIKE "%{details[2]}%"'
                     if details[4]:
                         cmd += " AND "
                 if details[4]:
-                    cmd += f"elective= \"{details[4]}\""
+                    cmd += f'elective= "{details[4]}"'
             cmd += ";"
             print(cmd)
             self.cursor.execute(cmd)
@@ -73,7 +73,7 @@ class DatabaseCtx:
                 details=[self.cursor.lastrowid, 0, 0, details[3], 0]
             )
             print(result)
-            return result
+            return result[0]
         except connector.Error as err:
             raise Exception(err)
 
@@ -88,18 +88,34 @@ class DatabaseCtx:
             result = self.queue_db(
                 details=[str(self.cursor.lastrowid), 0, 0, details[3], 0]
             )
-            return result
+            return result[0]
         except connector.Error as err:
             raise Exception(err)
 
-    def update_db(self, details):
+    def update_db(self, details, old_details):
         try:
-            return ""
+            command = f'UPDATE `{details[3]}`\
+            SET id="{details[0]}", lastname="{details[1]}", firstname="{details[2]}", elective="{details[4]}"\
+            WHERE id="{old_details[0]}" AND lastname LIKE "%{old_details[1]}%" AND firstname LIKE "%{old_details[2]}%" AND elective="{old_details[4]}"'
+            self.cursor.execute(command)
+            self.db_ctx.commit()
+            result = self.queue_db(details=[details[0], 0, 0, details[3], 0])
+            return result[0]
         except connector.Error as err:
             raise Exception(err)
 
     def delete_db(self, details):
         try:
-            return ""
+            command = f'DELETE FROM `{details[3]}`\
+            WHERE id="{details[0]}"\
+            AND lastname LIKE "%{details[1]}%"\
+            AND firstname LIKE "%{details[2]}%"\
+            AND elective="{details[4]}"'
+            self.cursor.execute(command)
+            self.db_ctx.commit()
+            # self.queue_db(
+            #     details=[str(self.cursor.lastrowid), 0, 0, details[3], 0]
+            # )
+            return details
         except connector.Error as err:
             raise Exception(err)
