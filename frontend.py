@@ -30,7 +30,7 @@ class InfoQueryCtx:
             master=self.frame,
             values=["MECH", "CIVIL", "ELEX", "STEM", "GAS", "ABM"],
         )
-        self.reset_entries = ttk.Button(master=self.frame, text="reset", command=self.reset_entries)
+        self.reset_entry_btn = ttk.Button(master=self.frame, text="reset", command=self.reset_entries)
 
     def grid(self) -> None:
         self.frame.grid(row=0, column=0)
@@ -45,7 +45,7 @@ class InfoQueryCtx:
         self.first_name_entry.grid(row=2, column=1)
         self.year_level_entry.grid(row=5, column=1)
         self.elective_entry.grid(row=6, column=1)
-        self.reset_entries.grid(row=7, column=1)
+        self.reset_entry_btn.grid(row=7, column=1)
 
     def get_entries(self):
         return (
