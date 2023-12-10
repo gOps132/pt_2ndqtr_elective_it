@@ -30,6 +30,7 @@ class InfoQueryCtx:
             master=self.frame,
             values=["MECH", "CIVIL", "ELEX", "STEM", "GAS", "ABM"],
         )
+        self.reset_entries = ttk.Button(master=self.frame, text="reset", command=self.reset_entries)
 
     def grid(self) -> None:
         self.frame.grid(row=0, column=0)
@@ -44,6 +45,7 @@ class InfoQueryCtx:
         self.first_name_entry.grid(row=2, column=1)
         self.year_level_entry.grid(row=5, column=1)
         self.elective_entry.grid(row=6, column=1)
+        self.reset_entries.grid(row=7, column=1)
 
     def get_entries(self):
         return (
@@ -53,7 +55,13 @@ class InfoQueryCtx:
             self.year_level_entry.get(),
             self.elective_entry.get(),
         )
-
+    
+    def reset_entries(self) -> None:
+        self.student_id_entry.delete(0, "end")
+        self.last_name_entry.delete(0, "end")
+        self.first_name_entry.delete(0, "end")
+        self.year_level_entry.delete(0, "end")
+        self.elective_entry.delete(0, "end")
 
 class ExecuteQueryCtxWidget:
     def __init__(self, db_ctx, info_query_ctx, info_query_output, window):
