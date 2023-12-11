@@ -9,8 +9,7 @@
 * Andan, Lance Reilly
 
 ## How to run:
-1. Initialize and run mysql server using pt_2nd_qtr_demo.sql in the db folder
-# Note: create schema first and choose when you import the sql dump
+1. Initialize a mysql server, create pt_2nd_qtr_demo_db, then run pt_2nd_qtr_demo.sql in the db folder
 2. create a .env file, modify, and insert credentials
 ```
 MYSQLPASS="[dbpassword]"
