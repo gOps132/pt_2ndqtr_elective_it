@@ -1,31 +1,31 @@
-id,lastname,firstname,elective
-1,ABANGAN,Seth Marcus,
-2,ABELLANOSA,Francis Seandrey,
-3,ALVARICO,"Liam Dermot,España",
-4,BACALLA,"Rafael Clyone,Ariola",
-5,BESARIO,"Fred Zorhen,Uy",
-6,BONGHANOY,"Iñigo Santi,Malagiok",
-7,CO,"Liam Cedric,Yu",
-8,CONCINA,"Rex Liam,Sayson",
-9,GACHO,"Ezekiel Janiño,Cabreros",
-10,GUISADIO,"Izac Ellis,Pantorilla",
-11,HERRERA,"Jan Rhys,Bolay-Og",
-12,LABAYA,"Kiel Anderson,Orillo",
-13,LIM,"Brandon Lucas,Bascos",
-14,LIMOSNERO,"Jaiden Uriel,Retuerto",
-15,MONZOLIN,"Niel Terence,Espinosa",
-16,PALUMAR,"John David,Arda",
-17,PASAPORTE,"Oscar Ii,Patagani",
-18,PEROCHO,"Aldrik,Balanquit",
-19,QUILO,"Vyell Raphael,Del Corro",
-20,REBALDE,"Renver Kristoff,Gemar",
-21,REBOQUIO,"Alberto Iii,Fernandez",
-22,RODA,"Tristan Dominic,Ibones",
-23,ROMERO,"Nico Paulo,Abella",
-24,TAN,"Nathaniel,Alcover",
-25,TANOY,"Xael Franchesco,Ceniza",
-26,TASSI,"Nicholas,Chua",
-27,TOLEDO,"Andrei Peter,Villacarlos",
-28,UY,"Juan Viktor Milbert,Vargas",
-29,VICTORIOSO,"Anderssen Rouge,Casakit",
-30,YAP,"Liam Ondres,Alingasa",
+id,lastname,firstname,elective,gender
+1,ABANGAN,Seth Marcus,,male
+2,ABELLANOSA,Francis Seandrey,,male
+3,ALVARICO,"Liam Dermot,España",,male
+4,BACALLA,"Rafael Clyone,Ariola",,male
+5,BESARIO,"Fred Zorhen,Uy",,male
+6,BONGHANOY,"Iñigo Santi,Malagiok",,male
+7,CO,"Liam Cedric,Yu",,male
+8,CONCINA,"Rex Liam,Sayson",,male
+9,GACHO,"Ezekiel Janiño,Cabreros",,male
+10,GUISADIO,"Izac Ellis,Pantorilla",,male
+11,HERRERA,"Jan Rhys,Bolay-Og",,male
+12,LABAYA,"Kiel Anderson,Orillo",,male
+13,LIM,"Brandon Lucas,Bascos",,male
+14,LIMOSNERO,"Jaiden Uriel,Retuerto",,male
+15,MONZOLIN,"Niel Terence,Espinosa",,male
+16,PALUMAR,"John David,Arda",,male
+17,PASAPORTE,"Oscar Ii,Patagani",,male
+18,PEROCHO,"Aldrik,Balanquit",,male
+19,QUILO,"Vyell Raphael,Del Corro",,male
+20,REBALDE,"Renver Kristoff,Gemar",,male
+21,REBOQUIO,"Alberto Iii,Fernandez",,male
+22,RODA,"Tristan Dominic,Ibones",,male
+23,ROMERO,"Nico Paulo,Abella",,male
+24,TAN,"Nathaniel,Alcover",,male
+25,TANOY,"Xael Franchesco,Ceniza",,male
+26,TASSI,"Nicholas,Chua",,male
+27,TOLEDO,"Andrei Peter,Villacarlos",,male
+28,UY,"Juan Viktor Milbert,Vargas",,male
+29,VICTORIOSO,"Anderssen Rouge,Casakit",,male
+30,YAP,"Liam Ondres,Alingasa",,male

@@ -1,33 +1,33 @@
-id,lastname,firstname,elective
-1,ABARQUEZ,"Anton Martino, Roncesvalles",
-2,ANCIANO,"Danbert, Vidal",
-3,ARENAJO,"David Mathew, Vallecer",
-4,BAISAC,"Ralee, Abing",
-5,BAGUIO,"Razi Gabrielle, Villoria",
-6,BALILI,"Cleford, Cajilo",
-7,BATHAN,"Paulus Ivan, Macuto",
-8,BULAY,"Marvy Jermaine, Toleroso",
-9,CAYACAP,"Bern Anton Marzyl, Bansag",
-10,COLIAO,"Alan Jr, Custodio",
-11,CONDE,"John Lexter, Sarabia",
-12,DELA CERNA," Mark John""",
-13,DELGAMO,"Jett-Daniel, Singco",
-14,ESTELLA,"Rence Mathew, Niere",
-15,GETARUELAS,Rojhan,
-16,HAYAG,"Chris Rocel, Tomada",
-17,JUBAC,"Chrysler Luke, Ysaal",
-18,LACANO,"James Ryan, Largadas",
-19,MUAÑA,"Mark Gabriel, Cabanada",
-20,NURPURI,"Karanvir, Singh",
-21,ORLANES,"Kirk Gabriel, Torcende",
-22,PACLIBAR,Ali Xander,
-23,QUIRANTE,"Hans Ezequiel, Repollo",
-24,RAFIL,"Rione Anthony, Cañeda",
-25,RONDRIQUE,"John Mark, Gisem",
-26,SARANILLO,Christian Marc,
-27,SEVILLE,"Nicholas Ray, Yap",
-28,TABADA,"Gian Xander, Caballero",
-29,TABOADA,"Robert Johann, Briones",
-30,TAGUD,"Ej Niño, Omboy",
-31,TAN,"Nolasco Dave Iii, Ando",
-32,YANONG,"Rayne Matthew, Lebios",
+id,lastname,firstname,elective,gender
+1,ABARQUEZ,"Anton Martino, Roncesvalles",,male
+2,ANCIANO,"Danbert, Vidal",,male
+3,ARENAJO,"David Mathew, Vallecer",,male
+4,BAISAC,"Ralee, Abing",,male
+5,BAGUIO,"Razi Gabrielle, Villoria",,male
+6,BALILI,"Cleford, Cajilo",,male
+7,BATHAN,"Paulus Ivan, Macuto",,male
+8,BULAY,"Marvy Jermaine, Toleroso",,male
+9,CAYACAP,"Bern Anton Marzyl, Bansag",,male
+10,COLIAO,"Alan Jr, Custodio",,male
+11,CONDE,"John Lexter, Sarabia",,male
+12,DELA CERNA," Mark John""",,male
+13,DELGAMO,"Jett-Daniel, Singco",,male
+14,ESTELLA,"Rence Mathew, Niere",,male
+15,GETARUELAS,Rojhan,,male
+16,HAYAG,"Chris Rocel, Tomada",,male
+17,JUBAC,"Chrysler Luke, Ysaal",,male
+18,LACANO,"James Ryan, Largadas",,male
+19,MUAÑA,"Mark Gabriel, Cabanada",,male
+20,NURPURI,"Karanvir, Singh",,male
+21,ORLANES,"Kirk Gabriel, Torcende",,male
+22,PACLIBAR,Ali Xander,,male
+23,QUIRANTE,"Hans Ezequiel, Repollo",,male
+24,RAFIL,"Rione Anthony, Cañeda",,male
+25,RONDRIQUE,"John Mark, Gisem",,male
+26,SARANILLO,Christian Marc,,male
+27,SEVILLE,"Nicholas Ray, Yap",,male
+28,TABADA,"Gian Xander, Caballero",,male
+29,TABOADA,"Robert Johann, Briones",,male
+30,TAGUD,"Ej Niño, Omboy",,male
+31,TAN,"Nolasco Dave Iii, Ando",,male
+32,YANONG,"Rayne Matthew, Lebios",,male

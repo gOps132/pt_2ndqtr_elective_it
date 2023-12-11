@@ -1,39 +1,39 @@
-id,lastname,firstname,elective
-1,ALKUINO,"Bret Gabriel, Omega",
-2,ANDAN,"Lance Reilly, Base",
-3,ARACAN,"Daniel Benedict, Gerasmio",
-4,ARANZADO,"Tristan James, Abangan",
-5,ARQUIZA,"Cris Joseph, Jael",
-6,BARAQUIL,"Kobe Andrew, Dayuno",
-7,BILAOS,"Daniel Nino, Bano",
-8,BRIGOLI,"Ryan Christian, Ferrer",
-9,BUNDALIAN,"Jose Alberto, Dela Cerna",
-10,CABALLERO,"Andrei Misael, Cardente",
-11,CASTAÑARES,"Benedict John, Bolaron",
-12,CENIZA,"John Marco, Silvosa",
-13,CENIZA,"Shawn Benedict, Edillon",
-14,CONDE,Seanpaul Vincent,
-15,DELOS ANGELES,"Zion, Muaña",
-16,DIGNOS,"John Francis, Leopardas",
-17,DIRA,"Luther Derrick, Encarnacion",
-18,EPILAN,"Gian Cedrick, Geloca",
-19,EVANGELISTA,"Jess Mathew, Pacquiao",
-20,FERRER,"Corleone Michelle Leia Anakin Es, Quibedo",
-21,FLORES,"John Fernan, Artajo",
-22,FRIAS,"Ashley James, Maiz",
-23,GONZALES,"Fritz Gerald, Ancajas",
-24,GONZALES,"Ven Ashley Junace, Dutallas",
-25,KINTANAR,"Kendric John, Tejada",
-26,LUBAY,"Ralph Emmanuel, Isidoro",
-27,MANABAT,"Martin Shawn, Campos",
-28,MANLOLOYO,"Zachary Deion, Magallones",
-29,MANOS,"Ralph Robert, Cabahug",
-30,MEDADO,"Joseph John, Cabantan",
-31,MERCADER,"Charles Adrian, Del Pilar",
-32,NAVAJA,"Dominic Angelo, Sasam",
-33,OYOG,"Karl Gabriel, Canoy",
-34,PAREDES,"Edgar Iii, Ebuña",
-36,SANSON,"Alexander, Montenegro",
-37,SULTIA,"Kirk Patrick, Ansale",
-38,UY,"Albert Andrei, Alenton",
-39,VILLO,"Paulo Demie Ray, Cordova",
+id,lastname,firstname,elective,gender
+1,ALKUINO,"Bret Gabriel, Omega",,male
+2,ANDAN,"Lance Reilly, Base",,male
+3,ARACAN,"Daniel Benedict, Gerasmio",,male
+4,ARANZADO,"Tristan James, Abangan",,male
+5,ARQUIZA,"Cris Joseph, Jael",,male
+6,BARAQUIL,"Kobe Andrew, Dayuno",,male
+7,BILAOS,"Daniel Nino, Bano",,male
+8,BRIGOLI,"Ryan Christian, Ferrer",,male
+9,BUNDALIAN,"Jose Alberto, Dela Cerna",,male
+10,CABALLERO,"Andrei Misael, Cardente",,male
+11,CASTAÑARES,"Benedict John, Bolaron",,male
+12,CENIZA,"John Marco, Silvosa",,male
+13,CENIZA,"Shawn Benedict, Edillon",,male
+14,CONDE,Seanpaul Vincent,,male
+15,DELOS ANGELES,"Zion, Muaña",,male
+16,DIGNOS,"John Francis, Leopardas",,male
+17,DIRA,"Luther Derrick, Encarnacion",,male
+18,EPILAN,"Gian Cedrick, Geloca",,male
+19,EVANGELISTA,"Jess Mathew, Pacquiao",,male
+20,FERRER,"Corleone Michelle Leia Anakin Es, Quibedo",,male
+21,FLORES,"John Fernan, Artajo",,male
+22,FRIAS,"Ashley James, Maiz",,male
+23,GONZALES,"Fritz Gerald, Ancajas",,male
+24,GONZALES,"Ven Ashley Junace, Dutallas",,male
+25,KINTANAR,"Kendric John, Tejada",,male
+26,LUBAY,"Ralph Emmanuel, Isidoro",,male
+27,MANABAT,"Martin Shawn, Campos",,male
+28,MANLOLOYO,"Zachary Deion, Magallones",,male
+29,MANOS,"Ralph Robert, Cabahug",,male
+30,MEDADO,"Joseph John, Cabantan",,male
+31,MERCADER,"Charles Adrian, Del Pilar",,male
+32,NAVAJA,"Dominic Angelo, Sasam",,male
+33,OYOG,"Karl Gabriel, Canoy",,male
+34,PAREDES,"Edgar Iii, Ebuña",,male
+36,SANSON,"Alexander, Montenegro",,male
+37,SULTIA,"Kirk Patrick, Ansale",,male
+38,UY,"Albert Andrei, Alenton",,male
+39,VILLO,"Paulo Demie Ray, Cordova",,male

@@ -1,28 +1,28 @@
-id,lastname,firstname,elective
-1,ABAPO,"Graham Prince, Barrientos",
-2,ALAMBRA,"Braeden Eryx, Bardinas",
-3,ALBISO,"Caine Dhustinn, Quibilan",
-4,AMARO,"Aj Lenon, Encorporado",
-5,ARAPOC,"Emrah Ryan, Gepitulan",
-6,CANG,"Daniel Lawrence, Gabiana",
-7,CO,"Luke Christoff, Yu",
-8,COROMINAS,"John Andrei, Apostol",
-9,DAGANATO,"Elijah Mikhail, Ayag",
-10,DAMALERIO,"Stephen Aaron, Magdaraog",
-11,DE LA PIEDRA,"Julian Carlo, Heredia",
-12,GERAGA,"Vhine Dominic, Saladaga",
-13,GONZALES,"John Ernest, Canino",
-14,IMPOK,"Kiean Anthony, Demecillo",
-15,MENGUITO,"Yuri Javier, Olis",
-16,NATEGHI,"Benyamin Hassan, Padin",
-17,OCADO,Charles Ruel,
-18,OCAÑADA,"Jansy, Ocampo",
-19,OMILIG,"Matthew Neil, Chua",
-20,PETALVER,"Oscar Miguel, Villaver",
-21,RAYO,"Alexander, Sadorra",
-22,RUBIA,"Uzziah Rhayji, Pelayo",
-23,SARIGUMBA,"Slevin, Flores",
-24,TEVES,"Niko Emilio, Manug",
-25,TORINO,"Kyle, Calabroso",
-26,TUDTUD,"Lex Justo Antonio, Aliling",
-27,VILLAMOR,"Rick Anthony, Heruela",
+id,lastname,firstname,elective,gender
+1,ABAPO,"Graham Prince, Barrientos",,male
+2,ALAMBRA,"Braeden Eryx, Bardinas",,male
+3,ALBISO,"Caine Dhustinn, Quibilan",,male
+4,AMARO,"Aj Lenon, Encorporado",,male
+5,ARAPOC,"Emrah Ryan, Gepitulan",,male
+6,CANG,"Daniel Lawrence, Gabiana",,male
+7,CO,"Luke Christoff, Yu",,male
+8,COROMINAS,"John Andrei, Apostol",,male
+9,DAGANATO,"Elijah Mikhail, Ayag",,male
+10,DAMALERIO,"Stephen Aaron, Magdaraog",,male
+11,DE LA PIEDRA,"Julian Carlo, Heredia",,male
+12,GERAGA,"Vhine Dominic, Saladaga",,male
+13,GONZALES,"John Ernest, Canino",,male
+14,IMPOK,"Kiean Anthony, Demecillo",,male
+15,MENGUITO,"Yuri Javier, Olis",,male
+16,NATEGHI,"Benyamin Hassan, Padin",,male
+17,OCADO,Charles Ruel,,male
+18,OCAÑADA,"Jansy, Ocampo",,male
+19,OMILIG,"Matthew Neil, Chua",,male
+20,PETALVER,"Oscar Miguel, Villaver",,male
+21,RAYO,"Alexander, Sadorra",,male
+22,RUBIA,"Uzziah Rhayji, Pelayo",,male
+23,SARIGUMBA,"Slevin, Flores",,male
+24,TEVES,"Niko Emilio, Manug",,male
+25,TORINO,"Kyle, Calabroso",,male
+26,TUDTUD,"Lex Justo Antonio, Aliling",,male
+27,VILLAMOR,"Rick Anthony, Heruela",,male

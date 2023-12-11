@@ -1,13 +1,13 @@
-id,lastname, firstname,elective
-1,ABASTAS,"Matthew Mier, Gelig",
-2,ALQUIZA,"Khalil Lucas, Saquilabon",
-3,CABRERA,"Jaeden, Panganiban",
-4,CASONA,"Johnden Rio, Pasumala",
-5,ENTESE,"Apollo Lorenz, Arandia",
-6,LADERA,"Lucas Elijah, Enriquez",
-7,MALOON,"Fitzcarl, Amancio",
-8,NG,"Rihan Isaac, Roncesvalles",
-9,OCABA,"Michael Vinrey, Batan",
-10,PEREZ,"Genesis Zoren, Quillosa",
-11,SALAZAR,"Nicanor Amari, Labor",
-12,YBAÑEZ,"Eoin Raphael, Pacana",
+id,lastname, firstname,elective,gender
+1,ABASTAS,"Matthew Mier, Gelig",,male
+2,ALQUIZA,"Khalil Lucas, Saquilabon",,male
+3,CABRERA,"Jaeden, Panganiban",,male
+4,CASONA,"Johnden Rio, Pasumala",,male
+5,ENTESE,"Apollo Lorenz, Arandia",,male
+6,LADERA,"Lucas Elijah, Enriquez",,male
+7,MALOON,"Fitzcarl, Amancio",,male
+8,NG,"Rihan Isaac, Roncesvalles",,male
+9,OCABA,"Michael Vinrey, Batan",,male
+10,PEREZ,"Genesis Zoren, Quillosa",,male
+11,SALAZAR,"Nicanor Amari, Labor",,male
+12,YBAÑEZ,"Eoin Raphael, Pacana",,male

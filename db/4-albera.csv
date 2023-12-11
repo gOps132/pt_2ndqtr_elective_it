@@ -1,33 +1,33 @@
-id,lastname,firstname,elective
-1,ARREGLO,"Kian Zyraoh,Burasca",
-2,BERING,"Andre Zachary,Millan",
-3,BOCADO,"Rendil John,Ruaya",
-4,BUDIONGAN,"Uzziah Eli,Barriga",
-5,CABRIDO,"Chadrick Kristoff,Araneta",
-6,CAL,"Luke Anton,Acuña",
-7,CEPE,"Axl Jace,Rodriguez",
-8,CUI,"Jacob Gabrielle,Duarte",
-9,DATAN,"Faustin Antonio,King",
-10,DELOS SANTOS,"Iyyob Francis Lee,Cañete",
-11,ESTOYE,"Rosendo V,Pajara",
-12,FERROLINO,Francis Archie,
-13,IBONES,"Jhaycee Phillip,Mellijor",
-14,ISIDORO,"Rene Alessandro,Alkuino",
-15,JOBOCO,"Rod Niño,Lerio",
-16,LAMBATING,"Niño Miguel,Vergara",
-17,MENDEZ,"Mackenzie Albie,Aspecto",
-18,MEPIEZA,"Paul Jet Xander,Canillo",
-19,MUYOT,"James Gabriel,Solana",
-20,ORTIZ,"Luke Alpheus,Ruiz",
-21,PETATE,"Zackary,Conde",
-22,PISCOS,"Jibreel Charlemagne,Cabaral",
-23,RABOR,"Reon Levine,Montesa",
-24,REBOSURA,"Eial Kaizar,Into",
-25,SANCHEZ,"Kyrie Matthan,Dumangas",
-26,SINADJAN,"Jeruss Peter,Manlosa",
-27,SUPATAN,"Miguel Iñigo,Escalera",
-28,TADLIP,"Joaquin Miguel,Galorport",
-29,TUMAPON,"Marciff,Gurrea",
-30,VILLACARLOS,"Aeon Viktor,Ango",
-31,VILLARASO,"Kendrick Andrew,Ong",
-32,YANONG,"Peter Angelo,Regis",
+id,lastname,firstname,elective,gender
+1,ARREGLO,"Kian Zyraoh,Burasca",,male
+2,BERING,"Andre Zachary,Millan",,male
+3,BOCADO,"Rendil John,Ruaya",,male
+4,BUDIONGAN,"Uzziah Eli,Barriga",,male
+5,CABRIDO,"Chadrick Kristoff,Araneta",,male
+6,CAL,"Luke Anton,Acuña",,male
+7,CEPE,"Axl Jace,Rodriguez",,male
+8,CUI,"Jacob Gabrielle,Duarte",,male
+9,DATAN,"Faustin Antonio,King",,male
+10,DELOS SANTOS,"Iyyob Francis Lee,Cañete",,male
+11,ESTOYE,"Rosendo V,Pajara",,male
+12,FERROLINO,Francis Archie,,male
+13,IBONES,"Jhaycee Phillip,Mellijor",,male
+14,ISIDORO,"Rene Alessandro,Alkuino",,male
+15,JOBOCO,"Rod Niño,Lerio",,male
+16,LAMBATING,"Niño Miguel,Vergara",,male
+17,MENDEZ,"Mackenzie Albie,Aspecto",,male
+18,MEPIEZA,"Paul Jet Xander,Canillo",,male
+19,MUYOT,"James Gabriel,Solana",,male
+20,ORTIZ,"Luke Alpheus,Ruiz",,male
+21,PETATE,"Zackary,Conde",,male
+22,PISCOS,"Jibreel Charlemagne,Cabaral",,male
+23,RABOR,"Reon Levine,Montesa",,male
+24,REBOSURA,"Eial Kaizar,Into",,male
+25,SANCHEZ,"Kyrie Matthan,Dumangas",,male
+26,SINADJAN,"Jeruss Peter,Manlosa",,male
+27,SUPATAN,"Miguel Iñigo,Escalera",,male
+28,TADLIP,"Joaquin Miguel,Galorport",,male
+29,TUMAPON,"Marciff,Gurrea",,male
+30,VILLACARLOS,"Aeon Viktor,Ango",,male
+31,VILLARASO,"Kendrick Andrew,Ong",,male
+32,YANONG,"Peter Angelo,Regis",,male

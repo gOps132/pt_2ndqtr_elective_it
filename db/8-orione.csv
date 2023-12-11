@@ -1,43 +1,43 @@
-id,lastname,firstname,elective
-1,"ABALLE","Dylan Sky, Cabarubias",CIVIL
-2,"ALESNA","Paul Nicholas, Coliao",CIVIL
-3,"ARPON","Josh Ethan, Watin",CIVIL
-4,"BERSALES","Rett Jr., Tipait",CIVIL
-5,"CABUENAS","Gemver, Quijano",CIVIL
-6,"CALDOZA","Matthew Codee, Romanos",CIVIL
-7,"CALLINO","Zel John, Longakit",CIVIL
-8,"CAÑARES","Rigel Wyatt, Mendoza",CIVIL
-9,"CANTILLAS","Marl Owen, Paloma",CIVIL
-10,"CASIPONG","Jose Sean Rey, De Los Reyes",CIVIL
-11,"CRUZ","Keiann Mykle, Batucan",CIVIL
-12,"DIEZ","John Mark, Galano",CIVIL
-13,"ENCISO","Zuriel James, Cabusas",CIVIL
-14,"FELICES","Emmanuelle Wain Carlo, Lasquete",CIVIL
-15,"GABUYA","Kyle Thomas Bryan, Osa",ELEX
-16,"GANDIONCO","Jairuz Xavier, Velasco",ELEX
-17,"GENON","Vinz Kyle, Flores",ELEX
-18,"GONZALES","Dwayne Wade, Ancajas",ELEX
-19,"GUY","Raeven Don, Borlasa",ELEX
-20,"HANZAWA","Shinichiro Garneth, Momongan",ELEX
-21,"HOFILEÑA","Liam Gerard, Cavada",ELEX
-22,"JACA","Mikhail Richthofen",ELEX
-23,"JAVA","Jershom Dane, Ong",ELEX
-24,"LAO","Iexak Ethanielle, King",ELEX
-25,"MAARAT","Niño Miguel Sebastian, Ramos",ELEX
-26,"MANGUBAT","Dom, Quirante",ELEX
-27,"MENDOZA","Daver Fredson, Lisondra",ELEX
-28,"NAZARENO","Ian Greg Felix, Pongase",ELEX
-29,"OBESO","Renzo Joshua",MECH
-30,"ONG V AÑO","Andre, Tampos",MECH
-31,"PANERIO","Denz Clark, Blanco",MECH
-32,"PARAS","Raphael Bransan, Gabas",MECH
-33,"QUILO","Manuel Gabriel, Del Corro",MECH
-34,"REYES","Josef Vince Dominic, Ovilla",MECH
-35,"SARIO","Alaine Gabriel, Dorimon",MECH
-36,"SIMOGAN","M Manuel Angel, Ceniza",MECH
-37,"SUMABON","Eugene Carlo",MECH
-38,"TAN","Orren Edcen, Tia",MECH
-39,"TAN","Zhacaree Chino, Navarro",MECH
-40,"TEVES","Niño Sebastian, Manug",MECH
-41,"VILLANUEVA","Khail Manu, Calderon",MECH
-42,"YBAÑEZ","Azriel James, Daigo",MECH
+id,lastname,firstname,elective,gender
+1,ABALLE,"Dylan Sky, Cabarubias",CIVIL,male
+2,ALESNA,"Paul Nicholas, Coliao",CIVIL,male
+3,ARPON,"Josh Ethan, Watin",CIVIL,male
+4,BERSALES,"Rett Jr., Tipait",CIVIL,male
+5,CABUENAS,"Gemver, Quijano",CIVIL,male
+6,CALDOZA,"Matthew Codee, Romanos",CIVIL,male
+7,CALLINO,"Zel John, Longakit",CIVIL,male
+8,CAÑARES,"Rigel Wyatt, Mendoza",CIVIL,male
+9,CANTILLAS,"Marl Owen, Paloma",CIVIL,male
+10,CASIPONG,"Jose Sean Rey, De Los Reyes",CIVIL,male
+11,CRUZ,"Keiann Mykle, Batucan",CIVIL,male
+12,DIEZ,"John Mark, Galano",CIVIL,male
+13,ENCISO,"Zuriel James, Cabusas",CIVIL,male
+14,FELICES,"Emmanuelle Wain Carlo, Lasquete",CIVIL,male
+15,GABUYA,"Kyle Thomas Bryan, Osa",ELEX,male
+16,GANDIONCO,"Jairuz Xavier, Velasco",ELEX,male
+17,GENON,"Vinz Kyle, Flores",ELEX,male
+18,GONZALES,"Dwayne Wade, Ancajas",ELEX,male
+19,GUY,"Raeven Don, Borlasa",ELEX,male
+20,HANZAWA,"Shinichiro Garneth, Momongan",ELEX,male
+21,HOFILEÑA,"Liam Gerard, Cavada",ELEX,male
+22,JACA,Mikhail Richthofen,ELEX,male
+23,JAVA,"Jershom Dane, Ong",ELEX,male
+24,LAO,"Iexak Ethanielle, King",ELEX,male
+25,MAARAT,"Niño Miguel Sebastian, Ramos",ELEX,male
+26,MANGUBAT,"Dom, Quirante",ELEX,male
+27,MENDOZA,"Daver Fredson, Lisondra",ELEX,male
+28,NAZARENO,"Ian Greg Felix, Pongase",ELEX,male
+29,OBESO,Renzo Joshua,MECH,male
+30,ONG V AÑO,"Andre, Tampos",MECH,male
+31,PANERIO,"Denz Clark, Blanco",MECH,male
+32,PARAS,"Raphael Bransan, Gabas",MECH,male
+33,QUILO,"Manuel Gabriel, Del Corro",MECH,male
+34,REYES,"Josef Vince Dominic, Ovilla",MECH,male
+35,SARIO,"Alaine Gabriel, Dorimon",MECH,male
+36,SIMOGAN,"M Manuel Angel, Ceniza",MECH,male
+37,SUMABON,Eugene Carlo,MECH,male
+38,TAN,"Orren Edcen, Tia",MECH,male
+39,TAN,"Zhacaree Chino, Navarro",MECH,male
+40,TEVES,"Niño Sebastian, Manug",MECH,male
+41,VILLANUEVA,"Khail Manu, Calderon",MECH,male
+42,YBAÑEZ,"Azriel James, Daigo",MECH,male

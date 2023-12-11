@@ -1,37 +1,37 @@
-id,lastname,firstname,elective
-1,"ACEBEDO","Gaeb Gil Ray, Oronce",ELEX
-2,"AMAHAN","Anthony Seth, Hayag",ELEX
-3,"ANG","Glyn Jefferson, Batuigas",ELEX
-4,"ANTONE","Jahdrienne Joe, Inocian",ELEX
-5,"BACULA","Tristan John, Ceñal",ELEX
-6,"BELANDRES","Shen Lance, Cortes",ELEX
-7,"CABRIDO","Chasler Keith, Araneta",ELEX
-8,"COROMINAS","Juan Miguel, Apostol",ELEX
-9,"CULANGO","Jessierylle, Al",ELEX
-10,"DELA VICTORIA","Marco Vicente, Dango",ELEX
-11,"DURANO","Ethan Zeke, Castrudes",MECH
-12,"ECHAVIA","Charles Andrae, Auman",ELEX
-13,"EMIA","Cezar Agustus, Toledo",ELEX
-14,"GANTUANGCO","Zaian Aiden, Balasa",MECH
-15,"GO","John Jacob, Reyes",MECH
-16,"GUISADIO","Dean Matthew, Abellanosa",MECH
-17,"IPONG","Jon Andre, Policarpio",MECH
-18,"LABIDES","Rynelzhen Dylan",MECH
-19,"LARGO","Axel Carlo, Oberes",MECH
-20,"LUCAS","Gene Marione, Coronado",MECH
-21,"MANLIGUEZ","Rajah Dariel, Gonzales",MECH
-22,"MANORIÑA","Mikhael Francis, Palanas",MECH
-23,"MANTILLA","Chino, Minaya",MECH
-24,"NAIGAL","Christian, Marte",CIVIL
-25,"NARBOADA","Ghian Alexis, Siboa",MECH
-26,"PABLEO","Ranver, Vertudazo",MECH
-27,"PALLER","Sylvester, Buagas",CIVIL
-28,"RABONG","James Zachary, Federico",CIVIL
-29,"RAMA","John Jr., Edaño",CIVIL
-30,"RAMIREZ","Nathan Hayden",CIVIL
-31,"REGALADO","Tristan Jake, Cagalawan",CIVIL
-32,"SARAÑA","Carl Vince Laurence, Ynclino",CIVIL
-33,"SOLLANO","Qyel Ino, Villanueva",CIVIL
-34,"SUMANTING","Franz Mikel Niño, Gerasmio",CIVIL
-35,"VELASCO","Mj, Sillacay",CIVIL
-36,"YAPCHING","Gol Martin, Kintanar",CIVIL
+id,lastname,firstname,elective,gender
+1,ACEBEDO,"Gaeb Gil Ray, Oronce",ELEX,male
+2,AMAHAN,"Anthony Seth, Hayag",ELEX,male
+3,ANG,"Glyn Jefferson, Batuigas",ELEX,male
+4,ANTONE,"Jahdrienne Joe, Inocian",ELEX,male
+5,BACULA,"Tristan John, Ceñal",ELEX,male
+6,BELANDRES,"Shen Lance, Cortes",ELEX,male
+7,CABRIDO,"Chasler Keith, Araneta",ELEX,male
+8,COROMINAS,"Juan Miguel, Apostol",ELEX,male
+9,CULANGO,"Jessierylle, Al",ELEX,male
+10,DELA VICTORIA,"Marco Vicente, Dango",ELEX,male
+11,DURANO,"Ethan Zeke, Castrudes",MECH,male
+12,ECHAVIA,"Charles Andrae, Auman",ELEX,male
+13,EMIA,"Cezar Agustus, Toledo",ELEX,male
+14,GANTUANGCO,"Zaian Aiden, Balasa",MECH,male
+15,GO,"John Jacob, Reyes",MECH,male
+16,GUISADIO,"Dean Matthew, Abellanosa",MECH,male
+17,IPONG,"Jon Andre, Policarpio",MECH,male
+18,LABIDES,Rynelzhen Dylan,MECH,male
+19,LARGO,"Axel Carlo, Oberes",MECH,male
+20,LUCAS,"Gene Marione, Coronado",MECH,male
+21,MANLIGUEZ,"Rajah Dariel, Gonzales",MECH,male
+22,MANORIÑA,"Mikhael Francis, Palanas",MECH,male
+23,MANTILLA,"Chino, Minaya",MECH,male
+24,NAIGAL,"Christian, Marte",CIVIL,male
+25,NARBOADA,"Ghian Alexis, Siboa",MECH,male
+26,PABLEO,"Ranver, Vertudazo",MECH,male
+27,PALLER,"Sylvester, Buagas",CIVIL,male
+28,RABONG,"James Zachary, Federico",CIVIL,male
+29,RAMA,"John Jr., Edaño",CIVIL,male
+30,RAMIREZ,Nathan Hayden,CIVIL,male
+31,REGALADO,"Tristan Jake, Cagalawan",CIVIL,male
+32,SARAÑA,"Carl Vince Laurence, Ynclino",CIVIL,male
+33,SOLLANO,"Qyel Ino, Villanueva",CIVIL,male
+34,SUMANTING,"Franz Mikel Niño, Gerasmio",CIVIL,male
+35,VELASCO,"Mj, Sillacay",CIVIL,male
+36,YAPCHING,"Gol Martin, Kintanar",CIVIL,male

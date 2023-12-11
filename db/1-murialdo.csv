@@ -1,29 +1,29 @@
-id,lastname,firstname,elective
-1,"ABELLANA","Xian Francis",
-2,"AGUSTIN","Louisse Jacob,Monares",
-3,"ALDE","Anton Mateo,Lagat",
-4,"ALIÑO","Djosef Kraig,Wenceslao",
-5,"BALMACEDA","Karson Aemon,Pono",
-6,"BASITAO","Reean Jei,Saquilabon",
-7,"CABARRUBIAS","Zach Delfin Jimz,Cervantes",
-8,"CAÑAMO","Jai Perri,Taclob",
-9,"CAPUTAN","David Lewis,Castro",
-10,"DANDAN","Xian Christoff,Restauro",
-11,"DATAN","Francis Four,Paguio",
-12,"DIRA","Louis Dolfus,Encarnacion",
-13,"FABOR","Matteo,Menchavez",
-14,"GERALI","Ean,Escoto",
-15,"KITAMURA","Kenta,Fernandez",
-16,"LABIO","Achaean Schyros Zaynn,Andales",
-17,"LAMBATING","Job Lucas,Vergara",
-18,"MARTINEZ","Zion Ash,Emperio",
-19,"MERILLES","Cody,Sanchez",
-20,"OYAO","Czedrich El Gibbor,Nadera",
-21,"PEPITO","Duke Marten,Villacastin",
-22,"RAPSING","Ram Theodore,Guinita",
-23,"RENDON","Ivo Ernestt",
-24,"SABELLANO","Zane Ashton,Pelaez",
-25,"SACEDA","Azriel Yohaynis,Mangitngit",
-26,"SESE","Sancho Francisco,Lozano",
-27,"TAMPUS","Luke Fabrice,Dinglasa",
-28,"TEVES","Maddox Zing,Rosal",
+id,lastname,firstname,elective,gender
+1,ABELLANA,Xian Francis,,male
+2,AGUSTIN,"Louisse Jacob,Monares",,male
+3,ALDE,"Anton Mateo,Lagat",,male
+4,ALIÑO,"Djosef Kraig,Wenceslao",,male
+5,BALMACEDA,"Karson Aemon,Pono",,male
+6,BASITAO,"Reean Jei,Saquilabon",,male
+7,CABARRUBIAS,"Zach Delfin Jimz,Cervantes",,male
+8,CAÑAMO,"Jai Perri,Taclob",,male
+9,CAPUTAN,"David Lewis,Castro",,male
+10,DANDAN,"Xian Christoff,Restauro",,male
+11,DATAN,"Francis Four,Paguio",,male
+12,DIRA,"Louis Dolfus,Encarnacion",,male
+13,FABOR,"Matteo,Menchavez",,male
+14,GERALI,"Ean,Escoto",,male
+15,KITAMURA,"Kenta,Fernandez",,male
+16,LABIO,"Achaean Schyros Zaynn,Andales",,male
+17,LAMBATING,"Job Lucas,Vergara",,male
+18,MARTINEZ,"Zion Ash,Emperio",,male
+19,MERILLES,"Cody,Sanchez",,male
+20,OYAO,"Czedrich El Gibbor,Nadera",,male
+21,PEPITO,"Duke Marten,Villacastin",,male
+22,RAPSING,"Ram Theodore,Guinita",,male
+23,RENDON,Ivo Ernestt,,male
+24,SABELLANO,"Zane Ashton,Pelaez",,male
+25,SACEDA,"Azriel Yohaynis,Mangitngit",,male
+26,SESE,"Sancho Francisco,Lozano",,male
+27,TAMPUS,"Luke Fabrice,Dinglasa",,male
+28,TEVES,"Maddox Zing,Rosal",,male

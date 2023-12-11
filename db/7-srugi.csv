@@ -1,26 +1,26 @@
-id,lastname,firstname,elective
-1,ALAJAS,"Jaden Philippe, Canillo",
-2,AMADO,"Mechaelle Sean Darent, Suficiencia",
-3,ANUADA,"Rayceed Scott, Alcala",
-4,BACHO,"Azriel Bryce, Salazar",
-5,BALICOCO,"Ceejay Miguel, Maribao",
-6,CASTAÑARES,"Liam Augustine, Ardiente",
-7,CAVADA,"Cyrus Jared, Rayman",
-8,CUTANG,"Zeus, Lauron",
-9,DORDAS,Jamhar Niño,
-10,GACAYAN,"Crixus Garrison, Cinco",
-11,GARCIA,"Alfred Marie Zionomichail, Sabal",
-12,GUISADIO,"Izar Eli, Pantorilla",
-13,LASCUÑA,"Rafael Archyne, Celeste",
-14,MAGNO,"Dirk Hennesy, Juezan",
-15,MAYOL,"Raiye Niño, Selma",
-16,MONTANO,"Drake Luis, Aspiras",
-17,MORASCALLO,"James Colin, Lutao",
-18,NUÑEZ,"Lajon, Castro",
-19,ONDAP,"Ralphe Dominique, Baclayon",
-20,PADILLA,"Karol Jyosef Niño, Igot",
-21,PEPITO,"Chance Frank, Villacastin",
-22,PEROLINO,"Jamiel, Repuela",
-23,SAGRADO,"Matthew Wayne, Cabrera",
-24,SEDON,"Sean Andrei, Teopiz",
-25,SULTAN,"Miguel, Aliviado",
+id,lastname,firstname,elective,gender
+1,ALAJAS,"Jaden Philippe, Canillo",,male
+2,AMADO,"Mechaelle Sean Darent, Suficiencia",,male
+3,ANUADA,"Rayceed Scott, Alcala",,male
+4,BACHO,"Azriel Bryce, Salazar",,male
+5,BALICOCO,"Ceejay Miguel, Maribao",,male
+6,CASTAÑARES,"Liam Augustine, Ardiente",,male
+7,CAVADA,"Cyrus Jared, Rayman",,male
+8,CUTANG,"Zeus, Lauron",,male
+9,DORDAS,Jamhar Niño,,male
+10,GACAYAN,"Crixus Garrison, Cinco",,male
+11,GARCIA,"Alfred Marie Zionomichail, Sabal",,male
+12,GUISADIO,"Izar Eli, Pantorilla",,male
+13,LASCUÑA,"Rafael Archyne, Celeste",,male
+14,MAGNO,"Dirk Hennesy, Juezan",,male
+15,MAYOL,"Raiye Niño, Selma",,male
+16,MONTANO,"Drake Luis, Aspiras",,male
+17,MORASCALLO,"James Colin, Lutao",,male
+18,NUÑEZ,"Lajon, Castro",,male
+19,ONDAP,"Ralphe Dominique, Baclayon",,male
+20,PADILLA,"Karol Jyosef Niño, Igot",,male
+21,PEPITO,"Chance Frank, Villacastin",,male
+22,PEROLINO,"Jamiel, Repuela",,male
+23,SAGRADO,"Matthew Wayne, Cabrera",,male
+24,SEDON,"Sean Andrei, Teopiz",,male
+25,SULTAN,"Miguel, Aliviado",,male

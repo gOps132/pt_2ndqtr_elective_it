@@ -1,34 +1,34 @@
-id,lastname,firstname,elective
-1,ALUNAN,"Reuel Benedict, Moroscallo",
-2,BELANDRES,"Lorenzo, Dajay",
-3,CABALLES,"Paolo Raffaele, Bañes",
-4,CAÑARIAS,"Jay Ric, Lapitan",
-5,CAUSIN,"Daniel Agustine, Abad",
-6,CHAN,"Joseph Antonio, Castro",
-7,CUYOS,"Justin, Sanchez",
-8,DACALOS,"Joshua Mari, Migabon",
-9,DESPUES,"Charlz David, Tagimacruz",
-10,DIAZ,"Draco Thorneval, Rodriguez",
-11,DOMINGUEZ,"Geoff Matthew, Flores",
-12,DOÑA,"Jean Karol, Manloloyo",
-13,ESPARRAGO,"Arthur Clarence, Acero",
-14,ESTIOLA,"Ariel Jr., Calitas",
-15,LARIBA,"Kurt Klein, Bautista",
-16,LIBREA,"Rion Steiner, Paño",
-17,LIM,"Edward Aleck, Saavedra",
-18,MACAILING,"Ser Raineir Benedict, Untalan",
-19,MANABAT,"Quint Martin, Paraiso",
-20,NACION,"Joaquin Antonio, Zamora",
-21,RAMOS,"Howard Dean, Sierra",
-22,RESTAURO,"Zyril Ryle, Reyes",
-23,SANCHEZ,"Lance Christian, Concoles",
-24,SECUSANA,"Jeb Sleydther, Doyon",
-25,SEÑEDO,"Iñigo Cleto, Viajar",
-26,TABAR,"Joross Clark, Cababat",
-27,TALANAY,"James Abser, Falar",
-28,TAMPO,"Sebastian Inñigo, Pineda",
-29,TEVES,"Luke Wilson, Pimentel",
-30,TORRIJOS,"Kenneth Justine, Berdigar",
-31,VILLAHERMOSA,"Emmanuelle John, Ramos",
-32,VILLEGAS,"Roy Jr, Maloloy-On",
-33,ZOZOBRADO,"Vincent Iii, Alidon",
+id,lastname,firstname,elective,gender
+1,ALUNAN,"Reuel Benedict, Moroscallo",,male
+2,BELANDRES,"Lorenzo, Dajay",,male
+3,CABALLES,"Paolo Raffaele, Bañes",,male
+4,CAÑARIAS,"Jay Ric, Lapitan",,male
+5,CAUSIN,"Daniel Agustine, Abad",,male
+6,CHAN,"Joseph Antonio, Castro",,male
+7,CUYOS,"Justin, Sanchez",,male
+8,DACALOS,"Joshua Mari, Migabon",,male
+9,DESPUES,"Charlz David, Tagimacruz",,male
+10,DIAZ,"Draco Thorneval, Rodriguez",,male
+11,DOMINGUEZ,"Geoff Matthew, Flores",,male
+12,DOÑA,"Jean Karol, Manloloyo",,male
+13,ESPARRAGO,"Arthur Clarence, Acero",,male
+14,ESTIOLA,"Ariel Jr., Calitas",,male
+15,LARIBA,"Kurt Klein, Bautista",,male
+16,LIBREA,"Rion Steiner, Paño",,male
+17,LIM,"Edward Aleck, Saavedra",,male
+18,MACAILING,"Ser Raineir Benedict, Untalan",,male
+19,MANABAT,"Quint Martin, Paraiso",,male
+20,NACION,"Joaquin Antonio, Zamora",,male
+21,RAMOS,"Howard Dean, Sierra",,male
+22,RESTAURO,"Zyril Ryle, Reyes",,male
+23,SANCHEZ,"Lance Christian, Concoles",,male
+24,SECUSANA,"Jeb Sleydther, Doyon",,male
+25,SEÑEDO,"Iñigo Cleto, Viajar",,male
+26,TABAR,"Joross Clark, Cababat",,male
+27,TALANAY,"James Abser, Falar",,male
+28,TAMPO,"Sebastian Inñigo, Pineda",,male
+29,TEVES,"Luke Wilson, Pimentel",,male
+30,TORRIJOS,"Kenneth Justine, Berdigar",,male
+31,VILLAHERMOSA,"Emmanuelle John, Ramos",,male
+32,VILLEGAS,"Roy Jr, Maloloy-On",,male
+33,ZOZOBRADO,"Vincent Iii, Alidon",,male

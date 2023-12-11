@@ -14,6 +14,8 @@ class InfoQueryCtx:
         self.student_id = tk.Label(master=self.frame, text="Student ID")
         self.last_name = tk.Label(master=self.frame, text="Last Name")
         self.first_name = tk.Label(master=self.frame, text="First Name")
+        self.gender = tk.Label(master=self.frame, text="Gender")
+        self.section = tk.Label(master=self.frame, text="Section")
         self.year_level = tk.Label(
             master=self.frame, text="Year Level And Section"
         )
@@ -22,7 +24,6 @@ class InfoQueryCtx:
         self.student_id_entry = tk.Entry(master=self.frame)
         self.last_name_entry = tk.Entry(master=self.frame)
         self.first_name_entry = tk.Entry(master=self.frame)
-        self.section_entry = tk.Entry(master=self.frame)
         # TODO: sort tables
         tables = error_handle(db_ctx.queue_tables)
         self.year_level_entry = ttk.Combobox(master=self.frame, values=tables)
@@ -30,23 +31,53 @@ class InfoQueryCtx:
             master=self.frame,
             values=["MECH", "CIVIL", "ELEX", "STEM", "GAS", "ABM"],
         )
+        self.gender_var = tk.IntVar()
+        self.gender_options = tk.Frame(master=self.frame)
+        self.gender_entry_m = ttk.Radiobutton(
+            master=self.gender_options, 
+            text="Male",
+            variable=self.gender_var,
+            value=1,
+            command=self.get_selected_gender
+        )
+        self.gender_entry_f = ttk.Radiobutton(
+            master=self.gender_options, 
+            text="Female",
+            variable=self.gender_var,
+            value=2,
+            command=self.get_selected_gender
+        )
         self.reset_entry_btn = ttk.Button(master=self.frame, text="reset", command=self.reset_entries)
+
+    def get_selected_gender(self):
+        self.selected_gender = self.gender_var.get()
+        if self.selected_gender == 1:
+            return "male"
+        elif self.selected_gender == 2:
+            return "female"
+        else:
+            return ""
 
     def grid(self) -> None:
         self.frame.grid(row=0, column=0)
         self.student_id.grid(row=0, column=0)
         self.last_name.grid(row=1, column=0)
         self.first_name.grid(row=2, column=0)
+        self.gender.grid(row=3, column=0)
         self.year_level.grid(row=5, column=0)
         self.elective.grid(row=6, column=0)
         self.elective_entry.grid(row=6, column=0)
         self.student_id_entry.grid(row=0, column=1)
         self.last_name_entry.grid(row=1, column=1)
         self.first_name_entry.grid(row=2, column=1)
+        self.gender_options.grid(row=3, column=1)
+        self.gender_entry_m.grid(row=0, column=0)
+        self.gender_entry_f.grid(row=0, column=1)
         self.year_level_entry.grid(row=5, column=1)
         self.elective_entry.grid(row=6, column=1)
         self.reset_entry_btn.grid(row=7, column=1)
 
+    # TODO: get gender
     def get_entries(self):
         return (
             self.student_id_entry.get(),
@@ -54,14 +85,17 @@ class InfoQueryCtx:
             self.first_name_entry.get(),
             self.year_level_entry.get(),
             self.elective_entry.get(),
+            self.get_selected_gender()
         )
-    
+
+    # TODO: reset gender
     def reset_entries(self) -> None:
         self.student_id_entry.delete(0, "end")
         self.last_name_entry.delete(0, "end")
         self.first_name_entry.delete(0, "end")
         self.year_level_entry.delete(0, "end")
         self.elective_entry.delete(0, "end")
+        self.gender_var.set(0)
 
 class ExecuteQueryCtxWidget:
     def __init__(self, db_ctx, info_query_ctx, info_query_output, window):
@@ -109,13 +143,7 @@ class ExecuteQueryCtxWidget:
                 if result:
                     messagebox.showinfo(
                         "success",
-                        f"""Successfully Added  
-                            ID: \t {result[0][0]}  
-                            Lastname: \t {result[0][1]}  
-                            Firstname: \t {result[0][2]}  
-                            Year & Section: \t {entries[3]}   
-                            elective: \t {result[0][3]}   
-                        """)
+                        f"Successfully added Student")
                     self.ifq_output.update_view(result)
             else:
                 messagebox.showerror("Lacking Entries", "no section")
@@ -129,13 +157,7 @@ class ExecuteQueryCtxWidget:
                 if result:
                     messagebox.showinfo(
                         "success",
-                        f"""Successfully Inserted  
-                            ID: \t {result[0][0]}  
-                            Lastname: \t {result[0][1]}  
-                            Firstname: \t {result[0][2]}  
-                            Year & Section: \t {entries[3]}   
-                            elective: \t {result[0][3]}   
-                        """)
+                        f"Successfully inserted Student")
                     self.ifq_output.update_view(result)
             else:
                 messagebox.showerror("Lacking Entries", "no section")
@@ -191,7 +213,7 @@ class OutputQueryCtx():
 
     def create_tree_widget(self):
         self.frame.grid(row=0, column=1)
-        columns = ('ID', 'Lastname', 'Firstname', 'Elective')
+        columns = ('ID', 'Lastname', 'Firstname', 'Elective', 'Gender')
         self.output = ttk.Treeview(
             master=self.frame,
             columns=columns,
@@ -207,6 +229,7 @@ class OutputQueryCtx():
         self.output.heading('Lastname', text='Lastname')
         self.output.heading('Firstname', text='Firstname')
         self.output.heading('Elective', text='Elective')
+        self.output.heading('Gender', text='Gender')
 
         self.output.bind('<<TreeviewSelect>>', self.selected_entry)
 

@@ -1,39 +1,39 @@
-id,lastname,firstname,elective
-1,ABELLA,"Antonio Miguel, Rubi",
-2,ASENSI,"Freitz Neil, Villasencio",
-3,BAÑO,"Glenniel Ivar, Aloba",
-4,BAS,"Cristopher Dan, Resgonia",
-5,BAYUTAS,"Raphael Lawrence, Castro",
-6,BERDEN,"Hector, Iniego",
-7,BERDOS,"Andrei, Macaraya",
-8,CAGA-ANAN,"Joshua, Romero",
-9,CAMORO,"Sebastian Franco, Sotto",
-10,CONDOR,"Chino Miguel, Ybañez",
-11,DAYAGAN,"David Mitz, Moraleda",
-12,DE JESUS,"Gene Horace, Polvorosa",
-13,DE VERA,"Terence Emmanuel, Alforque",
-14,DIAZ,"Venz Isaac, Badana",
-15,DUMAGUING,"Mark Simon Jr, Singson",
-16,ECHAVIA,"Adrian, Auman",
-17,FARRARONS,"Angel Caesar Jr., Mariño",
-18,FERNANDEZ,"Paulo, Romas",
-19,INOPIQUEZ,"Elijah Antoni, Dolina",
-20,ISRAEL,"Joshua Miguel, Ysmael",
-21,JACA,"Sebastian Angelo, Birao",
-22,LEDESMA,"Alezandro Domecq, Del Mar",
-23,LIM,"Khen Andrei, Lañas",
-24,MESINA,"Rafael George, Relampagos",
-25,PANGUE,"Garry Jr, Sanchez",
-26,RASUMAN,"Alykhuzain, Baladjay",
-27,RETIZA,"Robert Vincent, Arrojado",
-28,REYES,"Ronand Elijah, Teves",
-29,ROBILLOS,"Kirby John, Roloma",
-30,ROSCA,"Charles Steven, Aliño",
-31,SANTILLAN,"Zion Charles, Coleto",
-32,TABAR,"John Phillip, Obenque",
-33,TALINGTING,"Xavier Anthony, Librando",
-34,TANOY,"Jan Xander Benedict, Ceniza",
-35,VERANO,"Gems Hebron, Balbin",
-36,VERANO,"John Benedict, Balbin",
-37,VERANO,"Ritchie Khris, Cardeño",
-38,VILLAREAL,"Mel Jeferson, Manguera",
+id,lastname,firstname,elective,gender
+1,ABELLA,"Antonio Miguel, Rubi",,male
+2,ASENSI,"Freitz Neil, Villasencio",,male
+3,BAÑO,"Glenniel Ivar, Aloba",,male
+4,BAS,"Cristopher Dan, Resgonia",,male
+5,BAYUTAS,"Raphael Lawrence, Castro",,male
+6,BERDEN,"Hector, Iniego",,male
+7,BERDOS,"Andrei, Macaraya",,male
+8,CAGA-ANAN,"Joshua, Romero",,male
+9,CAMORO,"Sebastian Franco, Sotto",,male
+10,CONDOR,"Chino Miguel, Ybañez",,male
+11,DAYAGAN,"David Mitz, Moraleda",,male
+12,DE JESUS,"Gene Horace, Polvorosa",,male
+13,DE VERA,"Terence Emmanuel, Alforque",,male
+14,DIAZ,"Venz Isaac, Badana",,male
+15,DUMAGUING,"Mark Simon Jr, Singson",,male
+16,ECHAVIA,"Adrian, Auman",,male
+17,FARRARONS,"Angel Caesar Jr., Mariño",,male
+18,FERNANDEZ,"Paulo, Romas",,male
+19,INOPIQUEZ,"Elijah Antoni, Dolina",,male
+20,ISRAEL,"Joshua Miguel, Ysmael",,male
+21,JACA,"Sebastian Angelo, Birao",,male
+22,LEDESMA,"Alezandro Domecq, Del Mar",,male
+23,LIM,"Khen Andrei, Lañas",,male
+24,MESINA,"Rafael George, Relampagos",,male
+25,PANGUE,"Garry Jr, Sanchez",,male
+26,RASUMAN,"Alykhuzain, Baladjay",,male
+27,RETIZA,"Robert Vincent, Arrojado",,male
+28,REYES,"Ronand Elijah, Teves",,male
+29,ROBILLOS,"Kirby John, Roloma",,male
+30,ROSCA,"Charles Steven, Aliño",,male
+31,SANTILLAN,"Zion Charles, Coleto",,male
+32,TABAR,"John Phillip, Obenque",,male
+33,TALINGTING,"Xavier Anthony, Librando",,male
+34,TANOY,"Jan Xander Benedict, Ceniza",,male
+35,VERANO,"Gems Hebron, Balbin",,male
+36,VERANO,"John Benedict, Balbin",,male
+37,VERANO,"Ritchie Khris, Cardeño",,male
+38,VILLAREAL,"Mel Jeferson, Manguera",,male

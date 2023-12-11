@@ -1,31 +1,31 @@
-id,lastname,firstname,elective
-1,ABATAYO,"Miles Cedrick, Mercado",
-2,ABELLA,"Deric Andre, Manigos",
-3,ABELLANOSA,"Vic Simon, Daral",
-4,BACALSO,"Dan Joseph, Sabandeja",
-5,BARRO,"Kurt Justine, Lacang",
-6,CAMINERO,"Niño Nyjah, Panebio",
-7,CARETERO,"Andrei Noelle, Selerio",
-8,CASTILLO,"Blaire Don, Hontiveros",
-9,CAVADA,"Luis Elijah, De Gracia",
-10,COMENDADOR,Kurt Zed,
-11,ENRIQUEZ,"Renzo Angelo, Balaguer",
-12,GICA,"Andrei Ian, Lucero",
-13,GO,"Isaac, Bachiller",
-14,GO,"Sheldon Kirby, Correa",
-15,LUCAS,"Apoloni Vicente, Coronado",
-16,MANABAT,"Marco Shane, Campos",
-17,MANLOSA,"Allister Louis, Mariño",
-18,MANORIÑA,"Divron Niño, Palanas",
-19,MEDIJA,"Vince Anthony, Lim",
-20,MUAÑA,"Matt Rafael, Cabanada",
-21,NOGRA,Daniel Niven,
-22,REMONDE,Sean Rabillas,
-23,ROMANILLOS,"Uriel, Cane",
-24,SABAY,"Niño Gabriel, Nadera",
-25,SANCHEZ,"Iori Kyle, Adlawan",
-26,TABARES,"Jan Liebert, Artes",
-27,TENCHAVEZ,"Kenneth, Pablo",
-28,TOLENTINO,"Eisend Loujan, Evangelista",
-29,VILLAGONZALO,"Jose Manuel, Peñosa",
-30,VILLARES,"Daniel Joseph, Noval",
+id,lastname,firstname,elective,gender
+1,ABATAYO,"Miles Cedrick, Mercado",,male
+2,ABELLA,"Deric Andre, Manigos",,male
+3,ABELLANOSA,"Vic Simon, Daral",,male
+4,BACALSO,"Dan Joseph, Sabandeja",,male
+5,BARRO,"Kurt Justine, Lacang",,male
+6,CAMINERO,"Niño Nyjah, Panebio",,male
+7,CARETERO,"Andrei Noelle, Selerio",,male
+8,CASTILLO,"Blaire Don, Hontiveros",,male
+9,CAVADA,"Luis Elijah, De Gracia",,male
+10,COMENDADOR,Kurt Zed,,male
+11,ENRIQUEZ,"Renzo Angelo, Balaguer",,male
+12,GICA,"Andrei Ian, Lucero",,male
+13,GO,"Isaac, Bachiller",,male
+14,GO,"Sheldon Kirby, Correa",,male
+15,LUCAS,"Apoloni Vicente, Coronado",,male
+16,MANABAT,"Marco Shane, Campos",,male
+17,MANLOSA,"Allister Louis, Mariño",,male
+18,MANORIÑA,"Divron Niño, Palanas",,male
+19,MEDIJA,"Vince Anthony, Lim",,male
+20,MUAÑA,"Matt Rafael, Cabanada",,male
+21,NOGRA,Daniel Niven,,male
+22,REMONDE,Sean Rabillas,,male
+23,ROMANILLOS,"Uriel, Cane",,male
+24,SABAY,"Niño Gabriel, Nadera",,male
+25,SANCHEZ,"Iori Kyle, Adlawan",,male
+26,TABARES,"Jan Liebert, Artes",,male
+27,TENCHAVEZ,"Kenneth, Pablo",,male
+28,TOLENTINO,"Eisend Loujan, Evangelista",,male
+29,VILLAGONZALO,"Jose Manuel, Peñosa",,male
+30,VILLARES,"Daniel Joseph, Noval",,male

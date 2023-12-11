@@ -1,33 +1,33 @@
-id,lastname,first_name,elective
-1,ABABAN,"Lanz Luis Niño,Yap",
-2,ABELGAS,"Liam Ezekiel,Buot",
-3,ACAPULCO,Zayed,
-4,ARNOCO,"Serge Iñigo,Servan",
-5,ARRIOLA,"Jared Paolo,Empleo",
-6,ASIGNAR,"Kedric Alexander,Gamali",
-7,BALON,"Rafael Iago,Cabiluna",
-8,BENDIGOSA,"Hadi Hansen,Layon",
-9,BRIONES,"Jalree Shawn,Garong",
-10,CANONOY,"Edge Josef,Saguin",
-11,DIEZ,"John Paul,Galano",
-12,DUZON,"Jhianni Raphael,Montesclaros",
-13,GENERALE,"Ramonov Zed Constantine,Montañez",
-14,GO,"Fyodor Lucien,Abellanosa",
-15,LANTICSE,"Vito Corey,Delima",
-16,LAO,"Ieolo Enriquelle,King",
-17,LINAO,"Rafael Konrad,Saguin",
-18,MILLARE,"Lorenzo Jose,Pales",
-19,MONTESCLAROS,"Julian Miguel,Lim",
-20,MORENO,"Chris Van Andrei,Tindugan",
-21,MUÑEZ,"Zeus Sebastian,Dean",
-22,ONDAP,"Tyler Jaz,Baclayon",
-23,OPEÑA,"Theon Ezrah,Abas",
-24,PAÑARES,"Arthur,Hermoso",
-25,PATALINGHUG,Makaio Nicholaus,
-26,PINEDA,"Rico Leandro,Soria",
-27,RAFIL,"Raidon Alfonso,Cañeda",
-28,RAMOS,"Zev Michael,Yap",
-29,SERVANDE,"Gian Daryll,Balansag",
-30,TABANAS,"Luis Miguel,Sala",
-31,"TO-O""NG","Andrei Vito""",
-32,VALENZUELA,"Matthew Evan,Basa",
+id,lastname,first_name,elective,gender
+1,ABABAN,"Lanz Luis Niño,Yap",,male
+2,ABELGAS,"Liam Ezekiel,Buot",,male
+3,ACAPULCO,Zayed,,male
+4,ARNOCO,"Serge Iñigo,Servan",,male
+5,ARRIOLA,"Jared Paolo,Empleo",,male
+6,ASIGNAR,"Kedric Alexander,Gamali",,male
+7,BALON,"Rafael Iago,Cabiluna",,male
+8,BENDIGOSA,"Hadi Hansen,Layon",,male
+9,BRIONES,"Jalree Shawn,Garong",,male
+10,CANONOY,"Edge Josef,Saguin",,male
+11,DIEZ,"John Paul,Galano",,male
+12,DUZON,"Jhianni Raphael,Montesclaros",,male
+13,GENERALE,"Ramonov Zed Constantine,Montañez",,male
+14,GO,"Fyodor Lucien,Abellanosa",,male
+15,LANTICSE,"Vito Corey,Delima",,male
+16,LAO,"Ieolo Enriquelle,King",,male
+17,LINAO,"Rafael Konrad,Saguin",,male
+18,MILLARE,"Lorenzo Jose,Pales",,male
+19,MONTESCLAROS,"Julian Miguel,Lim",,male
+20,MORENO,"Chris Van Andrei,Tindugan",,male
+21,MUÑEZ,"Zeus Sebastian,Dean",,male
+22,ONDAP,"Tyler Jaz,Baclayon",,male
+23,OPEÑA,"Theon Ezrah,Abas",,male
+24,PAÑARES,"Arthur,Hermoso",,male
+25,PATALINGHUG,Makaio Nicholaus,,male
+26,PINEDA,"Rico Leandro,Soria",,male
+27,RAFIL,"Raidon Alfonso,Cañeda",,male
+28,RAMOS,"Zev Michael,Yap",,male
+29,SERVANDE,"Gian Daryll,Balansag",,male
+30,TABANAS,"Luis Miguel,Sala",,male
+31,"TO-O""NG","Andrei Vito""",,male
+32,VALENZUELA,"Matthew Evan,Basa",,male

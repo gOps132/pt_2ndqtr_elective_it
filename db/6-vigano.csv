@@ -1,42 +1,42 @@
-id,lastname,firstname,elective
-1,ALDE,"Jude Matthew,Lagat",
-2,ALESNA,"Xavier Blake,Alilin",
-3,AUDITOR,"Jayden Castiel,Cuizon",
-4,AURELIO,"Zac Hendrix,Encallado",
-5,BACALSO,Oliver Wendell,
-6,BACLAYON,"Clyde Andrew,Pano",
-7,BELANDRES,"Matthew Liam,Cortes",
-8,BOCADO,"Revin Jay,Ruaya",
-9,CABANADA,"Rain Chris,Rabaya",
-10,CABAÑAS,"Zjephan Jansen,Villarta",
-11,CALDOZA,"Zac Ezekiel,Romanos",
-12,CARABALLE,"Gabe Atticus,Miranda",
-13,CASILA,"Rob Elmo,Diaz",
-14,CO,"Jerahmiel Eli,Horteza",
-15,COCA,"Luke Ashton,Rivera",
-16,CORRO,"Ryan Gerard,Bolaño",
-17,DAKAY,"Niji Rae,Cayacap",
-18,DIAZ,"Marc Isaiah,Badana",
-19,DUMALA,"James Roy Jr,Tan",
-20,EMPLEO,Mateo Andreas,
-21,FERNANDEZ,"Zachary,Mauring",
-22,FERNANDO,"Ralph Gabriel,Hechanova",
-23,GONO,"Draco Mateo,Lazaro",
-24,HAPITAN,"Daniel Khristoff,Aban",
-25,LABAYA,"Zach Andrew,Orillo",
-26,LAPITAN,"John Marc,Labitad",
-27,LARUMBE,"Xander Gabriel,Lao",
-28,LEONES,"Mark Harris,Pepito",
-29,MACHITAR,"Vaughn Niño,Altura",
-30,MANTILLA,"Pio,Minaya",
-31,MEDADO,"Rafael Jonathan,Cabantan",
-32,MORIN,"Xian John,Meneses",
-33,MUNTUERTO,"Nick Rhyan,Lunday",
-34,PAQUET,"Domenic,Sanz",
-35,PEROCHO,"Arkin,Balanquit",
-36,QUIRANTE,"Jules Nathan,Estacion",
-37,SALUD,"Rian Stefan,Yamid",
-38,SAMSON,"Jann Ulrick,Amodia",
-39,SEBIAL,"Trevor Allen,Lubon",
-40,SOJOR,"Rei Antonni,Pepito",
-41,YLAYA,"Dylan Ray,Montalban",
+id,lastname,firstname,elective,gender
+1,ALDE,"Jude Matthew,Lagat",,male
+2,ALESNA,"Xavier Blake,Alilin",,male
+3,AUDITOR,"Jayden Castiel,Cuizon",,male
+4,AURELIO,"Zac Hendrix,Encallado",,male
+5,BACALSO,Oliver Wendell,,male
+6,BACLAYON,"Clyde Andrew,Pano",,male
+7,BELANDRES,"Matthew Liam,Cortes",,male
+8,BOCADO,"Revin Jay,Ruaya",,male
+9,CABANADA,"Rain Chris,Rabaya",,male
+10,CABAÑAS,"Zjephan Jansen,Villarta",,male
+11,CALDOZA,"Zac Ezekiel,Romanos",,male
+12,CARABALLE,"Gabe Atticus,Miranda",,male
+13,CASILA,"Rob Elmo,Diaz",,male
+14,CO,"Jerahmiel Eli,Horteza",,male
+15,COCA,"Luke Ashton,Rivera",,male
+16,CORRO,"Ryan Gerard,Bolaño",,male
+17,DAKAY,"Niji Rae,Cayacap",,male
+18,DIAZ,"Marc Isaiah,Badana",,male
+19,DUMALA,"James Roy Jr,Tan",,male
+20,EMPLEO,Mateo Andreas,,male
+21,FERNANDEZ,"Zachary,Mauring",,male
+22,FERNANDO,"Ralph Gabriel,Hechanova",,male
+23,GONO,"Draco Mateo,Lazaro",,male
+24,HAPITAN,"Daniel Khristoff,Aban",,male
+25,LABAYA,"Zach Andrew,Orillo",,male
+26,LAPITAN,"John Marc,Labitad",,male
+27,LARUMBE,"Xander Gabriel,Lao",,male
+28,LEONES,"Mark Harris,Pepito",,male
+29,MACHITAR,"Vaughn Niño,Altura",,male
+30,MANTILLA,"Pio,Minaya",,male
+31,MEDADO,"Rafael Jonathan,Cabantan",,male
+32,MORIN,"Xian John,Meneses",,male
+33,MUNTUERTO,"Nick Rhyan,Lunday",,male
+34,PAQUET,"Domenic,Sanz",,male
+35,PEROCHO,"Arkin,Balanquit",,male
+36,QUIRANTE,"Jules Nathan,Estacion",,male
+37,SALUD,"Rian Stefan,Yamid",,male
+38,SAMSON,"Jann Ulrick,Amodia",,male
+39,SEBIAL,"Trevor Allen,Lubon",,male
+40,SOJOR,"Rei Antonni,Pepito",,male
+41,YLAYA,"Dylan Ray,Montalban",,male

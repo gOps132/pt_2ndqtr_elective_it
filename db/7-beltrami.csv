@@ -1,28 +1,28 @@
-id,lastname,firstname,elective
-1,AGPALO,Ydrane Isen,
-2,ALAJAS,Louie Keith,
-3,ALEGADO,"Bryle Ghen,Escanilla",
-4,ANSAO,"Retzius Zul-Halo,Cabili",
-5,BARREDO,"Jhaff Nestor,Alberca",
-6,BUGWAT,"Rohan Yeshua,Estoy",
-7,CABINTOY,"Cyril Jacob,Quita",
-8,CARTECIANO,"Timothy,Lopez",
-9,CAUMERAN,"Jaime,Juezan",
-10,CERNAL,"Renjie Mier,Andales",
-11,ENRIQUEZ,"Ryke Kalel,Valdez",
-12,GODINEZ,"Ymiel Andreu,Llacer",
-13,HARINA,"Pete Xander,Bernaldez",
-14,HUPP,"Job Atticus,Escolar",
-15,LAWAS,"Mark Lawrence,Fajardo",
-16,LEPITEN,"Ethan Zander,Ortiz",
-17,LONGAKIT,"Charlesle Kurt,Amodia",
-18,NATEGHI,"Abdolrahman Hassan,Padin",
-19,OCAÑADA,John Ludy Jacob,
-20,PACUBAS,"Robi Christopher,Verano",
-21,RICAFRANCA,"Richo Diever,Odever",
-22,RICAÑA,"Aldreismith,Cubelo",
-23,ROMANILLOS,"Raphael,Cane",
-24,RUIZ,"Zack Aidan,Miranda Sy",
-25,SOLICAR,"Matthew Kihr,Dela Peña",
-26,TABARES,"Van Noel,Rago",
-27,TAN,"Jose Sebastian,Escudero",
+id,lastname,firstname,elective,gender
+1,AGPALO,Ydrane Isen,,male
+2,ALAJAS,Louie Keith,,male
+3,ALEGADO,"Bryle Ghen,Escanilla",,male
+4,ANSAO,"Retzius Zul-Halo,Cabili",,male
+5,BARREDO,"Jhaff Nestor,Alberca",,male
+6,BUGWAT,"Rohan Yeshua,Estoy",,male
+7,CABINTOY,"Cyril Jacob,Quita",,male
+8,CARTECIANO,"Timothy,Lopez",,male
+9,CAUMERAN,"Jaime,Juezan",,male
+10,CERNAL,"Renjie Mier,Andales",,male
+11,ENRIQUEZ,"Ryke Kalel,Valdez",,male
+12,GODINEZ,"Ymiel Andreu,Llacer",,male
+13,HARINA,"Pete Xander,Bernaldez",,male
+14,HUPP,"Job Atticus,Escolar",,male
+15,LAWAS,"Mark Lawrence,Fajardo",,male
+16,LEPITEN,"Ethan Zander,Ortiz",,male
+17,LONGAKIT,"Charlesle Kurt,Amodia",,male
+18,NATEGHI,"Abdolrahman Hassan,Padin",,male
+19,OCAÑADA,John Ludy Jacob,,male
+20,PACUBAS,"Robi Christopher,Verano",,male
+21,RICAFRANCA,"Richo Diever,Odever",,male
+22,RICAÑA,"Aldreismith,Cubelo",,male
+23,ROMANILLOS,"Raphael,Cane",,male
+24,RUIZ,"Zack Aidan,Miranda Sy",,male
+25,SOLICAR,"Matthew Kihr,Dela Peña",,male
+26,TABARES,"Van Noel,Rago",,male
+27,TAN,"Jose Sebastian,Escudero",,male

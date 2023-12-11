@@ -1,44 +1,44 @@
-id,lastname,firstname,elective
-1,"ABARQUEZ","Gabriel James, Neri",CIVIL
-2,"ABRICA","Fred Emmanuel, Restauro",CIVIL
-3,"ALKUINO","Nick Rafael, Omega",CIVIL
-4,"ALMONICAR","Sealtiel Dleh, Otud",CIVIL
-5,"ARRANGUEZ","Art Prince, Quimbo",CIVIL
-6,"BACULI","Matthew Zach, Amasa",CIVIL
-7,"BENEMERITO","Seth Alexander, Flores",CIVIL
-8,"BERONGOY","Pius Augustine, Sevilla",CIVIL
-9,"BINONGO","Gabriel, Faelnar",CIVIL
-10,"BRIGOLI","Diego, Pilapil",CIVIL
-11,"CALERO","Khiko Federico Ricardo, De Guzman",CIVIL
-12,"CAÑARIAS","Johann Ryle, Lapitan",CIVIL
-13,"CARTUCIANO","Mehmet Wade, Gonzaga",CIVIL
-14,"CASTAÑOS","Jayden Sylvan, Gines",CIVIL
-15,"CONDOR","Chad Martin, Ybañez",ELEX
-16,"ENRIQUEZ","Renzi Anthony, Balaguer",ELEX
-17,"ESCAÑO","Noeh Aldred, Cabrera",ELEX
-18,"GARCIA","Chris Lord, Montehermoso",ELEX
-19,"GEGAVINE","Zeke Bryne Ximen, Jainar",ELEX
-20,"GERONA","Cedric, Obeso",ELEX
-21,"GONZALEZ","Nieander Sean, Patual",ELEX
-22,"GRETAN","Lian Gabriel, Enopia",ELEX
-23,"GUMAHAD","Daniel Jacob, Vasquez",ELEX
-24,"JOYAG","Matthew Alain, Fortich",ELEX
-25,"JURADO","Rohan Nathaniel, Ipong",ELEX
-26,"KASAYAN","Micko Ian, Llavore",ELEX
-27,"LETIGIO","Brix Jyohann, Tabasa",ELEX
-28,"MONISIT","Norvin Clayne, Macapili",ELEX
-29,"MONZOLIN","Nate Lorenz, Espinosa",ELEX
-30,"MOSQUEDA","Chez, Bucad",MECH
-31,"OMAQUE","Lyle Tyler, Saldaña",MECH
-32,"ORTEGA","Terrence Yves, Labay",MECH
-33,"PACIBLE","Calix Raphael, Mosquera",MECH
-34,"PANTOLLANO","Jay Angelo, Perez",MECH
-35,"QUINAIN","Nash Ysrael, Diaz",MECH
-36,"REAL","Florencio Iv, Dolino",MECH
-37,"SACRO","Lemuel Angelo, Lastima",MECH
-38,"SANCHEZ","Louise Clark, Sabanal",MECH
-39,"SENSONTIC","Tristan Antoine Davian, Diano",MECH
-40,"SEVEN","Andre Ethan, Astor",MECH
-41,"SEVILLE","Zeonne Vincent, Iran",MECH
-42,"TALANAY","Adolf Ii, Falar",MECH
-43,"WONG","Rye Isidore, Deveza",MECH
+id,lastname,firstname,elective,gender
+1,ABARQUEZ,"Gabriel James, Neri",CIVIL,male
+2,ABRICA,"Fred Emmanuel, Restauro",CIVIL,male
+3,ALKUINO,"Nick Rafael, Omega",CIVIL,male
+4,ALMONICAR,"Sealtiel Dleh, Otud",CIVIL,male
+5,ARRANGUEZ,"Art Prince, Quimbo",CIVIL,male
+6,BACULI,"Matthew Zach, Amasa",CIVIL,male
+7,BENEMERITO,"Seth Alexander, Flores",CIVIL,male
+8,BERONGOY,"Pius Augustine, Sevilla",CIVIL,male
+9,BINONGO,"Gabriel, Faelnar",CIVIL,male
+10,BRIGOLI,"Diego, Pilapil",CIVIL,male
+11,CALERO,"Khiko Federico Ricardo, De Guzman",CIVIL,male
+12,CAÑARIAS,"Johann Ryle, Lapitan",CIVIL,male
+13,CARTUCIANO,"Mehmet Wade, Gonzaga",CIVIL,male
+14,CASTAÑOS,"Jayden Sylvan, Gines",CIVIL,male
+15,CONDOR,"Chad Martin, Ybañez",ELEX,male
+16,ENRIQUEZ,"Renzi Anthony, Balaguer",ELEX,male
+17,ESCAÑO,"Noeh Aldred, Cabrera",ELEX,male
+18,GARCIA,"Chris Lord, Montehermoso",ELEX,male
+19,GEGAVINE,"Zeke Bryne Ximen, Jainar",ELEX,male
+20,GERONA,"Cedric, Obeso",ELEX,male
+21,GONZALEZ,"Nieander Sean, Patual",ELEX,male
+22,GRETAN,"Lian Gabriel, Enopia",ELEX,male
+23,GUMAHAD,"Daniel Jacob, Vasquez",ELEX,male
+24,JOYAG,"Matthew Alain, Fortich",ELEX,male
+25,JURADO,"Rohan Nathaniel, Ipong",ELEX,male
+26,KASAYAN,"Micko Ian, Llavore",ELEX,male
+27,LETIGIO,"Brix Jyohann, Tabasa",ELEX,male
+28,MONISIT,"Norvin Clayne, Macapili",ELEX,male
+29,MONZOLIN,"Nate Lorenz, Espinosa",ELEX,male
+30,MOSQUEDA,"Chez, Bucad",MECH,male
+31,OMAQUE,"Lyle Tyler, Saldaña",MECH,male
+32,ORTEGA,"Terrence Yves, Labay",MECH,male
+33,PACIBLE,"Calix Raphael, Mosquera",MECH,male
+34,PANTOLLANO,"Jay Angelo, Perez",MECH,male
+35,QUINAIN,"Nash Ysrael, Diaz",MECH,male
+36,REAL,"Florencio Iv, Dolino",MECH,male
+37,SACRO,"Lemuel Angelo, Lastima",MECH,male
+38,SANCHEZ,"Louise Clark, Sabanal",MECH,male
+39,SENSONTIC,"Tristan Antoine Davian, Diano",MECH,male
+40,SEVEN,"Andre Ethan, Astor",MECH,male
+41,SEVILLE,"Zeonne Vincent, Iran",MECH,male
+42,TALANAY,"Adolf Ii, Falar",MECH,male
+43,WONG,"Rye Isidore, Deveza",MECH,male

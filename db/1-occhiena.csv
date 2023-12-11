@@ -1,33 +1,33 @@
-id,lastname,firstname,elective
-1,"ABELLANA","Trystyn Thaddeus,Espina",
-2,"AGUSTIN","Zac Gavin,Decinan",
-3,"APA-AP","Zeus,Orge",
-4,"ARMECIN","Buccio Lucas,Fabiano",
-5,"CAPAO","Axel Jairus,Gines",
-6,"CASTAÑOS","Johann Sachiel,Gines",
-7,"CONDE","Herbert Sean",
-8,"CORRO","Alshamari James,Agrabio",
-9,"DATAN","Savio Antonio,King",
-10,"DEL ROSARIO","Jan Lucas,Getubig",
-11,"FERNANDO","Dylan Ezekiel,Tampus",
-12,"GALLARDO","Ah-In Messi,Nadela",
-13,"GARCIA","Jace Miguel,Landia",
-14,"INCORPORADO","Javier Simon,Bual",
-15,"LUMAYAG","Malikk Ivar,Zanoria",
-16,"MALAMANIG","Cillian Zach,Abadiano",
-17,"MORENO","Galilee,Lazaro",
-18,"OSORIO","Gideon Franco,Rabillas",
-19,"PACUBAS","Lark Dylan,Ollague",
-20,"PARCON","Iam Daniel Marqus,Ogoc",
-21,"PATUAL","Randell Christopher,Quijada",
-22,"PEÑA","Marcus Vaughn,Astudillo",
-23,"PLAZA","Kade Anthony",
-24,"QUINTANA","Steven James,Semillano",
-25,"RALLOMA","Elijah Kyrie,Remarca",
-26,"RONQUILLO","Manuel Sebastian,Gimarino",
-27,"RUBIO","Haydes Kyrie,Abaño",
-28,"SALOMON","Robert Apollo,Bacolod",
-29,"SAMSON","Andre Simon,Cabus",
-30,"TIOPES","Ocean Lionel,Inot",
-31,"UY","Ethan Brandon,Rusia",
-32,"YPIL","Niño Jezeus,Encierto",
+id,lastname,firstname,elective,gender
+1,ABELLANA,"Trystyn Thaddeus,Espina",,male
+2,AGUSTIN,"Zac Gavin,Decinan",,male
+3,APA-AP,"Zeus,Orge",,male
+4,ARMECIN,"Buccio Lucas,Fabiano",,male
+5,CAPAO,"Axel Jairus,Gines",,male
+6,CASTAÑOS,"Johann Sachiel,Gines",,male
+7,CONDE,Herbert Sean,,male
+8,CORRO,"Alshamari James,Agrabio",,male
+9,DATAN,"Savio Antonio,King",,male
+10,DEL ROSARIO,"Jan Lucas,Getubig",,male
+11,FERNANDO,"Dylan Ezekiel,Tampus",,male
+12,GALLARDO,"Ah-In Messi,Nadela",,male
+13,GARCIA,"Jace Miguel,Landia",,male
+14,INCORPORADO,"Javier Simon,Bual",,male
+15,LUMAYAG,"Malikk Ivar,Zanoria",,male
+16,MALAMANIG,"Cillian Zach,Abadiano",,male
+17,MORENO,"Galilee,Lazaro",,male
+18,OSORIO,"Gideon Franco,Rabillas",,male
+19,PACUBAS,"Lark Dylan,Ollague",,male
+20,PARCON,"Iam Daniel Marqus,Ogoc",,male
+21,PATUAL,"Randell Christopher,Quijada",,male
+22,PEÑA,"Marcus Vaughn,Astudillo",,male
+23,PLAZA,Kade Anthony,,male
+24,QUINTANA,"Steven James,Semillano",,male
+25,RALLOMA,"Elijah Kyrie,Remarca",,male
+26,RONQUILLO,"Manuel Sebastian,Gimarino",,male
+27,RUBIO,"Haydes Kyrie,Abaño",,male
+28,SALOMON,"Robert Apollo,Bacolod",,male
+29,SAMSON,"Andre Simon,Cabus",,male
+30,TIOPES,"Ocean Lionel,Inot",,male
+31,UY,"Ethan Brandon,Rusia",,male
+32,YPIL,"Niño Jezeus,Encierto",,male

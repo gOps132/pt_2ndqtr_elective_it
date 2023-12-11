@@ -1,30 +1,30 @@
-id,lastname,firstname,elective
-1,ALCAZAREN,"Johan,Cobol",
-2,BONGHANOY,"Eivo Carlisle,Malagiok",
-3,BRAZAL,"Zakhary Brennan,Gica",
-4,CAMARINES,"Ed Eric Joshua,Ponce",
-5,CANABE,"Michael Warren,Odi",
-6,CARMELOTES,"Sidric,Sejesmundo",
-7,DAGONDON,"Trevor Trey,Orozco",
-8,DOMINGO,"Zaine Matthew,Canlobo",
-9,FERNANDEZ,"Philipp,Romas",
-10,FLORES,"Tyler Zachary,Bacon",
-11,INTING,"Castor Troy,Soriano",
-12,LARIDA,"Dominic,Lee",
-13,LUCAS,"Gabriel Martin,Coronado",
-14,MALIG-ON,"Charls Enric,Coronado",
-15,MEPIEZA,"Zadkiel Van Henfrei,Canillo",
-16,PEREZ,"Nathaniel,Bisnar",
-17,RECANO,"George Iii,Nacua",
-18,ROMA,"John Benedict,Borres",
-19,ROSELL,"Gabriele Franco,Igano",
-20,SANCHEZ,"Lucas Clint,Concoles",
-21,SANTIAGO,"Ethan Aerod,Adami",
-22,TABADA,"Prince Luis Julian,Aspacio",
-23,TECSON,"Kian Patrick,Manatad",
-24,TEVES,"Paul Dominic,Osmeña",
-25,TIOPES,"Moses Franco,Inot",
-26,TUMALE,"Ralph Neithan,Lapingcao",
-27,URPIANA,"Agila Reef,Tabada",
-28,YNCLINO,"Eugene Iohannes,Belialba",
-29,ZARATE,"Kimuel Brayden,Camocamo",
+id,lastname,firstname,elective,gender
+1,ALCAZAREN,"Johan,Cobol",,male
+2,BONGHANOY,"Eivo Carlisle,Malagiok",,male
+3,BRAZAL,"Zakhary Brennan,Gica",,male
+4,CAMARINES,"Ed Eric Joshua,Ponce",,male
+5,CANABE,"Michael Warren,Odi",,male
+6,CARMELOTES,"Sidric,Sejesmundo",,male
+7,DAGONDON,"Trevor Trey,Orozco",,male
+8,DOMINGO,"Zaine Matthew,Canlobo",,male
+9,FERNANDEZ,"Philipp,Romas",,male
+10,FLORES,"Tyler Zachary,Bacon",,male
+11,INTING,"Castor Troy,Soriano",,male
+12,LARIDA,"Dominic,Lee",,male
+13,LUCAS,"Gabriel Martin,Coronado",,male
+14,MALIG-ON,"Charls Enric,Coronado",,male
+15,MEPIEZA,"Zadkiel Van Henfrei,Canillo",,male
+16,PEREZ,"Nathaniel,Bisnar",,male
+17,RECANO,"George Iii,Nacua",,male
+18,ROMA,"John Benedict,Borres",,male
+19,ROSELL,"Gabriele Franco,Igano",,male
+20,SANCHEZ,"Lucas Clint,Concoles",,male
+21,SANTIAGO,"Ethan Aerod,Adami",,male
+22,TABADA,"Prince Luis Julian,Aspacio",,male
+23,TECSON,"Kian Patrick,Manatad",,male
+24,TEVES,"Paul Dominic,Osmeña",,male
+25,TIOPES,"Moses Franco,Inot",,male
+26,TUMALE,"Ralph Neithan,Lapingcao",,male
+27,URPIANA,"Agila Reef,Tabada",,male
+28,YNCLINO,"Eugene Iohannes,Belialba",,male
+29,ZARATE,"Kimuel Brayden,Camocamo",,male

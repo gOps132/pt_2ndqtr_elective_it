@@ -1,39 +1,39 @@
-id,lastname,firstname,elective
-1,AMAZONA,"Franz Matheu, Abalos",
-2,ARANZADO,"Martin Jonas, Abangan",
-3,ARCILLA,"Reuel Matthew, Aliñabon",
-4,BAYLOSES,"Angelo Miguel, Vidad",
-5,BOYLES,"Sean Patrick, Blando",
-6,BUCAO,"Jhasper Adrian, Formarejo",
-7,BUGTAI,"Niño Venice, Sarsona",
-8,CABAS,"John Vincent, Cantiveros",
-9,CARILLO,"Samuel, Balquin",
-10,CATINGUB,"Ethan Enzo, Maranga",
-11,CAYAO,"Frehd Eztahnly, Perez",
-12,CENIZA,Jonas Evander,
-13,CRUZ,"Joseph Florence Karl, Ubas",
-14,DACUMA,"George Marco, Abayan",
-15,DALMERO,"Lhester Rutart, Baltazar",
-16,DE LA CALZADA,"Chad, Antigua",
-17,DEL CAMPO,"Simon Andrei, Ruela",
-18,DELGAMO,"Josh-Carlo, Singco",
-19,ENAD,"John, Aratea",
-20,GARCES,Joseph Kyne,
-21,GARCIA,"Paul Emmanuel, Delos Angeles",
-22,GUILIPA,"Vynz Aron, Ventula",
-23,INCORPORADO,"Jose Sebastian, Bual",
-24,JUMAO-AS,"Johann Terence, Yee",
-25,LARGO,"Laurence, Sismar",
-26,LINGATONG,"Nathan Khail, Contreras",
-27,MALLO,"Jeul Matthew, Gutierrez",
-28,MAÑACAP,"Kirt Cj, Raypon",
-29,MONDARES,"John Rod, Amamangpang",
-30,PADLA,"Marc Achilles, Duran",
-31,PUMAREJA,"Carsten, Serrano",
-32,RONDRIQUE,"John Mehl, Gisem",
-33,SACABON,"Ziv Andrie, Fernandez",
-34,SARIGUMBA,"Josef Baskin, Flores",
-35,TAMPUS,"Tyrus Titus, Hortizuela",
-36,TAN,"Arden Philippe Malthus, Legaspi",
-37,WENCESLAO,"Antonio Benedict, Sabang",
-38,YAGONIA,"Janssen Niño, Tibay",
+id,lastname,firstname,elective,gender
+1,AMAZONA,"Franz Matheu, Abalos",,male
+2,ARANZADO,"Martin Jonas, Abangan",,male
+3,ARCILLA,"Reuel Matthew, Aliñabon",,male
+4,BAYLOSES,"Angelo Miguel, Vidad",,male
+5,BOYLES,"Sean Patrick, Blando",,male
+6,BUCAO,"Jhasper Adrian, Formarejo",,male
+7,BUGTAI,"Niño Venice, Sarsona",,male
+8,CABAS,"John Vincent, Cantiveros",,male
+9,CARILLO,"Samuel, Balquin",,male
+10,CATINGUB,"Ethan Enzo, Maranga",,male
+11,CAYAO,"Frehd Eztahnly, Perez",,male
+12,CENIZA,Jonas Evander,,male
+13,CRUZ,"Joseph Florence Karl, Ubas",,male
+14,DACUMA,"George Marco, Abayan",,male
+15,DALMERO,"Lhester Rutart, Baltazar",,male
+16,DE LA CALZADA,"Chad, Antigua",,male
+17,DEL CAMPO,"Simon Andrei, Ruela",,male
+18,DELGAMO,"Josh-Carlo, Singco",,male
+19,ENAD,"John, Aratea",,male
+20,GARCES,Joseph Kyne,,male
+21,GARCIA,"Paul Emmanuel, Delos Angeles",,male
+22,GUILIPA,"Vynz Aron, Ventula",,male
+23,INCORPORADO,"Jose Sebastian, Bual",,male
+24,JUMAO-AS,"Johann Terence, Yee",,male
+25,LARGO,"Laurence, Sismar",,male
+26,LINGATONG,"Nathan Khail, Contreras",,male
+27,MALLO,"Jeul Matthew, Gutierrez",,male
+28,MAÑACAP,"Kirt Cj, Raypon",,male
+29,MONDARES,"John Rod, Amamangpang",,male
+30,PADLA,"Marc Achilles, Duran",,male
+31,PUMAREJA,"Carsten, Serrano",,male
+32,RONDRIQUE,"John Mehl, Gisem",,male
+33,SACABON,"Ziv Andrie, Fernandez",,male
+34,SARIGUMBA,"Josef Baskin, Flores",,male
+35,TAMPUS,"Tyrus Titus, Hortizuela",,male
+36,TAN,"Arden Philippe Malthus, Legaspi",,male
+37,WENCESLAO,"Antonio Benedict, Sabang",,male
+38,YAGONIA,"Janssen Niño, Tibay",,male
