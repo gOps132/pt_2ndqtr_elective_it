@@ -29,7 +29,7 @@ CREATE TABLE `1-murialdo` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `1-murialdo` (
 
 LOCK TABLES `1-murialdo` WRITE;
 /*!40000 ALTER TABLE `1-murialdo` DISABLE KEYS */;
-INSERT INTO `1-murialdo` VALUES (1,'ABELLANA','Xian Francis','','male'),(2,'AGUSTIN','Louisse Jacob,Monares','','male'),(3,'ALDE','Anton Mateo,Lagat','','male'),(4,'ALIÃ‘O','Djosef Kraig,Wenceslao','','male'),(5,'BALMACEDA','Karson Aemon,Pono','','male'),(6,'BASITAO','Reean Jei,Saquilabon','','male'),(7,'CABARRUBIAS','Zach Delfin Jimz,Cervantes','','male'),(8,'CAÃ‘AMO','Jai Perri,Taclob','','male'),(9,'CAPUTAN','David Lewis,Castro','','male'),(10,'DANDAN','Xian Christoff,Restauro','','male'),(11,'DATAN','Francis Four,Paguio','','male'),(12,'DIRA','Louis Dolfus,Encarnacion','','male'),(13,'FABOR','Matteo,Menchavez','','male'),(14,'GERALI','Ean,Escoto','','male'),(15,'KITAMURA','Kenta,Fernandez','','male'),(16,'LABIO','Achaean Schyros Zaynn,Andales','','male'),(17,'LAMBATING','Job Lucas,Vergara','','male'),(18,'MARTINEZ','Zion Ash,Emperio','','male'),(19,'MERILLES','Cody,Sanchez','','male'),(20,'OYAO','Czedrich El Gibbor,Nadera','','male'),(21,'PEPITO','Duke Marten,Villacastin','','male'),(22,'RAPSING','Ram Theodore,Guinita','','male'),(23,'RENDON','Ivo Ernestt','','male'),(24,'SABELLANO','Zane Ashton,Pelaez','','male'),(25,'SACEDA','Azriel Yohaynis,Mangitngit','','male'),(26,'SESE','Sancho Francisco,Lozano','','male'),(27,'TAMPUS','Luke Fabrice,Dinglasa','','male'),(28,'TEVES','Maddox Zing,Rosal','','male');
+INSERT INTO `1-murialdo` VALUES (1,'','','','male'),(2,'sdfdsfdsf','sdfdsf','','female'),(3,'','','','female'),(4,'','','','female'),(5,'BALMACEDA','Karson Aemon,Pono','','male'),(6,'BASITAO','Reean Jei,Saquilabon','','male'),(7,'CABARRUBIAS','Zach Delfin Jimz,Cervantes','','male'),(8,'CAÃ‘AMO','Jai Perri,Taclob','','male'),(9,'CAPUTAN','David Lewis,Castro','','male'),(10,'DANDAN','Xian Christoff,Restauro','','male'),(11,'DATAN','Francis Four,Paguio','','male'),(12,'DIRA','Louis Dolfus,Encarnacion','','male'),(13,'FABOR','Matteo,Menchavez','','male'),(14,'GERALI','Ean,Escoto','','male'),(15,'KITAMURA','Kenta,Fernandez','','male'),(16,'LABIO','Achaean Schyros Zaynn,Andales','','male'),(17,'LAMBATING','Job Lucas,Vergara','','male'),(18,'MARTINEZ','Zion Ash,Emperio','','male'),(19,'MERILLES','Cody,Sanchez','','male'),(20,'OYAO','Czedrich El Gibbor,Nadera','','male'),(21,'PEPITO','Duke Marten,Villacastin','','male'),(22,'RAPSING','Ram Theodore,Guinita','','male'),(23,'RENDON','Ivo Ernestt','','male'),(24,'SABELLANO','Zane Ashton,Pelaez','','male'),(25,'SACEDA','Azriel Yohaynis,Mangitngit','','male'),(26,'SESE','Sancho Francisco,Lozano','','male'),(27,'TAMPUS','Luke Fabrice,Dinglasa','','male'),(28,'TEVES','Maddox Zing,Rosal','','male'),(29,'','','',''),(30,'sdfdsfdsf','sdfdsf','','female'),(31,'sdfdsfdsf','sdfdsf','','female'),(32,'sdfdsfdsf','sdfdsf','','female'),(33,'','','',''),(34,'','','','');
 /*!40000 ALTER TABLE `1-murialdo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -56,7 +56,7 @@ CREATE TABLE `1-occhiena` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -83,7 +83,7 @@ CREATE TABLE `10-magone` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -110,7 +110,7 @@ CREATE TABLE `10-namuncura` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -137,7 +137,7 @@ CREATE TABLE `10-savio` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -162,8 +162,9 @@ CREATE TABLE `10-vicuna` (
   `lastname` text,
   `firstname` text,
   `elective` text,
+  `gender` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -172,7 +173,7 @@ CREATE TABLE `10-vicuna` (
 
 LOCK TABLES `10-vicuna` WRITE;
 /*!40000 ALTER TABLE `10-vicuna` DISABLE KEYS */;
-INSERT INTO `10-vicuna` VALUES (1,'ABELLA','Angelo Theodore, Juntilla','MECH'),(2,'AMAZONA','Fritz Marco, Abalos','MECH'),(3,'BAYOT','Chris Joaquim, Dela Cerna','MECH'),(4,'BERING','Andre Raphael, Millan','MECH'),(5,'BORROMEO','Elijah Gay','MECH'),(6,'DEJOS','Lourd Audi, ArdoÃ±a','MECH'),(7,'ESCAÃ‘O','Leil Enrico, Cabrera','MECH'),(8,'FABIAN','Mathius Lue, Bacalso','MECH'),(9,'GO','Roo Kaiden','MECH'),(10,'LIM','Gavrie Lucas, Singson','MECH'),(11,'LINES','Allan Jules, Bautista','CIVIL'),(12,'MIÃ‘OZA','Harley Davidson, Saura','CIVIL'),(13,'NALDOZA','Romeo Giancarlo, Mauro','CIVIL'),(14,'NUÃ‘EZ','Jan Castor, Gaviola','CIVIL'),(15,'ORBETA','Ethan, Cristoria','CIVIL'),(16,'PANCITO','Regulus Noah, Cao','CIVIL'),(17,'PANGAN','Arnnon Zacch, Cantal','CIVIL'),(18,'PEREZ','Jeuz Raphael, Eamiguel','CIVIL'),(19,'RICAFRENTE','Florante, Yan','CIVIL'),(20,'RODA','Noel Terrence, Ibones','CIVIL'),(21,'ROMAGUERA','Glad Constantine, Limosnero','CIVIL'),(22,'SAAVEDRA','Stephen Angelo, Abaloyan','CIVIL'),(23,'SANCHEZ','Aaron, Sol','ELEX'),(24,'SUARING','Jayrus, Dela Corte','ELEX'),(25,'SUELLO','John Gershom, Sobretodo','ELEX'),(26,'TABADA','Victor Paolo, Pacina','ELEX'),(27,'TAN','Jejomar Roy, Tabilon','ELEX'),(28,'TEVES','Owen Wilson, Pimentel','ELEX'),(29,'TIONG','Kyle Lester, English','ELEX'),(30,'TONGCO','Gary Zachehugh, Pulma','ELEX'),(31,'WAGAS','Glian Andrej, Espinosa','ELEX'),(32,'YOUNG','Manuel Iii, Zafra','ELEX'),(33,'ZULUETA','Javier Vaughn Carmelo, Saberola','ELEX'),(34,'RESILLA','Ezekiel, Laurel','ELEX'),(35,'SANCHEZ','Raphael, Belandres','ELEX');
+INSERT INTO `10-vicuna` VALUES (1,'ABELLA','Angelo Theodore, Juntilla','MECH','male'),(2,'AMAZONA','Fritz Marco, Abalos','MECH','male'),(3,'BAYOT','Chris Joaquim, Dela Cerna','MECH','male'),(4,'BERING','Andre Raphael, Millan','MECH','male'),(5,'BORROMEO','Elijah Gay','MECH','male'),(6,'DEJOS','Lourd Audi, ArdoÃ±a','MECH','male'),(7,'ESCAÃ‘O','Leil Enrico, Cabrera','MECH','male'),(8,'FABIAN','Mathius Lue, Bacalso','MECH','male'),(9,'GO','Roo Kaiden','MECH','male'),(10,'LIM','Gavrie Lucas, Singson','MECH','male'),(11,'LINES','Allan Jules, Bautista','CIVIL','male'),(12,'MIÃ‘OZA','Harley Davidson, Saura','CIVIL','male'),(13,'NALDOZA','Romeo Giancarlo, Mauro','CIVIL','male'),(14,'NUÃ‘EZ','Jan Castor, Gaviola','CIVIL','male'),(15,'ORBETA','Ethan, Cristoria','CIVIL','male'),(16,'PANCITO','Regulus Noah, Cao','CIVIL','male'),(17,'PANGAN','Arnnon Zacch, Cantal','CIVIL','male'),(18,'PEREZ','Jeuz Raphael, Eamiguel','CIVIL','male'),(19,'RICAFRENTE','Florante, Yan','CIVIL','male'),(20,'RODA','Noel Terrence, Ibones','CIVIL','male'),(21,'ROMAGUERA','Glad Constantine, Limosnero','CIVIL','male'),(22,'SAAVEDRA','Stephen Angelo, Abaloyan','CIVIL','male'),(23,'SANCHEZ','Aaron, Sol','ELEX','male'),(24,'SUARING','Jayrus, Dela Corte','ELEX','male'),(25,'SUELLO','John Gershom, Sobretodo','ELEX','male'),(26,'TABADA','Victor Paolo, Pacina','ELEX','male'),(27,'TAN','Jejomar Roy, Tabilon','ELEX','male'),(28,'TEVES','Owen Wilson, Pimentel','ELEX','male'),(29,'TIONG','Kyle Lester, English','ELEX','male'),(30,'TONGCO','Gary Zachehugh, Pulma','ELEX','male'),(31,'WAGAS','Glian Andrej, Espinosa','ELEX','male'),(32,'YOUNG','Manuel Iii, Zafra','ELEX','male'),(33,'ZULUETA','Javier Vaughn Carmelo, Saberola','ELEX','male'),(34,'RESILLA','Ezekiel, Laurel','ELEX','male'),(35,'SANCHEZ','Raphael, Belandres','ELEX','male');
 /*!40000 ALTER TABLE `10-vicuna` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -190,7 +191,7 @@ CREATE TABLE `11-aparicio` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -217,7 +218,7 @@ CREATE TABLE `11-braga` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -244,7 +245,7 @@ CREATE TABLE `11-giordani` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -271,7 +272,7 @@ CREATE TABLE `11-quadrio` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -298,7 +299,7 @@ CREATE TABLE `12-joswiak` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -325,7 +326,7 @@ CREATE TABLE `12-kazmierski` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -352,7 +353,7 @@ CREATE TABLE `12-klinik` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -379,7 +380,7 @@ CREATE TABLE `12-wojciechowski` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -406,7 +407,7 @@ CREATE TABLE `2-piani` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -433,7 +434,7 @@ CREATE TABLE `2-rettore` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -460,7 +461,7 @@ CREATE TABLE `3-clifford` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -487,7 +488,7 @@ CREATE TABLE `3-czartoryski` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -514,7 +515,7 @@ CREATE TABLE `4-albera` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -541,7 +542,7 @@ CREATE TABLE `4-rua` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -568,7 +569,7 @@ CREATE TABLE `5-ricaldone` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -595,7 +596,7 @@ CREATE TABLE `5-ricceri` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -622,7 +623,7 @@ CREATE TABLE `6-chavez` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -649,7 +650,7 @@ CREATE TABLE `6-vigano` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -676,7 +677,7 @@ CREATE TABLE `7-beltrami` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -703,7 +704,7 @@ CREATE TABLE `7-mertens` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -730,7 +731,7 @@ CREATE TABLE `7-srugi` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -757,7 +758,7 @@ CREATE TABLE `7-zatti` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -784,7 +785,7 @@ CREATE TABLE `8-guanella` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -811,7 +812,7 @@ CREATE TABLE `8-hlond` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -820,7 +821,7 @@ CREATE TABLE `8-hlond` (
 
 LOCK TABLES `8-hlond` WRITE;
 /*!40000 ALTER TABLE `8-hlond` DISABLE KEYS */;
-INSERT INTO `8-hlond` VALUES ('id','lastname','firstname','elective','gender');
+INSERT INTO `8-hlond` VALUES (0,'lastname','firstname','elective','gender');
 /*!40000 ALTER TABLE `8-hlond` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -838,7 +839,7 @@ CREATE TABLE `8-orione` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -865,7 +866,7 @@ CREATE TABLE `8-variara` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -892,7 +893,7 @@ CREATE TABLE `9-calasanz` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -919,7 +920,7 @@ CREATE TABLE `9-caravario` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -946,7 +947,7 @@ CREATE TABLE `9-kowalski` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -955,7 +956,7 @@ CREATE TABLE `9-kowalski` (
 
 LOCK TABLES `9-kowalski` WRITE;
 /*!40000 ALTER TABLE `9-kowalski` DISABLE KEYS */;
-INSERT INTO `9-kowalski` VALUES ('id','lastname','firstname','elective','gender');
+INSERT INTO `9-kowalski` VALUES (0,'lastname','firstname','elective','gender');
 /*!40000 ALTER TABLE `9-kowalski` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -973,7 +974,7 @@ CREATE TABLE `9-versiglia` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1000,7 +1001,7 @@ CREATE TABLE `k-cimatti` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1027,7 +1028,7 @@ CREATE TABLE `k-morano` (
   `elective` text,
   `gender` text,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1049,4 +1050,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-11 20:34:24
+-- Dump completed on 2023-12-12 18:21:24

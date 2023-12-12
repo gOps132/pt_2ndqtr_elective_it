@@ -10,6 +10,7 @@ class InfoQueryCtx:
     def __init__(self, db_ctx):
         self.frame = ttk.Frame()
         self.db_ctx = db_ctx
+        self.current_section = ""
 
         self.student_id = tk.Label(master=self.frame, text="Student ID")
         self.last_name = tk.Label(master=self.frame, text="Last Name")
@@ -97,13 +98,20 @@ class InfoQueryCtx:
         self.elective_entry.delete(0, "end")
         self.gender_var.set(0)
 
+    def set_entries(self, details) -> None:
+        self.reset_entries()
+        self.student_id_entry.insert(0,details[0])
+        self.last_name_entry.insert(0,details[1])
+        self.first_name_entry.insert(0,details[2])
+        self.year_level_entry.insert(0,details[3])
+        self.elective_entry.insert(0,details[4])
+        self.gender_var.set(1 if details[5] == "male" else 2)
+
 class ExecuteQueryCtxWidget:
-    def __init__(self, db_ctx, info_query_ctx, info_query_output, window):
+    def __init__(self, info_query_ctx, info_query_output):
         self.frame = ttk.Frame()
-        self.db_ctx = db_ctx
         self.ifq_ctx = info_query_ctx
         self.ifq_output = info_query_output
-        self.main_window_ctx = window
         self.widgets()
 
     def widgets(self):
@@ -139,7 +147,8 @@ class ExecuteQueryCtxWidget:
         entries = self.ifq_ctx.get_entries()
         if self.verify(entries):
             if entries[3]:
-                result = error_handle(self.db_ctx.add_db, details=entries)
+                self.ifq_ctx.current_section = entries[3]
+                result = error_handle(self.ifq_ctx.db_ctx.add_db, details=entries)
                 if result:
                     messagebox.showinfo(
                         "success",
@@ -153,7 +162,8 @@ class ExecuteQueryCtxWidget:
         entries = self.ifq_ctx.get_entries()
         if self.verify(entries):
             if entries[3]:
-                result = error_handle(self.db_ctx.insert_db, details=entries)
+                self.ifq_ctx.current_section = entries[3]
+                result = error_handle(self.ifq_ctx.db_ctx.insert_db, details=entries)
                 if result:
                     messagebox.showinfo(
                         "success",
@@ -172,7 +182,7 @@ class ExecuteQueryCtxWidget:
                     f"Change {queue_selected_entry} to \n{entries}?"
                 )
                 if permission == 'yes':
-                    result = self.db_ctx.update_db(queue_selected_entry, entries)
+                    result = self.ifq_ctx.db_ctx.update_db(queue_selected_entry, entries)
                     self.ifq_output.update_view(result)
             else:
                 messagebox.showerror("error", "Please select an entry")
@@ -187,7 +197,7 @@ class ExecuteQueryCtxWidget:
                     f"DELETE {queue_selected_entry}?"
                 )
                 if permission == 'yes':
-                    result = self.db_ctx.delete_db(queue_selected_entry)
+                    result = self.ifq_ctx.db_ctx.delete_db(queue_selected_entry)
                     self.ifq_output.update_view(result)
             else:
                 messagebox.showerror("error", "Please select an entry")
@@ -195,16 +205,17 @@ class ExecuteQueryCtxWidget:
     def queue(self):
         entries = self.ifq_ctx.get_entries()
         if entries[3]:
-            result = error_handle(self.db_ctx.queue_db, details=entries)
+            self.ifq_ctx.current_section = entries[3]
+            result = error_handle(self.ifq_ctx.db_ctx.queue_db, details=entries)
             self.ifq_output.update_view(result)
         else:
             messagebox.showerror("Lacking Entries", "no section")
 
 class OutputQueryCtx():
-    def __init__(self, db_ctx: DatabaseCtx):
-        self.db_ctx = db_ctx
+    def __init__(self, info_query_ctx):
         self.frame = tk.Frame()
         self.create_tree_widget()
+        self.ifq_ctx = info_query_ctx
 
     def clear_view(self):
         x = self.output.get_children()         
@@ -237,6 +248,8 @@ class OutputQueryCtx():
         for selected_item in self.output.selection():
             item = self.output.item(selected_item)
             record = item['values']
+            self.ifq_ctx.set_entries([record[0],record[1],record[2],self.ifq_ctx.current_section,record[3],record[4]])
+            # TODO: update entry box entries with these values
             print(record)
             return record
 

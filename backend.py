@@ -10,7 +10,7 @@ class DatabaseCtx:
             self.db_ctx = connector.connect(
                 host="localhost",
                 user="root",
-                database="pt_2nd_qtr_demo_db",
+                database=os.getenv("MYSQLDATABASE"),
                 password=os.getenv("MYSQLPASS"),
             )
             self.cursor = self.db_ctx.cursor()
@@ -41,18 +41,20 @@ class DatabaseCtx:
                 cmd += " WHERE "
                 if details[0]:
                     cmd += f"id=\"{details[0]}\""
-                    if details[1] or details[2] or details[4]:
+                    if details[1] or details[2] or details[4] or details[5]:
                         cmd += " AND "
                 if details[1]:
                     cmd += f"lastname LIKE \"%{details[1]}%\""
-                    if details[2] or details[4]:
+                    if details[2] or details[4] or details[5]:
                         cmd += " AND "
                 if details[2]:
                     cmd += f"firstname LIKE \"%{details[2]}%\""
-                    if details[4]:
+                    if details[4] or details[5]:
                         cmd += " AND "
                 if details[4]:
                     cmd += f"elective= \"{details[4]}\""
+                    if details[5]:
+                        cmd += " AND "
                 if details[5]:
                     cmd += f"gender= \"{details[5]}\""
             cmd += ";"
@@ -97,16 +99,25 @@ class DatabaseCtx:
 
     def update_db(self, change_from, change_to):
         try:
-            cmd = f"""\
-UPDATE `{change_to[3]}`
-{f"SET id = {change_to[0]} AND" if change_to[0] else "SET"} \
-lastname = {f"`{change_to[1]}`," if change_to[1] else "\"\",\n"}\
-firstname = {f"`{change_to[2]}`," if change_to[2] else "\"\" ,\n"}\
-elective = {f"`{change_to[4]}`," if change_to[4] else "\"\",\n"}\
-gender = {f"\"{change_to[5]}\"" if change_to[5] else "\"\""}\n\
-WHERE id = {change_from[0]};
-"""
-            print(cmd)
+            cmd = """
+UPDATE `{section}`
+SET
+{id_set}
+lastname = "{lastname}",
+firstname = "{firstname}",
+elective = "{elective}",
+gender = "{gender}"
+WHERE id = {id};
+""".format(
+    section=change_to[3],
+    id_set=("id="+change_to[0]+",") if change_to[0] else "",
+    lastname=change_to[1] if change_to[1] else "",
+    firstname=change_to[2] if change_to[2] else "",
+    elective=change_to[4] if change_to[4] else "",
+    gender=change_to[5] if change_to[5] else "",
+    id = change_from[0]
+    )
+            print(f"----{cmd}----")
             self.cursor.execute(cmd)
             self.db_ctx.commit()
             result = self.queue_db(details=[0, 0, 0, self.current_section, 0, 0])
